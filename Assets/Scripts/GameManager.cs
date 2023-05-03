@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public static event Action OnPause;
     public static event Action OnResume;
 
-    public static bool GameIsPaused = false;
+    public static bool GameIsPaused { get; private set; } = false;
 
     private static float _savedTimeScale;
 
