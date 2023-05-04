@@ -132,6 +132,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 212028670}
+  - component: {fileID: 212028672}
+  - component: {fileID: 212028671}
   m_Layer: 0
   m_Name: BoundaryCollider
   m_TagString: Untagged
@@ -154,6 +156,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &212028671
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212028668}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.4590609, y: -0.50102067}
+  - {x: -0.6517262, y: -0.4178353}
+  - {x: -0.25373554, y: -0.14157972}
+  - {x: -0.15691447, y: -1.3722594}
+  - {x: -3.0598557, y: -1.4506586}
+  - {x: -3.13542, y: -0.92603815}
+  - {x: -3.4249277, y: -0.8893264}
+  - {x: -3.7871795, y: -2.8899908}
+  - {x: -4.2695775, y: -4.280985}
+  - {x: -7.062063, y: -4.1679907}
+  - {x: -7.387419, y: -2.0836887}
+  - {x: -7.453524, y: -0.18319899}
+  - {x: -7.09479, y: 1.348746}
+  - {x: -6.419026, y: 2.417302}
+  - {x: -4.1209693, y: 2.4638522}
+  - {x: -3.467371, y: 1.1005052}
+  - {x: -3.3415585, y: -0.098085016}
+  - {x: -3.0791318, y: -0.09028358}
+  - {x: -3.1044874, y: 0.124879844}
+  - {x: -2.0537531, y: 0.21750939}
+  - {x: -1.8943139, y: -0.28365362}
+  - {x: -1.4590609, y: -0.50102067}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &212028672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212028668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb239217b35ad374eaa9b5fa7cec381c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EdgeCollider: {fileID: 212028671}
 --- !u!1001 &1046781252
 PrefabInstance:
   m_ObjectHideFlags: 0
