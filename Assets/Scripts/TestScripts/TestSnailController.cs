@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class TestSnailController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float MoveSpeed;
+
+    private Vector3 _moveDirection;
+    private Rigidbody2D _rb;
+
+    private void Start()
     {
-        
+        _rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        float x = Input.GetAxisRaw("Horizontal");
+        float y = Input.GetAxisRaw("Vertical");
+        _moveDirection = ((Vector3.right * x) + (Vector3.up * y)).normalized;
+    }
+
+    private void FixedUpdate()
+    {
+        _rb.velocity = _moveDirection * MoveSpeed;
     }
 }
