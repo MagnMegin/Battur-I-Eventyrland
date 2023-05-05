@@ -23,9 +23,20 @@ public class BoundaryCollider : MonoBehaviour
 
     private void Update()
     {
+        if (EdgeCollider == null)
+        {
+            Debug.LogWarning("Boundary collider has no edge collider reference.");
+            return;
+        }
+
         Vector2[] newPoints = EdgeCollider.points;
         newPoints[0] = newPoints.Last();
         EdgeCollider.points = newPoints;
+    }
+
+    private void OnDestroy()
+    {
+        if (!Application.isPlaying && gameObject.activeSelf) DestroyImmediate(EdgeCollider);
     }
 #endif
 }
