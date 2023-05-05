@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
 {
@@ -10,19 +11,27 @@ public class Dialogue : MonoBehaviour
     public float textSpeed;
 
     private int index;
+    private bool dialogueInProgress = false;
+    private Component imageComponent;
 
     // Start is called before the first frame update
     void Start()
     {
         textComponent.text = string.Empty; //Makes sure the textcomponent is empty on scene start
-        StartDialogue();
+        imageComponent = GetComponent<Image>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            StartDialogue();
+        }
+
+
         //This is to skip the sentence being written out letter for letter, or to skip to the next sentence.
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && dialogueInProgress)
         {
             //If the current line is finished typing, run this
             if(textComponent.text == lines[index])
@@ -42,7 +51,10 @@ public class Dialogue : MonoBehaviour
     void StartDialogue()
     {
         index = 0;
+        Debug.Log("Dialogue started");
+        imageComponent.GetComponent<Image>().enabled = true;
         StartCoroutine(TypeLine());
+        dialogueInProgress = true;
     }
 
     IEnumerator TypeLine() //The aim of this coroutine is to make the text appear one letter after the other
@@ -63,9 +75,11 @@ public class Dialogue : MonoBehaviour
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
         }
-        else
+        else //Disables the textbox and clears the text
         {
-            gameObject.SetActive(false);
+            imageComponent.GetComponent<Image>().enabled = false;
+            textComponent.text = string.Empty;
+            dialogueInProgress = false;
         }
     }
 }
