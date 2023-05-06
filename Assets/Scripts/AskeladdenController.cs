@@ -5,6 +5,8 @@ using UnityEngine;
 public class AskeladdenController : MonoBehaviour
 {
     public float MoveSpeed;
+    
+    public bool IsActive { get; private set; }
 
     private Vector3 _moveDirection;
     private Rigidbody2D _rb;
@@ -16,9 +18,7 @@ public class AskeladdenController : MonoBehaviour
 
     private void Update()
     {
-        float x = Input.GetAxisRaw("Horizontal");
-        float y = Input.GetAxisRaw("Vertical");
-        _moveDirection = ((Vector3.right * x) + (Vector3.up * y)).normalized;
+        _moveDirection = InputManager.GetMovement();
     }
 
     private void FixedUpdate()
