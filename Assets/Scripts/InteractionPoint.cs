@@ -17,17 +17,18 @@ public class InteractionPoint : MonoBehaviour
     public UnityEvent PrimaryInteraction;
     public UnityEvent SecondaryInteraction;
 
-    private TestSnailController _character;
+    private GameObject _character;
 
     #region Unity Messages
     void Start()
     {
-        _character = FindObjectOfType<TestSnailController>();
-        if (_character == null) Debug.LogWarning("Player character not found");
+        _character = GameManager.PlayerCharacter;   // Get character ref
+        GameManager.OnNewCharacterInstance += GetCharacter; // In case character ref changes
     }
 
     void Update()
     {
+        if (_character == null) return;
         if (!CharacterInRange()) return;
 
         if (Input.GetKeyDown(PrimaryButton))
@@ -51,8 +52,14 @@ public class InteractionPoint : MonoBehaviour
         float distance = (_character.transform.position - transform.position).magnitude;
         return (distance < Radius);
     }
+
+    private void GetCharacter(GameObject characterObj)
+    {
+        _character = characterObj;
+    }
     #endregion
 
+    #region Editor
 #if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
@@ -60,4 +67,5 @@ public class InteractionPoint : MonoBehaviour
         Handles.DrawWireDisc(transform.position, Vector3.forward, Radius, 1.5f);
     }
 #endif
+    #endregion
 }
