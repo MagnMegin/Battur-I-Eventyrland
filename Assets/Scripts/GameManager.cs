@@ -5,13 +5,35 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    // Gamestate
+    public enum State
+    {
+        Menu,
+        Pause,
+        Overworld,
+        Map,
+        Combat,
+        Dialogue,
+        Cutscene,
+    }
+
     // Instance
     public static GameManager Instance;
 
     // Events
+    public static event Action<GameObject> OnNewCharacterInstance;
+    public static event Action OnEnterMenu;
+    public static event Action OnExitMenu;
     public static event Action OnPause;
     public static event Action OnResume;
-    public static event Action<GameObject> OnNewCharacterInstance;
+    public static event Action OnEnterOverworld;
+    public static event Action OnExitOverworld;
+    public static event Action OnEnterMap;
+    public static event Action OnExitMap;
+    public static event Action OnEnterCombat;
+    public static event Action OnExitCombat;
+    public static event Action OnEnterDialogue;
+    public static event Action OnExitDialogue;
 
     // Player Character
     public static GameObject PlayerCharacter;

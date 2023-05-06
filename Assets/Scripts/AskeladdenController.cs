@@ -6,13 +6,15 @@ public class AskeladdenController : MonoBehaviour
 {
     public float MoveSpeed;
     
-    public bool IsActive { get; private set; }
-
     private Vector3 _moveDirection;
     private Rigidbody2D _rb;
 
+    #region Unity Messages
     private void Start()
     {
+        GameManager.OnEnterOverworld += Enable; // Enables character controller in overworld
+        GameManager.OnExitOverworld += Disable; // Disables it otherwise
+
         _rb = GetComponent<Rigidbody2D>();
     }
 
@@ -25,4 +27,23 @@ public class AskeladdenController : MonoBehaviour
     {
         _rb.velocity = _moveDirection * MoveSpeed;
     }
+    #endregion
+
+    #region State
+    /// <summary>
+    /// Activates the controller.
+    /// </summary>
+    public void Enable()
+    {
+        this.enabled = true;
+    }
+
+    /// <summary>
+    /// Deactivates the controller.
+    /// </summary>
+    public void Disable()
+    {
+        this.enabled = false;
+    }
+    #endregion
 }
