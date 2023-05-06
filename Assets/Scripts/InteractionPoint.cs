@@ -9,10 +9,6 @@ public class InteractionPoint : MonoBehaviour
     [Header("Interaction Area")]
     public float Radius = 0.5f;
 
-    [Header("Interaction Keybinds")]
-    public KeyCode PrimaryButton = KeyCode.E;
-    public KeyCode SecondaryButton;
-
     [Header("Interaction Events")]
     public UnityEvent PrimaryInteraction;
     public UnityEvent SecondaryInteraction;
@@ -31,12 +27,12 @@ public class InteractionPoint : MonoBehaviour
         if (_character == null) return;
         if (!CharacterInRange()) return;
 
-        if (Input.GetKeyDown(PrimaryButton))
+        if (InputManager.GetPrimaryInteractionDown())
         {
             PrimaryInteraction?.Invoke();
         }
 
-        if (Input.GetKeyDown(SecondaryButton))
+        if (InputManager.GetSecondaryInteractionDown())
         {
             SecondaryInteraction?.Invoke();
         }

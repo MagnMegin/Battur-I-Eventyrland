@@ -16,7 +16,7 @@ public class VideoManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(SkipVideoKey))
+        if (InputManager.GetIntroSkipDown())
         {
             Destroy(gameObject);
         }
