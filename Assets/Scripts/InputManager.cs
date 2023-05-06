@@ -8,7 +8,7 @@ public class InputManager : MonoBehaviour
 
     public InputSettings Settings;
 
-    #region Singleton
+    #region Singleton Behaviour
     private void Awake()
     {
         if (Instance == null)
