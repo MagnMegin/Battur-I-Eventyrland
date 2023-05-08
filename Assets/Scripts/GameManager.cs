@@ -5,25 +5,44 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    // Instance
     public static GameManager Instance;
+
+    // Events
+    public static event Action<GameObject> OnNewCharacterInstance;
     public static event Action OnPause;
     public static event Action OnResume;
 
-    public static bool GameIsPaused = false;
+    // Player Character
+    public static GameObject PlayerCharacter;
 
+    // Pausing
+    public static bool GameIsPaused { get; private set; } = false;
     private static float _savedTimeScale;
 
-    #region Singleton
-    void Awake()
+    #region Unity Messages
+    // Singleton behaviour and start up
+    private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(this);
+            FindPlayerCharacter(); // Gets player character reference
+            InputManager.Scheme = InputManager.ControlScheme.Video; // Sets control scheme
         }
         else
         {
             Destroy(this);
+        }
+    }
+
+    // Search for player character in case it is not found in Awake
+    private void Update()
+    {
+        if (PlayerCharacter == null)
+        {
+            FindPlayerCharacter();
         }
     }
     #endregion
@@ -42,6 +61,19 @@ public class GameManager : MonoBehaviour
         Time.timeScale = _savedTimeScale;
         OnResume?.Invoke();
         GameIsPaused = false;
+    }
+    #endregion
+
+    #region Player Character
+
+    /// <summary>
+    /// For getting a reference to the player character. Notifies via event
+    /// GameManager.OnNewCharacterInstance.
+    /// </summary>
+    private void FindPlayerCharacter()
+    {
+        PlayerCharacter = FindObjectOfType<AskeladdenController>()?.gameObject;
+        OnNewCharacterInstance?.Invoke(PlayerCharacter); // Message to scripts in case of character Reload
     }
     #endregion
 }

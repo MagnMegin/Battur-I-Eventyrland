@@ -1,0 +1,497 @@
+fileFormatVersion: 2
+guid: 5943fe896721781419464f7aa594a908
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arc's Resource Pack_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 650
+        width: 292
+        height: 251
+      alignment: 9
+      pivot: {x: 0.48166004, y: 0.16535105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8ddee20b0468d419e0bd298f7bf88b
+      internalID: -1870403608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arc's Resource Pack_1
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 654
+        width: 252
+        height: 245
+      alignment: 9
+      pivot: {x: 0.5531272, y: 0.18032949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150a4c4d45d9a8245b6c4ca1750b107c
+      internalID: -1125839529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arc's Resource Pack_2
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 779
+        width: 149
+        height: 120
+      alignment: 9
+      pivot: {x: 0.4910139, y: 0.1896647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a2beec621095f4796f9deb0f29e90b
+      internalID: 1931588979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arc's Resource Pack_3
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 655
+        width: 149
+        height: 120
+      alignment: 9
+      pivot: {x: 0.49999958, y: 0.15619455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a924b7fc5af5a1b4aa0991b4e48c72f0
+      internalID: -1993751965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arc's Resource Pack_4
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 353
+        width: 289
+        height: 290
+      alignment: 9
+      pivot: {x: 0.5555908, y: 0.18466376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cacc2747f81891469fc915024a82c7a
+      internalID: 137167829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arc's Resource Pack_5
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 387
+        width: 252
+        height: 249
+      alignment: 9
+      pivot: {x: 0.44155955, y: 0.20969339}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e637385c74912940b731ec709ff3da4
+      internalID: -1893747774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arc's Resource Pack_6
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 531
+        width: 149
+        height: 120
+      alignment: 9
+      pivot: {x: 0.48202863, y: 0.1896647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104b7559f23e7b540913e469c4c77b97
+      internalID: 959554542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arc's Resource Pack_7
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 403
+        width: 149
+        height: 120
+      alignment: 9
+      pivot: {x: 0.4910139, y: 0.14503784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e24c31ec4b9b0a45aec15aa7218141a
+      internalID: 1175726415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arc's Resource Pack_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 204
+        width: 127
+        height: 142
+      alignment: 9
+      pivot: {x: 0.46837464, y: 0.17943992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69faf424549cc243ad7236250a00a1d
+      internalID: 1628589015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arc's Resource Pack_9
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 204
+        width: 127
+        height: 142
+      alignment: 9
+      pivot: {x: 0.48945796, y: 0.1888677}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec490662c801f7e48b4cdff60be1af5d
+      internalID: -1532400846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arc's Resource Pack_10
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 205
+        width: 127
+        height: 142
+      alignment: 9
+      pivot: {x: 0.46837392, y: 0.19829549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3d1a07f22b1b74a86076c4f833169f
+      internalID: 55704572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arc's Resource Pack_11
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 276
+        width: 149
+        height: 120
+      alignment: 9
+      pivot: {x: 0.49999958, y: 0.16735102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf17b7e14f073b44b9b2eae4a9f7355f
+      internalID: 1233455741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arc's Resource Pack_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 60
+        width: 127
+        height: 142
+      alignment: 9
+      pivot: {x: 0.47891644, y: 0.19829576}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cb0e917c306594a8298b79332fdcf1
+      internalID: -582727335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arc's Resource Pack_13
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 60
+        width: 127
+        height: 142
+      alignment: 9
+      pivot: {x: 0.48945796, y: 0.21715224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c95d4c269bb01942a463bce8ce9706d
+      internalID: 1039141851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arc's Resource Pack_14
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 59
+        width: 127
+        height: 142
+      alignment: 9
+      pivot: {x: 0.47891596, y: 0.17943965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87288a4d8d274824a9112cc849001d62
+      internalID: 483449094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arc's Resource Pack_15
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 148
+        width: 149
+        height: 120
+      alignment: 9
+      pivot: {x: 0.4910139, y: 0.15619455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f7d6eb4e061904eba1fa9585559401
+      internalID: 402245737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arc's Resource Pack_16
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 21
+        width: 149
+        height: 120
+      alignment: 9
+      pivot: {x: 0.4910139, y: 0.15619494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cedc7a431a3bd3428da6bcdb4275f0f
+      internalID: -20310284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Arc's Resource Pack_0: -1870403608
+      Arc's Resource Pack_7: 1175726415
+      Arc's Resource Pack_14: 483449094
+      Arc's Resource Pack_3: -1993751965
+      Arc's Resource Pack_13: 1039141851
+      Arc's Resource Pack_6: 959554542
+      Arc's Resource Pack_1: -1125839529
+      Arc's Resource Pack_9: -1532400846
+      Arc's Resource Pack_15: 402245737
+      Arc's Resource Pack_10: 55704572
+      Arc's Resource Pack_4: 137167829
+      Arc's Resource Pack_8: 1628589015
+      Arc's Resource Pack_5: -1893747774
+      Arc's Resource Pack_12: -582727335
+      Arc's Resource Pack_16: -20310284
+      Arc's Resource Pack_2: 1931588979
+      Arc's Resource Pack_11: 1233455741
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
