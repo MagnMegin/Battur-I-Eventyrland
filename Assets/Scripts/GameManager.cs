@@ -82,6 +82,7 @@ public class GameManager : MonoBehaviour
             FindPlayerCharacter(); 
         }
 
+        // Toggle pause
         if (InputManager.PauseButtonDown())
         {
             if (GameIsPaused) ResumeGame();
