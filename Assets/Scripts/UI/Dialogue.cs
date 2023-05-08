@@ -19,12 +19,13 @@ public class Dialogue : MonoBehaviour
     {
         textComponent.text = string.Empty; //Makes sure the textcomponent is empty on scene start
         imageComponent = GetComponent<Image>();
+        InputManager.Scheme = InputManager.ControlScheme.Menu;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (InputManager.MenuSelectDown() && !dialogueInProgress)
         {
             StartDialogue();
         }
