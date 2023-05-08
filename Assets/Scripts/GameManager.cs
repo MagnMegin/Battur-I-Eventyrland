@@ -5,6 +5,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public enum GameState
+    {
+        Video,
+        Pause
+    }
+
     // Instance
     public static GameManager Instance;
 
@@ -20,6 +26,9 @@ public class GameManager : MonoBehaviour
     public static bool GameIsPaused { get; private set; } = false;
     private static float _savedTimeScale;
 
+    // Scene Data
+    private static SceneData CurrentSceneData;
+
     #region Unity Messages
     // Singleton behaviour and start up
     private void Awake()
@@ -28,13 +37,18 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(this);
-            FindPlayerCharacter(); // Gets player character reference
-            InputManager.Scheme = InputManager.ControlScheme.Video; // Sets control scheme
         }
         else
         {
             Destroy(this);
         }
+    }
+
+    // First-time initialization of GameManager
+    private void Start()
+    {
+        FindPlayerCharacter(); // Gets player character reference
+        InputManager.Scheme = InputManager.ControlScheme.Video; // Sets control scheme
     }
 
     // Search for player character in case it is not found in Awake
@@ -44,6 +58,27 @@ public class GameManager : MonoBehaviour
         {
             FindPlayerCharacter();
         }
+    }
+    #endregion
+
+    #region Initialization and Reloading
+
+    /// <summary>
+    /// For getting a reference to the player character. Notifies via event
+    /// GameManager.OnNewCharacterInstance.
+    /// </summary>
+    private void FindPlayerCharacter()
+    {
+        PlayerCharacter = FindObjectOfType<AskeladdenController>()?.gameObject;
+        OnNewCharacterInstance?.Invoke(PlayerCharacter); // Message to scripts in case of character reload
+    }
+
+    private void Initialize()
+    {
+        FindPlayerCharacter(); // Gets player character reference
+        CurrentSceneData = SceneData.Instance;
+        InputManager.Scheme = InputManager.ControlScheme.Video; // Sets control scheme
+
     }
     #endregion
 
@@ -61,19 +96,6 @@ public class GameManager : MonoBehaviour
         Time.timeScale = _savedTimeScale;
         OnResume?.Invoke();
         GameIsPaused = false;
-    }
-    #endregion
-
-    #region Player Character
-
-    /// <summary>
-    /// For getting a reference to the player character. Notifies via event
-    /// GameManager.OnNewCharacterInstance.
-    /// </summary>
-    private void FindPlayerCharacter()
-    {
-        PlayerCharacter = FindObjectOfType<AskeladdenController>()?.gameObject;
-        OnNewCharacterInstance?.Invoke(PlayerCharacter); // Message to scripts in case of character Reload
     }
     #endregion
 }

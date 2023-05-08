@@ -1,18 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneData : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // The base type of the scene
+    public enum SceneType
     {
-        
+        OverWorld,
+        Menu,
+        Video,
+        Bootstrap,
     }
 
-    // Update is called once per frame
-    void Update()
+    public static SceneData Instance;
+
+    public SceneType TypeOfScene;
+    public string SceneName { get; private set; }
+
+    #region Unity Messages
+    private void Awake()
     {
-        
+        if (Instance != null) Destroy(Instance.gameObject);
+        Instance = this;
+
+        SceneName = SceneManager.GetActiveScene().name;
     }
+    #endregion
 }
