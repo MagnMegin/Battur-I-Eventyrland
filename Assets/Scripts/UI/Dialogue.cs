@@ -3,22 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
+    public CharacterInfo characterInfo;
     public string[] lines;
     public float textSpeed;
+    public event Action onDialogueOver;
 
+    private string characterName;
     private int index;
     private bool dialogueInProgress = false;
-    private Component imageComponent;
+    private Component rightImageComponent; //This is the background of the text
+    private Component leftImageComponent;
 
     // Start is called before the first frame update
     void Start()
     {
+        lines = characterInfo.lines;
+        characterName = characterInfo.characterName;
+
         textComponent.text = string.Empty; //Makes sure the textcomponent is empty on scene start
-        imageComponent = GetComponent<Image>();
+
+        rightImageComponent = GetComponent<Image>();
+        leftImageComponent = GetComponent<Image>();
+
         InputManager.Scheme = InputManager.ControlScheme.Menu;
     }
 
@@ -29,10 +40,8 @@ public class Dialogue : MonoBehaviour
         {
             StartDialogue();
         }
-
-
         //This is to skip the sentence being written out letter for letter, or to skip to the next sentence.
-        if (Input.GetMouseButtonDown(0) && dialogueInProgress)
+        else if (InputManager.MenuSelectDown() && dialogueInProgress)
         {
             //If the current line is finished typing, run this
             if(textComponent.text == lines[index])
@@ -52,8 +61,9 @@ public class Dialogue : MonoBehaviour
     void StartDialogue()
     {
         index = 0;
-        Debug.Log("Dialogue started");
-        imageComponent.GetComponent<Image>().enabled = true;
+        //Debug.Log("Dialogue started");
+        leftImageComponent.GetComponent<Image>().enabled = true;
+        rightImageComponent.GetComponent<Image>().enabled = true;
         StartCoroutine(TypeLine());
         dialogueInProgress = true;
     }
@@ -78,9 +88,11 @@ public class Dialogue : MonoBehaviour
         }
         else //Disables the textbox and clears the text
         {
-            imageComponent.GetComponent<Image>().enabled = false;
+            leftImageComponent.GetComponent<Image>().enabled = false;
+            rightImageComponent.GetComponent<Image>().enabled = false;
             textComponent.text = string.Empty;
             dialogueInProgress = false;
+            onDialogueOver?.Invoke();
         }
     }
 }
