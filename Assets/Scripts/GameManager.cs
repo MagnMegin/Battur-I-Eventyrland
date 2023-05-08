@@ -2,13 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public enum GameState
     {
-        Video,
-        Pause
+        Overworld,
+        Menu,
+        Cutscene,
+        Dialogue,
+        Combat,
     }
 
     // Instance
@@ -27,10 +31,14 @@ public class GameManager : MonoBehaviour
     private static float _savedTimeScale;
 
     // Scene Data
-    private static SceneData CurrentSceneData;
+    public SceneData.SceneType CurrentSceneType => SceneData.Instance.TypeOfScene;
+    public InputManager.ControlScheme SceneBaseControlScheme 
+                                                => SceneData.Instance.BaseControlScheme;
 
-    #region Unity Messages
-    // Singleton behaviour and start up
+    // Intro Video
+    public GameObject IntroVideo;
+
+    #region Singleton
     private void Awake()
     {
         if (Instance == null)
@@ -43,25 +51,21 @@ public class GameManager : MonoBehaviour
             Destroy(this);
         }
     }
+    #endregion
+
+    #region Initialization and Reloading
+
+    // First-time initialization of GameManager
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += SetControlSchemeFromScene;
+    }
 
     // First-time initialization of GameManager
     private void Start()
     {
         FindPlayerCharacter(); // Gets player character reference
-        InputManager.Scheme = InputManager.ControlScheme.Video; // Sets control scheme
     }
-
-    // Search for player character in case it is not found in Awake
-    private void Update()
-    {
-        if (PlayerCharacter == null)
-        {
-            FindPlayerCharacter();
-        }
-    }
-    #endregion
-
-    #region Initialization and Reloading
 
     /// <summary>
     /// For getting a reference to the player character. Notifies via event
@@ -70,23 +74,55 @@ public class GameManager : MonoBehaviour
     private void FindPlayerCharacter()
     {
         PlayerCharacter = FindObjectOfType<AskeladdenController>()?.gameObject;
-        OnNewCharacterInstance?.Invoke(PlayerCharacter); // Message to scripts in case of character reload
+        OnNewCharacterInstance?.Invoke(PlayerCharacter);
     }
 
-    private void Initialize()
+    /// <summary>
+    /// Sets control scheme in input manager based on the current scene type.
+    /// </summary>
+    private void SetControlSchemeFromScene(Scene scene, LoadSceneMode loadMode)
     {
-        FindPlayerCharacter(); // Gets player character reference
-        CurrentSceneData = SceneData.Instance;
-        InputManager.Scheme = InputManager.ControlScheme.Video; // Sets control scheme
+        InputManager.Scheme = SceneBaseControlScheme;
+    }
+    #endregion
 
+    #region Update
+    private void Update()
+    {
+        // Search for player character in case it is not found in Start
+        if (PlayerCharacter == null)
+        {
+            FindPlayerCharacter(); 
+        }
+
+        if (InputManager.PauseButtonDown())
+        {
+            if (GameIsPaused) ResumeGame();
+            else PauseGame();
+        }
+    }
+    #endregion
+
+    #region Video
+    public void PlayVideo(GameObject videoObject)
+    {
+        VideoController video = Instantiate(videoObject).GetComponent<VideoController>();
+    }
+
+    private void PlayIntroVideo()
+    {
+        Instantiate(IntroVideo);
     }
     #endregion
 
     #region Pause
     public void PauseGame()
     {
+        if (CurrentSceneType != SceneData.SceneType.Overworld) return;
+
         _savedTimeScale = Time.timeScale;
         Time.timeScale = 0f;
+        InputManager.Scheme = InputManager.ControlScheme.Menu;
         OnPause?.Invoke();
         GameIsPaused = true;
     }
@@ -94,6 +130,7 @@ public class GameManager : MonoBehaviour
     public void ResumeGame()
     {
         Time.timeScale = _savedTimeScale;
+        InputManager.Scheme = SceneBaseControlScheme;
         OnResume?.Invoke();
         GameIsPaused = false;
     }

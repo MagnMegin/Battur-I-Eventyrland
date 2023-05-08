@@ -5,13 +5,14 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    // State
+    // Control scheme (state of input manager)
     public enum ControlScheme
     {
         Overworld,
         Combat,
         Menu,
-        Video,
+        Cutscene,
+        None,
     }
 
     public static InputManager Instance;
@@ -51,6 +52,13 @@ public class InputManager : MonoBehaviour
         {
             _menuNavigationRegistered = false;
         }
+    }
+    #endregion
+
+    #region General
+    public static bool PauseButtonDown()
+    {
+        return Input.GetKeyDown(Instance.Settings.PauseButton);
     }
     #endregion
 
@@ -147,7 +155,7 @@ public class InputManager : MonoBehaviour
     #region Video
     public static bool GetIntroSkipDown()
     {
-        if (Scheme != ControlScheme.Video) return false;
+        if (Scheme != ControlScheme.Cutscene) return false;
 
         return Input.GetKeyDown(Instance.Settings.IntroSkip);
     }

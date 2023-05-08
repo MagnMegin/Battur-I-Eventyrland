@@ -5,6 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "InputSettings", menuName = "InputManager/InputSettings", order = 1)]
 public class InputSettings : ScriptableObject
 {
+    [Header("General")]
+    public KeyCode PauseButton;
+
     [Header("Overworld")]
     public string XMovementAxis;
     public string YMovementAxis;

@@ -8,15 +8,17 @@ public class SceneData : MonoBehaviour
     // The base type of the scene
     public enum SceneType
     {
-        OverWorld,
+        Overworld,
         Menu,
-        Video,
+        Cutscene,
         Bootstrap,
     }
 
     public static SceneData Instance;
 
     public SceneType TypeOfScene;
+    public InputManager.ControlScheme BaseControlScheme;
+
     public string SceneName { get; private set; }
 
     #region Unity Messages
