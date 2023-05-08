@@ -12,11 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b8a73894be1dd24d89b2aa5db5c543f, type: 3}
   m_Name: InputSettings
   m_EditorClassIdentifier: 
-  X_Movement: Horizontal
-  Y_Movement: Vertical
+  XMovementAxis: Horizontal
+  YMovementAxis: Vertical
   PrimaryInteraction: 101
-  SecondaryInteraction: 0
-  MenuUpDown: 
-  MenuLeftRight: 
-  MenuSelect: 0
+  SecondaryInteraction: 113
+  CombatLeftRightAxis: Horizontal
+  CombatUpDownAxis: Vertical
+  CombatSelect: 101
+  CombatPrimaryInteraction: 101
+  CombatSecondaryInteraction: 113
+  MenuLeftRightAxis: Horizontal
+  MenuUpDownAxis: Vertical
+  MenuSelect: 101
   IntroSkip: 32

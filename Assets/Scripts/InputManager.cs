@@ -4,7 +4,17 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
+    // State
+    public enum ControlScheme
+    {
+        Overworld,
+        Combat,
+        Menu,
+        Video,
+    }
+
     public static InputManager Instance;
+    public static ControlScheme Scheme;
 
     public InputSettings Settings;
 
@@ -26,43 +36,62 @@ public class InputManager : MonoBehaviour
     #region Overworld
     public static Vector3 GetMovement()
     {
-        float x = Input.GetAxisRaw(Instance.Settings.X_Movement);
-        float y = Input.GetAxisRaw(Instance.Settings.Y_Movement);
+        if (Scheme != ControlScheme.Overworld) return Vector3.zero;
+
+        float x = Input.GetAxisRaw(Instance.Settings.XMovementAxis);
+        float y = Input.GetAxisRaw(Instance.Settings.YMovementAxis);
         return (Vector3)(new Vector2(x, y).normalized);
     }
 
-    public static bool GetPrimaryInteractionDown()
+    public static bool PrimaryInteractionDown()
     {
+        if (Scheme != ControlScheme.Overworld) return false;
+
         return Input.GetKeyDown(Instance.Settings.PrimaryInteraction);
     }
 
-    public static bool GetSecondaryInteractionDown()
+    public static bool SecondaryInteractionDown()
     {
+        if (Scheme != ControlScheme.Overworld) return false;
+
         return Input.GetKeyDown(Instance.Settings.SecondaryInteraction);
     }
     #endregion
 
     #region Combat
-    public static bool GetPrimaryCombatInteractionDown()
+    public static Vector2Int GetCombatNavigationDown()
     {
-        return false;
+        //if (Scheme != ControlScheme.Combat) return Vector2Int.zero;
+
+        int up = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuUpDownAxis));
+        int right = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuLeftRightAxis));
+        return new Vector2Int(up, right);
     }
 
-    public static bool GetSecondaryCombatInteractionDown()
+    public static bool CombatPrimaryInteractionDown()
     {
-        return false;
+        //if (Scheme != ControlScheme.Combat) return false;
+
+        return Input.GetKeyDown(Instance.Settings.CombatPrimaryInteraction);
+    }
+
+    public static bool CombatSecondaryInteractionDown()
+    {
+        //if (Scheme != ControlScheme.Combat) return false;
+
+        return Input.GetKeyDown(Instance.Settings.CombatSecondaryInteraction);
     }
     #endregion
 
     #region Menu
-    public static Vector2Int GetMenuNavigation()
+    public static Vector2Int GetMenuNavigationDown()
     {
-        int up = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuUpDown));
-        int right = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuLeftRight));
+        int up = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuUpDownAxis));
+        int right = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuLeftRightAxis));
         return new Vector2Int(up, right);
     }
 
-    public static bool GetMenuSelectDown()
+    public static bool MenuSelectDown()
     {
         return Input.GetKeyDown(Instance.Settings.MenuSelect);
     }

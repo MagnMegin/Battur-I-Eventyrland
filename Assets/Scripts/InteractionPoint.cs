@@ -27,12 +27,12 @@ public class InteractionPoint : MonoBehaviour
         if (_character == null) return;
         if (!CharacterInRange()) return;
 
-        if (InputManager.GetPrimaryInteractionDown())
+        if (InputManager.PrimaryInteractionDown())
         {
             PrimaryInteraction?.Invoke();
         }
 
-        if (InputManager.GetSecondaryInteractionDown())
+        if (InputManager.SecondaryInteractionDown())
         {
             SecondaryInteraction?.Invoke();
         }
