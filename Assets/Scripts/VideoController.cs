@@ -8,7 +8,12 @@ public class VideoController : MonoBehaviour
 {
     public bool PlayInEditor;
 
+    public bool VideoIsFinished => (_vidPlayer.frame == (long)_totalFrames - 1);
+
     public event Action OnVideoEnd;
+
+    private VideoPlayer _vidPlayer;
+    private ulong _totalFrames;
 
     private void Start()
     {
@@ -19,17 +24,26 @@ public class VideoController : MonoBehaviour
             return;
         }
         #endif
+
+        _vidPlayer = GetComponent<VideoPlayer>();
+        _totalFrames = _vidPlayer.frameCount;
     }
     private void Update()
     {
         if (InputManager.GetIntroSkipDown())
         {
-            Destroy(gameObject);
+            EndVideo();
+        }
+
+        if (VideoIsFinished)
+        {
+            EndVideo();
         }
     }
 
-    private void OnDestroy()
+    public void EndVideo()
     {
-        
+        Destroy(gameObject);
+        OnVideoEnd?.Invoke();
     }
 }
