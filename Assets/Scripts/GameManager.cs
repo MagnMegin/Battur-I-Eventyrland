@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(this);
             FindPlayerCharacter(); // Gets player character reference
+            InputManager.Scheme = InputManager.ControlScheme.Video; // Sets control scheme
         }
         else
         {

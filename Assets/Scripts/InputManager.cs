@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 public class InputManager : MonoBehaviour
@@ -18,7 +19,12 @@ public class InputManager : MonoBehaviour
 
     public InputSettings Settings;
 
-    #region Singleton Behaviour
+    private static bool _combatNavigationRegistered;
+    private static bool _menuNavigationRegistered;
+
+    #region Unity Messages
+
+    // Awake is used for singleton behaviour
     private void Awake()
     {
         if (Instance == null)
@@ -29,6 +35,21 @@ public class InputManager : MonoBehaviour
         else
         {
             Destroy(this);
+        }
+    }
+    // Update is used for keeping track of input (specifically menu and combat navigation)
+    private void Update()
+    {
+        // Resets GetCombatNavigationDown method once GetCombatNavigation returns [0,0]
+        if (_combatNavigationRegistered && GetCombatNavigation() == Vector2Int.zero)
+        {
+            _combatNavigationRegistered = false;
+        }
+
+        // Same thing but for GetMenuNavigationDown
+        if (_menuNavigationRegistered && GetMenuNavigation() == Vector2Int.zero)
+        {
+            _menuNavigationRegistered = false;
         }
     }
     #endregion
@@ -59,47 +80,75 @@ public class InputManager : MonoBehaviour
     #endregion
 
     #region Combat
-    public static Vector2Int GetCombatNavigationDown()
+    public static Vector2Int GetCombatNavigation()
     {
-        //if (Scheme != ControlScheme.Combat) return Vector2Int.zero;
+        if (Scheme != ControlScheme.Combat) return Vector2Int.zero;
 
         int up = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuUpDownAxis));
         int right = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuLeftRightAxis));
+
         return new Vector2Int(up, right);
+    }
+
+    public static Vector2Int GetCombatNavigationDown()
+    {
+        if (Scheme != ControlScheme.Combat) return Vector2Int.zero;
+        if (_combatNavigationRegistered) return Vector2Int.zero; // To prevent input on more than one frame
+
+        _combatNavigationRegistered = true;
+
+        return GetCombatNavigation();
     }
 
     public static bool CombatPrimaryInteractionDown()
     {
-        //if (Scheme != ControlScheme.Combat) return false;
+        if (Scheme != ControlScheme.Combat) return false;
 
         return Input.GetKeyDown(Instance.Settings.CombatPrimaryInteraction);
     }
 
     public static bool CombatSecondaryInteractionDown()
     {
-        //if (Scheme != ControlScheme.Combat) return false;
+        if (Scheme != ControlScheme.Combat) return false;
 
         return Input.GetKeyDown(Instance.Settings.CombatSecondaryInteraction);
     }
     #endregion
 
     #region Menu
-    public static Vector2Int GetMenuNavigationDown()
+    public static Vector2Int GetMenuNavigation()
     {
+        if (Scheme != ControlScheme.Menu) return Vector2Int.zero;
+
         int up = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuUpDownAxis));
         int right = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuLeftRightAxis));
+
         return new Vector2Int(up, right);
+    }
+
+    public static Vector2Int GetMenuNavigationDown()
+    {
+        if (Scheme != ControlScheme.Menu) return Vector2Int.zero;
+        if (_menuNavigationRegistered) return Vector2Int.zero; // To prevent input on more than one frame
+
+        _menuNavigationRegistered = true;
+
+        return GetCombatNavigation();
     }
 
     public static bool MenuSelectDown()
     {
+        if (Scheme != ControlScheme.Menu) return false;
+
         return Input.GetKeyDown(Instance.Settings.MenuSelect);
     }
     #endregion
 
-    #region Intro Sequence
+    #region Video
     public static bool GetIntroSkipDown()
     {
+        if (Scheme != ControlScheme.Video) return false;
+
         return Input.GetKeyDown(Instance.Settings.IntroSkip);
     }
     #endregion
