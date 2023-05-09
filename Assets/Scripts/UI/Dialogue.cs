@@ -7,30 +7,26 @@ using System;
 
 public class Dialogue : MonoBehaviour
 {
-    public TextMeshProUGUI textComponent;
-    public CharacterInfo characterInfo;
-    public string[] lines;
+    public TextMeshProUGUI dialogueTextComponent;
+    public TextMeshProUGUI rightCharacterName;
+    public CharacterInfo rightCharacterInfo;
     public float textSpeed;
     public event Action onDialogueOver;
+    public GameObject dialogueCanvas;
+    public Image rightCharacterPicture;
+    public string[] lines;
 
-    private string characterName;
+
     private int index;
     private bool dialogueInProgress = false;
-    private Component rightImageComponent; //This is the background of the text
-    private Component leftImageComponent;
 
     // Start is called before the first frame update
     void Start()
     {
-        lines = characterInfo.lines;
-        characterName = characterInfo.characterName;
-
-        textComponent.text = string.Empty; //Makes sure the textcomponent is empty on scene start
-
-        rightImageComponent = GetComponent<Image>();
-        leftImageComponent = GetComponent<Image>();
-
-        InputManager.Scheme = InputManager.ControlScheme.Menu;
+        LoadRightCharacterInfo();
+        dialogueTextComponent.text = string.Empty; //Makes sure the textcomponent is empty on scene start
+        dialogueCanvas.SetActive(false); //Makes sure the dialogue canvas is disabled on scene load.
+        InputManager.Scheme = InputManager.ControlScheme.Menu; //Sets control scheme to menu controls
     }
 
     // Update is called once per frame
@@ -40,11 +36,12 @@ public class Dialogue : MonoBehaviour
         {
             StartDialogue();
         }
+
         //This is to skip the sentence being written out letter for letter, or to skip to the next sentence.
         else if (InputManager.MenuSelectDown() && dialogueInProgress)
         {
             //If the current line is finished typing, run this
-            if(textComponent.text == lines[index])
+            if(dialogueTextComponent.text == lines[index])
             {
                 NextLine();
             }
@@ -53,7 +50,7 @@ public class Dialogue : MonoBehaviour
             else
             {
                 StopAllCoroutines();
-                textComponent.text = lines[index];
+                dialogueTextComponent.text = lines[index];
             }
         }
     }
@@ -61,19 +58,18 @@ public class Dialogue : MonoBehaviour
     void StartDialogue()
     {
         index = 0;
-        //Debug.Log("Dialogue started");
-        leftImageComponent.GetComponent<Image>().enabled = true;
-        rightImageComponent.GetComponent<Image>().enabled = true;
+        dialogueCanvas.SetActive(true);
         StartCoroutine(TypeLine());
         dialogueInProgress = true;
     }
 
     IEnumerator TypeLine() //The aim of this coroutine is to make the text appear one letter after the other
     {
+        yield return new WaitForSeconds(0.2f);
         //This foreach loop breaks all text down to their own letters
         foreach (char c in lines[index].ToCharArray())
         {
-            textComponent.text += c;
+            dialogueTextComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
     }
@@ -83,16 +79,22 @@ public class Dialogue : MonoBehaviour
         if (index < lines.Length - 1)
         {
             index++;
-            textComponent.text = string.Empty;
+            dialogueTextComponent.text = string.Empty;
             StartCoroutine(TypeLine());
         }
-        else //Disables the textbox and clears the text
+        else //Disables the dialogue canvas
         {
-            leftImageComponent.GetComponent<Image>().enabled = false;
-            rightImageComponent.GetComponent<Image>().enabled = false;
-            textComponent.text = string.Empty;
+            dialogueCanvas.SetActive(false);
+            dialogueTextComponent.text = string.Empty;
             dialogueInProgress = false;
             onDialogueOver?.Invoke();
         }
+    }
+
+    void LoadRightCharacterInfo()
+    {
+        lines = rightCharacterInfo.lines;
+        rightCharacterName.text = rightCharacterInfo.characterName;
+        rightCharacterPicture.sprite = rightCharacterInfo.characterDialogueSprite;
     }
 }
