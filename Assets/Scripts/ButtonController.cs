@@ -39,30 +39,69 @@ public class ButtonController : MonoBehaviour
 
         if (direction == Vector2Int.up)
         {
-            _currentButton = (Button)_currentButton.FindSelectableOnUp();
-            _currentButton.Select();
+            SelectUpButton();
             return;
         }
 
         if (direction == Vector2Int.down)
         {
-            _currentButton = (Button)_currentButton.FindSelectableOnDown();
-            _currentButton.Select();
+            SelectDownButton();
             return;
         }
 
         if (direction == Vector2Int.left)
         {
-            _currentButton = (Button)_currentButton.FindSelectableOnLeft();
-            _currentButton.Select();
+            SelectLeftButton();
             return;
         }
 
         if (direction == Vector2Int.right)
         {
-            _currentButton = (Button)_currentButton.FindSelectableOnRight();
-            _currentButton.Select();
+            SelectRightButton();
             return;
         }
+    }
+
+    private void SelectUpButton()
+    {
+        Button nextButton = (Button)_currentButton.FindSelectableOnUp();
+        if (nextButton != null)
+        {
+            _currentButton = nextButton;
+            _currentButton.Select();
+        }
+        return;
+    }
+
+    private void SelectDownButton()
+    {
+        Button nextButton = (Button)_currentButton.FindSelectableOnDown();
+        if (nextButton != null)
+        {
+            _currentButton = nextButton;
+            _currentButton.Select();
+        }
+        return;
+    }
+    private void SelectLeftButton()
+    {
+        Button nextButton = (Button)_currentButton.FindSelectableOnLeft();
+        if (nextButton != null)
+        {
+            _currentButton = nextButton;
+            _currentButton.Select();
+        }
+        return;
+    }
+
+    private void SelectRightButton()
+    {
+        Button nextButton = (Button)_currentButton.FindSelectableOnRight();
+        if (nextButton != null)
+        {
+            _currentButton = nextButton;
+            _currentButton.Select();
+        }
+        return;
     }
 }

@@ -208,9 +208,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 317391180}
-        m_TargetAssemblyTypeName: TestInteraction, Assembly-CSharp
-        m_MethodName: Goodbye
+      - m_Target: {fileID: 2147083363}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -558,7 +558,6 @@ GameObject:
   - component: {fileID: 853324555}
   - component: {fileID: 853324554}
   - component: {fileID: 853324553}
-  - component: {fileID: 853324556}
   m_Layer: 5
   m_Name: StartGameButton
   m_TagString: Untagged
@@ -631,9 +630,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 853324556}
-        m_TargetAssemblyTypeName: TestInteraction, Assembly-CSharp
-        m_MethodName: Hello
+      - m_Target: {fileID: 2147083363}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -681,18 +680,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853324551}
   m_CullTransparentMesh: 1
---- !u!114 &853324556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 853324551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6539cb6d3f003154496b15e161619322, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1330252408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,8 +1149,9 @@ GameObject:
   - component: {fileID: 2147083359}
   - component: {fileID: 2147083358}
   - component: {fileID: 2147083362}
+  - component: {fileID: 2147083363}
   m_Layer: 5
-  m_Name: UI
+  m_Name: MenuUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1267,3 +1255,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartButton: {fileID: 853324553}
+--- !u!114 &2147083363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147083357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96d8969ff5cc02543bf4c2ba13580b10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
