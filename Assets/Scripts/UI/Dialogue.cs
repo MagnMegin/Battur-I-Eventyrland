@@ -40,12 +40,6 @@ public class Dialogue : MonoBehaviour
     }
     #endregion
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        InputManager.CurrentScheme = InputManager.ControlScheme.Menu; //Sets control scheme to menu controls
-    }
-
     // Update is called once per frame
     void Update()
     {

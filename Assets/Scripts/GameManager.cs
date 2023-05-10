@@ -51,8 +51,6 @@ public class GameManager : MonoBehaviour
     private void OnEnable()
     {
         SceneManager.sceneLoaded += SetControlSchemeFromScene;
-        Dialogue.Instance.onDialogueStart += OnDialogueStart;
-        Dialogue.Instance.onDialogueOver += SetControlSchemeFromScene;
     }
 
     // First-time initialization of GameManager
@@ -60,6 +58,8 @@ public class GameManager : MonoBehaviour
     {
         FindPlayerCharacter(); // Gets player character reference
         PlayIntroVideo();
+        Dialogue.Instance.onDialogueStart += OnDialogueStart;
+        Dialogue.Instance.onDialogueOver += SetControlSchemeFromScene;
     }
     #endregion
 
