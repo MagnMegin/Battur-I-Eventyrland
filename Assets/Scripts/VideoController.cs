@@ -20,7 +20,7 @@ public class VideoController : MonoBehaviour
         #if UNITY_EDITOR
         if (!PlayInEditor)
         {
-            Destroy(gameObject);
+            EndVideo();
             return;
         }
         #endif
