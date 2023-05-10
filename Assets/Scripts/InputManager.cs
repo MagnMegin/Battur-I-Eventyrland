@@ -5,17 +5,18 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    // State
+    // Control scheme (state of input manager)
     public enum ControlScheme
     {
         Overworld,
         Combat,
         Menu,
-        Video,
+        Cutscene,
+        None,
     }
 
     public static InputManager Instance;
-    public static ControlScheme Scheme;
+    public static ControlScheme CurrentScheme;
 
     public InputSettings Settings;
 
@@ -54,10 +55,17 @@ public class InputManager : MonoBehaviour
     }
     #endregion
 
+    #region General
+    public static bool PauseButtonDown()
+    {
+        return Input.GetKeyDown(Instance.Settings.PauseButton);
+    }
+    #endregion
+
     #region Overworld
     public static Vector3 GetMovement()
     {
-        if (Scheme != ControlScheme.Overworld) return Vector3.zero;
+        if (CurrentScheme != ControlScheme.Overworld) return Vector3.zero;
 
         float x = Input.GetAxisRaw(Instance.Settings.XMovementAxis);
         float y = Input.GetAxisRaw(Instance.Settings.YMovementAxis);
@@ -66,14 +74,14 @@ public class InputManager : MonoBehaviour
 
     public static bool PrimaryInteractionDown()
     {
-        if (Scheme != ControlScheme.Overworld) return false;
+        if (CurrentScheme != ControlScheme.Overworld) return false;
 
         return Input.GetKeyDown(Instance.Settings.PrimaryInteraction);
     }
 
     public static bool SecondaryInteractionDown()
     {
-        if (Scheme != ControlScheme.Overworld) return false;
+        if (CurrentScheme != ControlScheme.Overworld) return false;
 
         return Input.GetKeyDown(Instance.Settings.SecondaryInteraction);
     }
@@ -82,7 +90,7 @@ public class InputManager : MonoBehaviour
     #region Combat
     public static Vector2Int GetCombatNavigation()
     {
-        if (Scheme != ControlScheme.Combat) return Vector2Int.zero;
+        if (CurrentScheme != ControlScheme.Combat) return Vector2Int.zero;
 
         int up = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuUpDownAxis));
         int right = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuLeftRightAxis));
@@ -92,7 +100,7 @@ public class InputManager : MonoBehaviour
 
     public static Vector2Int GetCombatNavigationDown()
     {
-        if (Scheme != ControlScheme.Combat) return Vector2Int.zero;
+        if (CurrentScheme != ControlScheme.Combat) return Vector2Int.zero;
         if (_combatNavigationRegistered) return Vector2Int.zero; // To prevent input on more than one frame
 
         _combatNavigationRegistered = true;
@@ -102,14 +110,14 @@ public class InputManager : MonoBehaviour
 
     public static bool CombatPrimaryInteractionDown()
     {
-        if (Scheme != ControlScheme.Combat) return false;
+        if (CurrentScheme != ControlScheme.Combat) return false;
 
         return Input.GetKeyDown(Instance.Settings.CombatPrimaryInteraction);
     }
 
     public static bool CombatSecondaryInteractionDown()
     {
-        if (Scheme != ControlScheme.Combat) return false;
+        if (CurrentScheme != ControlScheme.Combat) return false;
 
         return Input.GetKeyDown(Instance.Settings.CombatSecondaryInteraction);
     }
@@ -118,7 +126,7 @@ public class InputManager : MonoBehaviour
     #region Menu
     public static Vector2Int GetMenuNavigation()
     {
-        if (Scheme != ControlScheme.Menu) return Vector2Int.zero;
+        if (CurrentScheme != ControlScheme.Menu) return Vector2Int.zero;
 
         int up = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuUpDownAxis));
         int right = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuLeftRightAxis));
@@ -128,7 +136,7 @@ public class InputManager : MonoBehaviour
 
     public static Vector2Int GetMenuNavigationDown()
     {
-        if (Scheme != ControlScheme.Menu) return Vector2Int.zero;
+        if (CurrentScheme != ControlScheme.Menu) return Vector2Int.zero;
         if (_menuNavigationRegistered) return Vector2Int.zero; // To prevent input on more than one frame
 
         _menuNavigationRegistered = true;
@@ -138,7 +146,7 @@ public class InputManager : MonoBehaviour
 
     public static bool MenuSelectDown()
     {
-        if (Scheme != ControlScheme.Menu) return false;
+        if (CurrentScheme != ControlScheme.Menu) return false;
 
         return Input.GetKeyDown(Instance.Settings.MenuSelect);
     }
@@ -147,7 +155,7 @@ public class InputManager : MonoBehaviour
     #region Video
     public static bool GetIntroSkipDown()
     {
-        if (Scheme != ControlScheme.Video) return false;
+        if (CurrentScheme != ControlScheme.Cutscene) return false;
 
         return Input.GetKeyDown(Instance.Settings.IntroSkip);
     }
