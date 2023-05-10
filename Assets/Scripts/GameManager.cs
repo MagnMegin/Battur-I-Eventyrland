@@ -51,6 +51,8 @@ public class GameManager : MonoBehaviour
     private void OnEnable()
     {
         SceneManager.sceneLoaded += SetControlSchemeFromScene;
+        Dialogue.Instance.onDialogueStart += OnDialogueStart;
+        Dialogue.Instance.onDialogueOver += SetControlSchemeFromScene;
     }
 
     // First-time initialization of GameManager
@@ -103,6 +105,11 @@ public class GameManager : MonoBehaviour
     private void SetControlSchemeFromScene()
     {
         InputManager.CurrentScheme = SceneBaseControlScheme;
+    }
+
+    private void OnDialogueStart()
+    {
+        InputManager.CurrentScheme = InputManager.ControlScheme.Menu;
     }
     #endregion
 
