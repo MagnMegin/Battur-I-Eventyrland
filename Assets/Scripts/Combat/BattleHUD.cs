@@ -9,12 +9,14 @@ public class BattleHUD : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI pointsText;
     public TextMeshProUGUI currentHealth;
+    string points;
 
     public void SetHUD(Unit unit)
     {
         nameText.text = unit.unitName;
-        pointsText.text = unit.currentPoints + " ability points";
-        currentHealth.text = unit.currentHP + " / " + unit.maxHP + " helse";
+        points = unit.currentPoints.ToString();
+        pointsText.text = points;
+        currentHealth.text = unit.currentHP + " / " + unit.maxHP;
 
     }
 
@@ -23,5 +25,9 @@ public class BattleHUD : MonoBehaviour
         unit.currentHP = unit.currentHP - damageTaken;
     }
 
+    public void UpdatePoints(Unit unit, int points)
+    {
+        unit.currentPoints = unit.currentPoints + points;
+    }
 
 }

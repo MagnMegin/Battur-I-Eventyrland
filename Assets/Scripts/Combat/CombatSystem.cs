@@ -4,13 +4,19 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
+public enum BattleState { START, PLAYERTURN, PLAYERINTERACT, ENEMYTURN, ENEMYINTERACT, WON, LOST }
 public class CombatSystem : MonoBehaviour
 {
 
     public GameObject player1Prefab;
     public GameObject player2Prefab;
     public GameObject enemyPrefab;
+
+    public GameObject player1ButtonsPrefab;
+    public GameObject player2ButtonsPrefab;
+
+    public Transform player1ButtonParent;
+    public Transform player2ButtonParent;
 
     public Transform player1BattleSpot;
     public Transform player2BattleSpot;
@@ -30,12 +36,12 @@ public class CombatSystem : MonoBehaviour
     private void Start()
     {
         state = BattleState.START;
-        SetupBattle();
+        StartCoroutine(SetupBattle());
 
     }
 
 
-    void SetupBattle()
+    IEnumerator SetupBattle()
     {
         GameObject player1GO = Instantiate(player1Prefab, player1BattleSpot);
         player1Unit = player1GO.GetComponent<Unit>(); 
@@ -51,6 +57,21 @@ public class CombatSystem : MonoBehaviour
         player1HUD.SetHUD(player1Unit);
         player2HUD.SetHUD(player2Unit);
         enemyHUD.SetHUD(player1Unit);
+
+        yield return new WaitForSeconds(3f);
+
+        state = BattleState.PLAYERTURN;
+        PlayerTurn();
+    }
+
+    void PlayerTurn()
+    {
+        Debug.Log("PlayerTurn");
+        dialogueText.text = "Velg en handling";
+        GameObject AskButtons = Instantiate(player1ButtonsPrefab, player1ButtonParent);
+        GameObject KompanjongButtons = Instantiate(player2ButtonsPrefab, player2ButtonParent);
+
+       
     }
 
 }
