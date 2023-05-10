@@ -36,28 +36,21 @@ public class Dialogue : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        gameObject.SetActive(false);
     }
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
-        LoadRightCharacterInfo();
-        dialogueTextComponent.text = string.Empty; //Makes sure the textcomponent is empty on scene start
-        dialogueCanvas.SetActive(false); //Makes sure the dialogue canvas is disabled on scene load.
-        InputManager.Scheme = InputManager.ControlScheme.Menu; //Sets control scheme to menu controls
+        InputManager.CurrentScheme = InputManager.ControlScheme.Menu; //Sets control scheme to menu controls
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (InputManager.MenuSelectDown() && !dialogueInProgress)
-        {
-            StartDialogue();
-        }
-
         //This is to skip the sentence being written out letter for letter, or to skip to the next sentence.
-        else if (InputManager.MenuSelectDown() && dialogueInProgress)
+        if (InputManager.MenuSelectDown() && dialogueInProgress)
         {
             //If the current line is finished typing, run this
             if(dialogueTextComponent.text == lines[index])
@@ -74,12 +67,17 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    void StartDialogue()
+    public void StartDialogue(CharacterInfo info)
     {
-        index = 0;
-        dialogueCanvas.SetActive(true);
-        StartCoroutine(TypeLine());
+        gameObject.SetActive(true);
+        CleanUpDialogue(); //Readies dialogue UI for use
+        LoadRightCharacterInfo(info); //Loads info name, lines pic, etc.
+
+        
         dialogueInProgress = true;
+        StartCoroutine(TypeLine());
+
+        onDialogueStart?.Invoke();
     }
 
     IEnumerator TypeLine() //This makes the dialogue text appear one letter after the other
@@ -103,17 +101,29 @@ public class Dialogue : MonoBehaviour
         }
         else //Disables the dialogue canvas
         {
-            dialogueCanvas.SetActive(false);
-            dialogueTextComponent.text = string.Empty;
+            CleanUpDialogue();
+            EndDialogue();
             dialogueInProgress = false;
-            onDialogueOver?.Invoke();
         }
     }
 
-    void LoadRightCharacterInfo()
+    void LoadRightCharacterInfo(CharacterInfo info)
     {
-        lines = rightCharacterInfo.lines;
-        rightCharacterNameTextbox.text = rightCharacterInfo.characterName;
-        rightCharacterPicture.sprite = rightCharacterInfo.characterDialogueSprite;
+        lines = info.lines;
+        rightCharacterNameTextbox.text = info.characterName;
+        rightCharacterPicture.sprite = info.characterDialogueSprite;
+    }
+
+    void CleanUpDialogue() //Readies dialogue UI for use
+    {
+        index = 0;
+        dialogueTextComponent.text = string.Empty; //Makes sure the textcomponent is empty on scene start
+        //dialogueCanvas.SetActive(false); //Makes sure the dialogue canvas is disabled on scene load.
+    }
+
+    void EndDialogue()
+    {
+        gameObject.SetActive(false);
+        onDialogueOver?.Invoke();
     }
 }
