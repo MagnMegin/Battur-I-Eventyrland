@@ -342,7 +342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueTextComponent: {fileID: 317537457}
-  rightCharacterName: {fileID: 632433246}
+  rightCharacterNameTextbox: {fileID: 632433246}
   rightCharacterInfo: {fileID: 11400000, guid: 10c4de5a1db3650419be02aa2f443935, type: 2}
   textSpeed: 0.07
   dialogueCanvas: {fileID: 1285965605}

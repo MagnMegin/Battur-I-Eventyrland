@@ -4,21 +4,40 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System;
+using UnityEngine.Events;
 
 public class Dialogue : MonoBehaviour
 {
+    public static Dialogue Instance;
+
     public TextMeshProUGUI dialogueTextComponent;
-    public TextMeshProUGUI rightCharacterName;
+    public TextMeshProUGUI rightCharacterNameTextbox;
     public CharacterInfo rightCharacterInfo;
+    public Image rightCharacterPicture;
+    public GameObject dialogueCanvas;
     public float textSpeed;
     public event Action onDialogueOver;
-    public GameObject dialogueCanvas;
-    public Image rightCharacterPicture;
-    public string[] lines;
+    public event Action onDialogueStart;
 
+    public string[] lines;
 
     private int index;
     private bool dialogueInProgress = false;
+
+    #region Singleton
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    #endregion
 
     // Start is called before the first frame update
     void Start()
@@ -63,7 +82,7 @@ public class Dialogue : MonoBehaviour
         dialogueInProgress = true;
     }
 
-    IEnumerator TypeLine() //The aim of this coroutine is to make the text appear one letter after the other
+    IEnumerator TypeLine() //This makes the dialogue text appear one letter after the other
     {
         yield return new WaitForSeconds(0.2f);
         //This foreach loop breaks all text down to their own letters
@@ -94,7 +113,7 @@ public class Dialogue : MonoBehaviour
     void LoadRightCharacterInfo()
     {
         lines = rightCharacterInfo.lines;
-        rightCharacterName.text = rightCharacterInfo.characterName;
+        rightCharacterNameTextbox.text = rightCharacterInfo.characterName;
         rightCharacterPicture.sprite = rightCharacterInfo.characterDialogueSprite;
     }
 }
