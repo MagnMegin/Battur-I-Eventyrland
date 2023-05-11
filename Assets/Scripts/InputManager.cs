@@ -92,10 +92,10 @@ public class InputManager : MonoBehaviour
     {
         if (CurrentScheme != ControlScheme.Combat) return Vector2Int.zero;
 
-        int up = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuUpDownAxis));
-        int right = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuLeftRightAxis));
+        int up = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.CombatUpDownAxis));
+        int right = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.CombatLeftRightAxis));
 
-        return new Vector2Int(up, right);
+        return new Vector2Int(right, up);
     }
 
     public static Vector2Int GetCombatNavigationDown()
@@ -131,7 +131,7 @@ public class InputManager : MonoBehaviour
         int up = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuUpDownAxis));
         int right = Mathf.RoundToInt(Input.GetAxisRaw(Instance.Settings.MenuLeftRightAxis));
 
-        return new Vector2Int(up, right);
+        return new Vector2Int(right, up);
     }
 
     public static Vector2Int GetMenuNavigationDown()
@@ -141,7 +141,7 @@ public class InputManager : MonoBehaviour
 
         _menuNavigationRegistered = true;
 
-        return GetCombatNavigation();
+        return GetMenuNavigation();
     }
 
     public static bool MenuSelectDown()

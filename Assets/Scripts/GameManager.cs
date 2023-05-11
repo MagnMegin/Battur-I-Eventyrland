@@ -58,6 +58,8 @@ public class GameManager : MonoBehaviour
     {
         FindPlayerCharacter(); // Gets player character reference
         PlayIntroVideo();
+        Dialogue.Instance.onDialogueStart += OnDialogueStart;
+        Dialogue.Instance.onDialogueOver += SetControlSchemeFromScene;
     }
     #endregion
 
@@ -103,6 +105,11 @@ public class GameManager : MonoBehaviour
     private void SetControlSchemeFromScene()
     {
         InputManager.CurrentScheme = SceneBaseControlScheme;
+    }
+
+    private void OnDialogueStart()
+    {
+        InputManager.CurrentScheme = InputManager.ControlScheme.Menu;
     }
     #endregion
 
