@@ -354,6 +354,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5152937658750167484, guid: 2cdbee8d8df34b746a1d9c7c14a2d037, type: 3}
+      propertyPath: SceneMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: b40b5bb9fb715b54c8ee60cb65d7baff, type: 3}
+    - target: {fileID: 5152937658750167484, guid: 2cdbee8d8df34b746a1d9c7c14a2d037, type: 3}
       propertyPath: TypeOfScene
       value: 1
       objectReference: {fileID: 0}

@@ -39,4 +39,14 @@ public class MusicSystem : MonoBehaviour
         if (Audio.clip != null) Audio.Play();
         else Debug.LogWarning("No music to play.");
     }
+
+    public static void Pause()
+    {
+        Instance.Audio.Pause();
+    }
+
+    public static void Resume()
+    {
+        Instance.Audio.UnPause();
+    }
 }
