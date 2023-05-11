@@ -261,8 +261,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 715762371}
-        m_TargetAssemblyTypeName: TestInteraction, Assembly-CSharp
-        m_MethodName: Hello
+        m_TargetAssemblyTypeName: GOTOLEVEL, Assembly-CSharp
+        m_MethodName: Go
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -275,7 +275,7 @@ MonoBehaviour:
   SecondaryInteraction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 715762371}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TestInteraction, Assembly-CSharp
         m_MethodName: Goodbye
         m_Mode: 1
@@ -296,7 +296,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 715762368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6539cb6d3f003154496b15e161619322, type: 3}
+  m_Script: {fileID: 11500000, guid: 42dd6d13c2d0a1348881bf8812b73424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2057646388
