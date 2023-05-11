@@ -33,7 +33,7 @@ public class TestEnterButton : MonoBehaviour
     }
     private void Update()
     {
-        if ((PlayerInRange == true) && Input.GetKeyDown(KeyCode.Space))
+        if ((PlayerInRange == true) && Input.GetKeyDown(KeyCode.E))
         {
             OnButtonPressed.Invoke();
         }
