@@ -359,4 +359,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d4bc14702d86604eaee41d566588465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayInEditor: 1
+  PlayInEditor: 0
