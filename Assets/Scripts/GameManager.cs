@@ -30,6 +30,9 @@ public class GameManager : MonoBehaviour
     // Intro Video
     public GameObject IntroVideo;
 
+    // Map
+    public GameObject MapPrefab;
+
     #region Singleton
     private void Awake()
     {
@@ -124,6 +127,15 @@ public class GameManager : MonoBehaviour
     private void PlayIntroVideo()
     {
         PlayVideo(IntroVideo);
+    }
+    #endregion
+
+    #region Map
+    public static void OpenMap()
+    {
+        Map map = Instantiate(Instance.MapPrefab).GetComponent<Map>();
+        InputManager.CurrentScheme = InputManager.ControlScheme.Menu;
+        map.OnMapClose += Instance.SetControlSchemeFromScene;
     }
     #endregion
 

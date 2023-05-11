@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GOTOLEVEL : MonoBehaviour
+public class GOTOMAP : MonoBehaviour
 {
     public void Go()
     {
-        SceneManager.LoadSceneAsync(3);
+        GameManager.OpenMap();
     }
 }
