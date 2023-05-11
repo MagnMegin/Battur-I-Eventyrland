@@ -34,9 +34,9 @@ public class BoundaryCollider : MonoBehaviour
         EdgeCollider.points = newPoints;
     }
 
-    private void OnDestroy()
-    {
-        if (!Application.isPlaying && gameObject.activeSelf) DestroyImmediate(EdgeCollider);
-    }
+    //private void OnDestroy()
+    //{
+    //    if (!Application.isPlaying && gameObject.activeSelf) DestroyImmediate(EdgeCollider);
+    //}
 #endif
 }
