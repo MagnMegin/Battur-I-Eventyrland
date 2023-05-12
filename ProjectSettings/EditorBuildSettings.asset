@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/TestScenes/EdgeGenerator.unity
     guid: 4cb2fd6ee8134724a80a8a0ccd7d2530
   - enabled: 1
-    path: Assets/Scenes/TestScenes/TestLevel1.unity
-    guid: 129d6f6f46e206649abca9ef71e7083b
+    path: Assets/Scenes/TestScenes/TestLevel1.2.unity
+    guid: c5073fb4a2a253d46a0412e7fd9e26bc
   m_configObjects: {}

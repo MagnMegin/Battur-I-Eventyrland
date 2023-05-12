@@ -103,9 +103,10 @@ public class InputManager : MonoBehaviour
         if (CurrentScheme != ControlScheme.Combat) return Vector2Int.zero;
         if (_combatNavigationRegistered) return Vector2Int.zero; // To prevent input on more than one frame
 
-        _combatNavigationRegistered = true;
+        Vector2Int navigation = GetCombatNavigation();
+        if (navigation != Vector2Int.zero) _combatNavigationRegistered = true;
 
-        return GetCombatNavigation();
+        return navigation;
     }
 
     public static bool CombatPrimaryInteractionDown()
@@ -139,9 +140,10 @@ public class InputManager : MonoBehaviour
         if (CurrentScheme != ControlScheme.Menu) return Vector2Int.zero;
         if (_menuNavigationRegistered) return Vector2Int.zero; // To prevent input on more than one frame
 
-        _menuNavigationRegistered = true;
+        Vector2Int navigation = GetMenuNavigation();
+        if (navigation != Vector2Int.zero ) _menuNavigationRegistered = true;
 
-        return GetMenuNavigation();
+        return navigation;
     }
 
     public static bool MenuSelectDown()

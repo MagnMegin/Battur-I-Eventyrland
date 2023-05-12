@@ -18,6 +18,7 @@ public class SceneData : MonoBehaviour
 
     public SceneType TypeOfScene;
     public InputManager.ControlScheme BaseControlScheme;
+    public AudioClip SceneMusic;
 
     public string SceneName { get; private set; }
 

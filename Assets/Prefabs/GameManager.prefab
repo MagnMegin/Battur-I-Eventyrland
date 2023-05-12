@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b3ec83a717d55e49a347cdadd8f4c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IntroVideo: {fileID: 1129681569701725711, guid: e1e6a6c4804201e41b5f014e72e0929c, type: 3}
+  MapPrefab: {fileID: 4619174456381559130, guid: d60920b0381c5ee4486873ccc1de6087, type: 3}
