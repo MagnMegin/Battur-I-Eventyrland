@@ -20,9 +20,10 @@ public class BattleHUD : MonoBehaviour
 
     }
 
-    public void UpdateHP(Unit unit, int damageTaken)
+    public void UpdateHP(Unit unit)
     {
-        unit.currentHP = unit.currentHP - damageTaken;
+        currentHealth.text = unit.currentHP + " / " + unit.maxHP;
+        // unit.currentHP = unit.currentHP - damageTaken;
     }
 
     public void UpdatePoints(Unit unit, int points)

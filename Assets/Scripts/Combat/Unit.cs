@@ -13,6 +13,35 @@ public class Unit : MonoBehaviour
     public int maxHP;
     public int currentHP;
 
+    public bool NoHealthLeft;
+
+    public CombatActions Actions;
+
+    private void Awake()
+    {
+        Actions = (CombatActions)GetComponent(typeof(CombatActions));
+    }
 
 
+    public void TakeDamage(int dmg, Unit unit)
+    {
+        unit.currentHP = unit.currentHP - dmg;
+
+        if (unit.currentHP <= 0)
+        {
+            NoHealthLeft = true;
+            Debug.Log("Health = none");
+        }
+        else
+        {
+            NoHealthLeft = false;
+            Debug.Log("Health = plenty");
+        }
+
+        CombatSystem CS = FindObjectOfType<CombatSystem>();
+
+        CS.DamageEnemy();
+
+
+    }
 }

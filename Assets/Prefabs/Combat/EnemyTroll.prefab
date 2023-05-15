@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 94945632945142452}
   - component: {fileID: 8760193536350558796}
+  - component: {fileID: 8074261616796733825}
   m_Layer: 0
   m_Name: EnemyTroll
   m_TagString: Untagged
@@ -131,5 +132,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: TrollSlime
   damage: 3
-  maxHP: 30
-  currentHP: 30
+  currentPoints: 7
+  maxHP: 40
+  currentHP: 40
+  NoHealthLeft: 0
+--- !u!114 &8074261616796733825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7195021280464513982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de099f4e70772f94fb9da99043ac0a4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
