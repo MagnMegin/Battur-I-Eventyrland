@@ -47,6 +47,7 @@ public class PauseScreen : MonoBehaviour
     public void ToMenu()
     {
         SceneManager.LoadSceneAsync("MainMenu");
+        GameManager.Instance.ResumeGame();
     }
 
     public void Resume()
