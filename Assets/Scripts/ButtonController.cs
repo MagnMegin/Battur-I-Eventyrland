@@ -9,7 +9,7 @@ public class ButtonController : MonoBehaviour
 
     private Button _currentButton;
 
-    private void Start()
+    private void OnEnable()
     {
         if (StartButton == null)
         {
