@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{333e695d-b726-47c8-aaf2-5eb16a94ab8a}">
+		<property name="name">
+			<value>AtmosSkog</value>
+		</property>
+		<relationship name="folder">
+			<destination>{3437f5eb-3332-4e82-b6be-fa267692733b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{ae8565b8-73d6-48ff-8eec-dfb4cb74822a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{ae8565b8-73d6-48ff-8eec-dfb4cb74822a}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

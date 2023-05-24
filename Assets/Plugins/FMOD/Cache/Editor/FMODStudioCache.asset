@@ -1,5 +1,268 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9158257216669588032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Troll/Combat/TrollKasteGren
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Troll/Combat/TrollKasteGren
+  Guid:
+    Data1: 1166044009
+    Data2: 1087046391
+    Data3: -658362958
+    Data4: -1054836047
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1358
+--- !u!114 &-9127135786042063499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Askeladden/Combat/AskeladdenMottaHelse
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Askeladden/Combat/AskeladdenMottaHelse
+  Guid:
+    Data1: 376893575
+    Data2: 1221357278
+    Data3: -325347394
+    Data4: -664992135
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-8367840719227258236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Combat/CombatFX/Helbrede
+  m_EditorClassIdentifier: 
+  Path: event:/Combat/CombatFX/Helbrede
+  Guid:
+    Data1: 1752378136
+    Data2: 1091164315
+    Data3: -1719523199
+    Data4: -504161796
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4609
+--- !u!114 &-8364453305731535496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Askeladden/Combat/AskeladdenVoice
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Askeladden/Combat/AskeladdenVoice
+  Guid:
+    Data1: -1375481087
+    Data2: 1224350075
+    Data3: 247319452
+    Data4: -1894214769
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-7700474520247844376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Combat/CombatFX/Besvim
+  m_EditorClassIdentifier: 
+  Path: event:/Combat/CombatFX/Besvim
+  Guid:
+    Data1: -1647391514
+    Data2: 1341598336
+    Data3: -2144436093
+    Data4: -862920204
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1962
+--- !u!114 &-6917090508319693094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Eivind/Combat/EivindBesvime
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Eivind/Combat/EivindBesvime
+  Guid:
+    Data1: -166525185
+    Data2: 1316219166
+    Data3: -557004876
+    Data4: 969678880
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-6858090691444617815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Combat.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Combat.bank
+  Name: Combat
+  StudioPath: bank:/Combat
+  lastModified: 638205203860000000
+  FileSizes:
+  - Name: Desktop
+    Value: 346688
+  Exists: 1
+--- !u!114 &-4546874277870886913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Askeladden/Combat/AskeladdenMottaSmerte
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Askeladden/Combat/AskeladdenMottaSmerte
+  Guid:
+    Data1: 754582174
+    Data2: 1214174753
+    Data3: -941214057
+    Data4: 761645467
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-4367816546948669236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Troll/Combat/TrollMottaSmerte
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Troll/Combat/TrollMottaSmerte
+  Guid:
+    Data1: 1410775047
+    Data2: 1076756709
+    Data3: -719477574
+    Data4: 507290230
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-4335880602281417979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Karakterer/Eivind/Combat/EivindBl\xE5sKaldt"
+  m_EditorClassIdentifier: 
+  Path: "event:/Karakterer/Eivind/Combat/EivindBl\xE5sKaldt"
+  Guid:
+    Data1: -1754734003
+    Data2: 1144368285
+    Data3: 1972875685
+    Data4: 503952568
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2928
 --- !u!114 &-3670313327492152192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,11 +278,66 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638205187440000000
+  lastModified: 638205203860000000
   FileSizes:
   - Name: Desktop
     Value: 1644
   Exists: 1
+--- !u!114 &-2997832668228239957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Combat/CombatFX/Timing
+  m_EditorClassIdentifier: 
+  Path: event:/Combat/CombatFX/Timing
+  Guid:
+    Data1: -104515314
+    Data2: 1243862697
+    Data3: -1577455722
+    Data4: 1574077922
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1119018290492988379}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8000
+--- !u!114 &-2860576422237541936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Eivind/Combat/EivindMottaHelse
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Eivind/Combat/EivindMottaHelse
+  Guid:
+    Data1: -715768065
+    Data2: 1314246644
+    Data3: -1433387346
+    Data4: 1367608212
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-2532858549708337395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,6 +382,111 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-1797278671059381963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Eivind/Combat/EivindMottaSmerte
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Eivind/Combat/EivindMottaSmerte
+  Guid:
+    Data1: -1550110541
+    Data2: 1196542722
+    Data3: 1931100814
+    Data4: -1290524999
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-1119018290492988379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Timing/Timing
+  m_EditorClassIdentifier: 
+  Name: Timing
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 800747564
+    data2: 3545062490
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-923166432710719745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Troll/Combat/TrollBesvim
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Troll/Combat/TrollBesvim
+  Guid:
+    Data1: 500294158
+    Data2: 1262726239
+    Data3: -1460021573
+    Data4: 172727583
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-541344316915403948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Askeladden/Combat/AskeladdenSverd
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Askeladden/Combat/AskeladdenSverd
+  Guid:
+    Data1: -1916997983
+    Data2: 1146502292
+    Data3: 1728965022
+    Data4: 627707700
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 513
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,18 +503,66 @@ MonoBehaviour:
   - {fileID: 2510350537494216410}
   - {fileID: -3670313327492152192}
   - {fileID: -2532858549708337395}
+  - {fileID: -6858090691444617815}
   EditorEvents:
   - {fileID: 7074610000489235979}
   - {fileID: 3358458012784360955}
   - {fileID: 6969092881816573446}
+  - {fileID: -8364453305731535496}
+  - {fileID: -4367816546948669236}
+  - {fileID: -2997832668228239957}
+  - {fileID: -923166432710719745}
+  - {fileID: -8367840719227258236}
+  - {fileID: 8781431025709063870}
+  - {fileID: 5730584944084656351}
+  - {fileID: -4335880602281417979}
+  - {fileID: -9158257216669588032}
+  - {fileID: -9127135786042063499}
+  - {fileID: 214088819567578823}
+  - {fileID: -4546874277870886913}
+  - {fileID: 2853536399443436579}
+  - {fileID: -541344316915403948}
+  - {fileID: 3849360426457845866}
+  - {fileID: -1797278671059381963}
+  - {fileID: 5051483842268046502}
+  - {fileID: -7700474520247844376}
+  - {fileID: -6917090508319693094}
+  - {fileID: -2860576422237541936}
   EditorParameters:
   - {fileID: 5799610091465801258}
   MasterBanks:
   - {fileID: -3670313327492152192}
   StringsBanks:
   - {fileID: 2510350537494216410}
-  cacheTime: 638205187440000000
+  cacheTime: 638205203860000000
   cacheVersion: 131603
+--- !u!114 &214088819567578823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Troll/Combat/TrollVoice
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Troll/Combat/TrollVoice
+  Guid:
+    Data1: -1135937142
+    Data2: 1091029194
+    Data3: 1877867154
+    Data4: -1731438952
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &2510350537494216410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,11 +578,38 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638205187440000000
+  lastModified: 638205203860000000
   FileSizes:
   - Name: Desktop
-    Value: 982
+    Value: 2014
   Exists: 1
+--- !u!114 &2853536399443436579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Troll/Combat/TrollSlag
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Troll/Combat/TrollSlag
+  Guid:
+    Data1: -1508416609
+    Data2: 1147303043
+    Data3: 1357021065
+    Data4: 1012616906
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2376
 --- !u!114 &2948249384625164221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +662,87 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &3849360426457845866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Karakterer/Eivind/Combat/EivindBl\xE5sVarmt"
+  m_EditorClassIdentifier: 
+  Path: "event:/Karakterer/Eivind/Combat/EivindBl\xE5sVarmt"
+  Guid:
+    Data1: -799994454
+    Data2: 1195902236
+    Data3: 1121999526
+    Data4: -1751533824
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3918
+--- !u!114 &5051483842268046502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Askeladden/Combat/AskeladdenBesvim
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Askeladden/Combat/AskeladdenBesvim
+  Guid:
+    Data1: -1875797276
+    Data2: 1259210256
+    Data3: 969675399
+    Data4: -968455524
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &5730584944084656351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Askeladden/Combat/MosOst
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Askeladden/Combat/MosOst
+  Guid:
+    Data1: 1041477164
+    Data2: 1081791858
+    Data3: 249114798
+    Data4: -800250138
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 612
 --- !u!114 &5799610091465801258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,3 +822,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &8781431025709063870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Karakterer/Eivind/Combat/EivindSn\xF8ball"
+  m_EditorClassIdentifier: 
+  Path: "event:/Karakterer/Eivind/Combat/EivindSn\xF8ball"
+  Guid:
+    Data1: -335401952
+    Data2: 1115564332
+    Data3: -529681275
+    Data4: 1647583296
+  Banks:
+  - {fileID: -6858090691444617815}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 725
