@@ -1091,6 +1091,8 @@ GameObject:
   - component: {fileID: 2147083358}
   - component: {fileID: 2147083362}
   - component: {fileID: 2147083363}
+  - component: {fileID: 2147083364}
+  - component: {fileID: 2147083365}
   m_Layer: 5
   m_Name: MenuUI
   m_TagString: Untagged
@@ -1208,3 +1210,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d8969ff5cc02543bf4c2ba13580b10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2147083364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147083357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2098269509
+      Data2: 1310697799
+      Data3: -1212664936
+      Data4: 1902155177
+    Path: event:/Meny/MenyAtmos
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &2147083365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147083357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: PressStart
+  TriggerEvent: 2
+  Value: 1
