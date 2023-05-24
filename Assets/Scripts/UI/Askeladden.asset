@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Askeladden
   m_EditorClassIdentifier: 
   characterName: Askeladden
-  characterDescription: 
-  characterDialogueSprite: {fileID: 21300000, guid: f08f8003d93165947b6c2b8aa1b3b528, type: 3}
-  lines: []
+  characterDescription: Null
+  characterDialogueSprite: {fileID: 21300000, guid: 4821e6107ad294848b700690910af9da, type: 3}
+  lines:
+  - This is a test.
+  - If you're seeing this you've found a bug.
