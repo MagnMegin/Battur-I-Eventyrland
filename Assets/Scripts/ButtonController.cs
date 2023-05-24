@@ -20,6 +20,13 @@ public class ButtonController : MonoBehaviour
         _currentButton.Select();
     }
 
+    private IEnumerator Start()
+    {
+        // Sometimes button is not selected during enable so this is here for backup
+        yield return null;
+        _currentButton.Select();
+    }
+
     private void Update()
     {
         Vector2Int buttonDirection = InputManager.GetMenuNavigationDown();
