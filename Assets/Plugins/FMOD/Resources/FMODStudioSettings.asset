@@ -225,8 +225,9 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: FMOD_Assets/Askeladden - HovedProsjekt.fspackage
-  sourceBankPath: FMOD_Assets/Build
+  sourceProjectPath: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Askeladden
+    - HovedProsjekt.fspro
+  sourceBankPath: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -247,8 +248,10 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks: []
-  Banks: []
+  MasterBanks:
+  - Master
+  Banks:
+  - meny
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
