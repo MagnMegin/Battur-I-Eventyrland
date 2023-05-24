@@ -17,6 +17,7 @@ public class CombatSystem : MonoBehaviour
 
     public GameObject player1Buttons;
     public GameObject player2Buttons;
+    public GameObject healPick;
 
     public Transform player1BattleSpot;
     public Transform player2BattleSpot;
@@ -73,7 +74,8 @@ public class CombatSystem : MonoBehaviour
 
         player1Buttons.SetActive(true);
         player2Buttons.SetActive(true);
-
+        _player1TurnDone = false;
+        _player2TurnDone = false;
     }
 
 
@@ -85,6 +87,40 @@ public class CombatSystem : MonoBehaviour
         
         Unit U = gameObject.GetComponent<Unit>();
         enemyHUD.UpdateHP(enemyUnit);
+
+        if (_player1TurnDone == false)
+        {
+            player1Buttons.SetActive(true);
+        }
+        else if (_player2TurnDone == false)
+        {
+            player2Buttons.SetActive(true);
+        }
+        else
+        {
+            state = BattleState.ENEMYTURN;
+        }
+
+    }
+
+    public void HealPlayers()
+    {
+        Unit U = gameObject.GetComponent<Unit>();
+        player1HUD.UpdateHP(player1Unit);
+        player2HUD.UpdateHP(player2Unit);
+
+        if (_player1TurnDone == false)
+        {
+            player1Buttons.SetActive(true);
+        }
+        else if (_player2TurnDone == false)
+        {
+            player2Buttons.SetActive(true);
+        }
+        else
+        {
+            state = BattleState.ENEMYTURN;
+        }
 
     }
 

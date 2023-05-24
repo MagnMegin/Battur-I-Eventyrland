@@ -41,7 +41,20 @@ public class Unit : MonoBehaviour
         CombatSystem CS = FindObjectOfType<CombatSystem>();
 
         CS.DamageEnemy();
+    }
 
+    public void Heal(int heal, Unit unit)
+    {
+        unit.currentHP = unit.currentHP + heal;
+
+        if (unit.currentHP > unit.maxHP)
+        {
+            unit.currentHP = unit.maxHP;
+        }
+
+        CombatSystem CS = FindObjectOfType<CombatSystem>();
+
+        CS.HealPlayers();
 
     }
 }

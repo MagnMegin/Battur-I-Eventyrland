@@ -46,11 +46,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211f7c4d51560f34f9ed9a3914ab2fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Somre&Vintre
+  unitName: Eivind
   damage: 5
   currentPoints: 10
   maxHP: 20
-  currentHP: 20
+  currentHP: 10
   NoHealthLeft: 0
 --- !u!114 &1636025318516459092
 MonoBehaviour:

@@ -65,6 +65,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dmg: 5
+  _heal: 6
   unitScript: {fileID: 0}
   combatScript: {fileID: 0}
 --- !u!1 &4915218405264926923
