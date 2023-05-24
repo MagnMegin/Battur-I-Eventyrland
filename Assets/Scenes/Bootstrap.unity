@@ -130,6 +130,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8283998885875462371, guid: 1d09c490bce91204792d8bfad9f0cff5, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8283998886855025409, guid: 1d09c490bce91204792d8bfad9f0cff5, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8283998887146215959, guid: 1d09c490bce91204792d8bfad9f0cff5, type: 3}
       propertyPath: rightCharacterInfo
       value: 
@@ -181,6 +189,10 @@ PrefabInstance:
     - target: {fileID: 8283998887146215961, guid: 1d09c490bce91204792d8bfad9f0cff5, type: 3}
       propertyPath: m_Name
       value: DialogueController
+      objectReference: {fileID: 0}
+    - target: {fileID: 8283998887176746478, guid: 1d09c490bce91204792d8bfad9f0cff5, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d09c490bce91204792d8bfad9f0cff5, type: 3}
