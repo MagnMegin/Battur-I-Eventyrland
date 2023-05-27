@@ -33,4 +33,21 @@ public class AudioManager : MonoBehaviour
     {
         return RuntimeManager.CreateInstance(sound); 
     }
+
+    public void PauseMusic()
+    {
+
+    }
+
+    #region Muting
+    public void MuteAll()
+    {
+        RuntimeManager.MuteAllEvents(true);
+    }
+
+    public void UnMuteAll()
+    {
+        RuntimeManager.MuteAllEvents(false);
+    }
+    #endregion
 }
