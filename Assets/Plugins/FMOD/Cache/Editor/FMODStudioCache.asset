@@ -177,7 +177,7 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Combat.bank
   Name: Combat
   StudioPath: bank:/Combat
-  lastModified: 638207836615609540
+  lastModified: 638205203860000000
   FileSizes:
   - Name: Desktop
     Value: 346688
@@ -278,7 +278,7 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638207836615609540
+  lastModified: 638205203860000000
   FileSizes:
   - Name: Desktop
     Value: 1644
@@ -353,7 +353,7 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/meny.bank
   Name: meny
   StudioPath: bank:/meny
-  lastModified: 638207836615698920
+  lastModified: 638205187440000000
   FileSizes:
   - Name: Desktop
     Value: 1587808
@@ -534,7 +534,7 @@ MonoBehaviour:
   - {fileID: -3670313327492152192}
   StringsBanks:
   - {fileID: 2510350537494216410}
-  cacheTime: 638207836615698920
+  cacheTime: 638205203860000000
   cacheVersion: 131603
 --- !u!114 &214088819567578823
 MonoBehaviour:
@@ -578,7 +578,7 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638207836615619542
+  lastModified: 638205203860000000
   FileSizes:
   - Name: Desktop
     Value: 2014
