@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instance;
 
     private EventInstance _currentMusic;
+    private EventInstance _currentAmbiance;
 
     #region Singleton
     private void Awake()
@@ -21,7 +22,7 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Found more than one Audio Manager in the scene.");
+            Debug.LogWarning("Found more than one Audio Manager in the scene.");
             Destroy(this);
         }
     }
@@ -31,12 +32,30 @@ public class AudioManager : MonoBehaviour
     private void OnEnable()
     {
         SceneManager.sceneLoaded += SetMusicFromScene;
+        SceneManager.sceneLoaded += SetAmbianceFromScene;
     }
 
     private void SetMusicFromScene(Scene scene, LoadSceneMode mode)
     {
-
-        SetCurrentMusic(SceneData.Instance.SceneMusic);
+        if (SceneData.Instance.SceneMusic.IsNull)
+        {
+            Debug.LogWarning("Scene has no music to play.");
+        }
+        else
+        {
+            SetCurrentMusic(SceneData.Instance.SceneMusic);
+        }
+    }
+    private void SetAmbianceFromScene(Scene scene, LoadSceneMode mode)
+    {
+        if (SceneData.Instance.SceneAmbiance.IsNull)
+        {
+            Debug.LogWarning("Scene has no ambiance to play.");
+        }
+        else
+        {
+            SetCurrentAmbiance(SceneData.Instance.SceneAmbiance);
+        }
     }
     #endregion
 
@@ -82,11 +101,37 @@ public class AudioManager : MonoBehaviour
     public void PauseMusic()
     {
         _currentMusic.setPaused(true);
+        Debug.Log("Music Paused");
     }
 
     public void ResumeMusic()
     {
         _currentMusic.setPaused(false);
+        Debug.Log("Music Resumed");
+    }
+    #endregion
+
+    #region Ambiance
+    /// <summary>
+    /// Sets the current ambiance but DOES NOT STOP the previous ambiance.
+    /// </summary>
+    public void SetCurrentAmbiance(EventReference newAmbiance)
+    {
+        _currentAmbiance.release();
+        _currentAmbiance = CreateEventInstance(newAmbiance);
+        _currentAmbiance.start();
+    }
+
+    public void PauseAmbiance()
+    {
+        _currentAmbiance.setPaused(true);
+        Debug.Log("Ambiance Paused");
+    }
+
+    public void ResumeAmbiance()
+    {
+        _currentAmbiance.setPaused(false);
+        Debug.Log("Ambiance Resumed");
     }
     #endregion
 

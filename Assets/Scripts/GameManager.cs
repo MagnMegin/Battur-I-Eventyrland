@@ -121,9 +121,13 @@ public class GameManager : MonoBehaviour
     {
         VideoController video = Instantiate(videoObject).GetComponent<VideoController>();
         InputManager.CurrentScheme = InputManager.ControlScheme.Cutscene;
+        
         AudioManager.Instance.PauseMusic();
+        AudioManager.Instance.PauseAmbiance();
+
         video.OnVideoEnd += SetControlSchemeFromScene;
         video.OnVideoEnd += AudioManager.Instance.ResumeMusic;
+        video.OnVideoEnd += AudioManager.Instance.ResumeAmbiance;
     }
 
     private void PlayIntroVideo()

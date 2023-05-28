@@ -20,6 +20,7 @@ public class SceneData : MonoBehaviour
     public SceneType TypeOfScene;
     public InputManager.ControlScheme BaseControlScheme;
     public EventReference SceneMusic;
+    public EventReference SceneAmbiance;
 
     public string SceneName { get; private set; }
 
