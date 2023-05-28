@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
+    public EventInstance CurrentMusic => _currentMusic;
+    public EventInstance CurrentAmbiance => _currentAmbiance;
 
     private EventInstance _currentMusic;
     private EventInstance _currentAmbiance;
@@ -85,11 +87,22 @@ public class AudioManager : MonoBehaviour
     {
         return RuntimeManager.CreateInstance(sound); 
     }
+
+    public void MuteAll()
+    {
+        RuntimeManager.MuteAllEvents(true);
+    }
+
+    public void UnMuteAll()
+    {
+        RuntimeManager.MuteAllEvents(false);
+    }
     #endregion
 
     #region Music
     /// <summary>
-    /// Sets the current music but DOES NOT STOP the previous music.
+    /// Sets the current music and realeases the previous music. NOTE: 
+    /// DOES NOT STOP the previous music.
     /// </summary>
     public void SetCurrentMusic(EventReference newMusic)
     {
@@ -113,7 +126,8 @@ public class AudioManager : MonoBehaviour
 
     #region Ambiance
     /// <summary>
-    /// Sets the current ambiance but DOES NOT STOP the previous ambiance.
+    /// Sets the current ambiance and realeases the previous ambiance. NOTE: 
+    /// DOES NOT STOP the previous ambiance.
     /// </summary>
     public void SetCurrentAmbiance(EventReference newAmbiance)
     {
@@ -132,18 +146,6 @@ public class AudioManager : MonoBehaviour
     {
         _currentAmbiance.setPaused(false);
         Debug.Log("Ambiance Resumed");
-    }
-    #endregion
-
-    #region Muting
-    public void MuteAll()
-    {
-        RuntimeManager.MuteAllEvents(true);
-    }
-
-    public void UnMuteAll()
-    {
-        RuntimeManager.MuteAllEvents(false);
     }
     #endregion
 }
