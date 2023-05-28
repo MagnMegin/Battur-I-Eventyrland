@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,7 +19,8 @@ public class SceneData : MonoBehaviour
 
     public SceneType TypeOfScene;
     public InputManager.ControlScheme BaseControlScheme;
-    public AudioClip SceneMusic;
+    public EventReference SceneMusic;
+    public EventReference SceneAmbiance;
 
     public string SceneName { get; private set; }
 

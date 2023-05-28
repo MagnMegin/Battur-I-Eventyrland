@@ -362,8 +362,48 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5152937658750167484, guid: 2cdbee8d8df34b746a1d9c7c14a2d037, type: 3}
+      propertyPath: SceneMusic.Path
+      value: event:/Meny/MenyMusikk
+      objectReference: {fileID: 0}
+    - target: {fileID: 5152937658750167484, guid: 2cdbee8d8df34b746a1d9c7c14a2d037, type: 3}
       propertyPath: BaseControlScheme
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5152937658750167484, guid: 2cdbee8d8df34b746a1d9c7c14a2d037, type: 3}
+      propertyPath: SceneAmbiance.Path
+      value: event:/Meny/MenyAtmos
+      objectReference: {fileID: 0}
+    - target: {fileID: 5152937658750167484, guid: 2cdbee8d8df34b746a1d9c7c14a2d037, type: 3}
+      propertyPath: SceneMusic.Guid.Data1
+      value: 1712333899
+      objectReference: {fileID: 0}
+    - target: {fileID: 5152937658750167484, guid: 2cdbee8d8df34b746a1d9c7c14a2d037, type: 3}
+      propertyPath: SceneMusic.Guid.Data2
+      value: 1274936571
+      objectReference: {fileID: 0}
+    - target: {fileID: 5152937658750167484, guid: 2cdbee8d8df34b746a1d9c7c14a2d037, type: 3}
+      propertyPath: SceneMusic.Guid.Data3
+      value: 2051755652
+      objectReference: {fileID: 0}
+    - target: {fileID: 5152937658750167484, guid: 2cdbee8d8df34b746a1d9c7c14a2d037, type: 3}
+      propertyPath: SceneMusic.Guid.Data4
+      value: -644213004
+      objectReference: {fileID: 0}
+    - target: {fileID: 5152937658750167484, guid: 2cdbee8d8df34b746a1d9c7c14a2d037, type: 3}
+      propertyPath: SceneAmbiance.Guid.Data1
+      value: -2098269509
+      objectReference: {fileID: 0}
+    - target: {fileID: 5152937658750167484, guid: 2cdbee8d8df34b746a1d9c7c14a2d037, type: 3}
+      propertyPath: SceneAmbiance.Guid.Data2
+      value: 1310697799
+      objectReference: {fileID: 0}
+    - target: {fileID: 5152937658750167484, guid: 2cdbee8d8df34b746a1d9c7c14a2d037, type: 3}
+      propertyPath: SceneAmbiance.Guid.Data3
+      value: -1212664936
+      objectReference: {fileID: 0}
+    - target: {fileID: 5152937658750167484, guid: 2cdbee8d8df34b746a1d9c7c14a2d037, type: 3}
+      propertyPath: SceneAmbiance.Guid.Data4
+      value: 1902155177
       objectReference: {fileID: 0}
     - target: {fileID: 5152937658750167485, guid: 2cdbee8d8df34b746a1d9c7c14a2d037, type: 3}
       propertyPath: m_Name
@@ -1091,7 +1131,6 @@ GameObject:
   - component: {fileID: 2147083358}
   - component: {fileID: 2147083362}
   - component: {fileID: 2147083363}
-  - component: {fileID: 2147083364}
   - component: {fileID: 2147083365}
   m_Layer: 5
   m_Name: MenuUI
@@ -1210,37 +1249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d8969ff5cc02543bf4c2ba13580b10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2147083364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2147083357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -2098269509
-      Data2: 1310697799
-      Data3: -1212664936
-      Data4: 1902155177
-    Path: event:/Meny/MenyAtmos
-  Event: 
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!114 &2147083365
 MonoBehaviour:
   m_ObjectHideFlags: 0
