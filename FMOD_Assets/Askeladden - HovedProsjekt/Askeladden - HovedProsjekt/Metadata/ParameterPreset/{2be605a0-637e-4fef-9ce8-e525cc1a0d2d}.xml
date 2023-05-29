@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{2be605a0-637e-4fef-9ce8-e525cc1a0d2d}">
+		<property name="name">
+			<value>Skoglyd</value>
+		</property>
+		<relationship name="folder">
+			<destination>{3437f5eb-3332-4e82-b6be-fa267692733b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{e02fe71a-6d75-4c2c-8a40-1a39477ce99c}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{e02fe71a-6d75-4c2c-8a40-1a39477ce99c}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+	</object>
+</objects>

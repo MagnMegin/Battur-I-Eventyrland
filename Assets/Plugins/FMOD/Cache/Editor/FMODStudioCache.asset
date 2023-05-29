@@ -461,10 +461,10 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638209713325009204
+  lastModified: 638209740011044094
   FileSizes:
   - Name: Desktop
-    Value: 7723488
+    Value: 7726368
   Exists: 1
 --- !u!114 &-3363814943395068841
 MonoBehaviour:
@@ -516,7 +516,8 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 3215751532239096652}
   MinDistance: 1
   MaxDistance: 20
   Length: 58000
@@ -543,10 +544,35 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: -2383513640413670722}
   MinDistance: 1
   MaxDistance: 20
   Length: 58000
+--- !u!114 &-2383513640413670722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Skoglyd/Skoglyd
+  m_EditorClassIdentifier: 
+  Name: Skoglyd
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3061777020
+    data2: 1309441945
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-1988294880479089647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -642,12 +668,12 @@ MonoBehaviour:
   Name: 'DYSTER SKOG '
   StudioPath: 
   Min: 0
-  Max: 5
+  Max: 1
   Default: 0
   ID:
     data1: 1307381016
     data2: 1014327829
-  Type: 0
+  Type: 1
   IsGlobal: 0
   Labels: []
   Exists: 1
@@ -805,7 +831,7 @@ MonoBehaviour:
   - {fileID: -3670313327492152192}
   StringsBanks:
   - {fileID: 2510350537494216410}
-  cacheTime: 638209713325200777
+  cacheTime: 638209740011245258
   cacheVersion: 131603
 --- !u!114 &214088819567578823
 MonoBehaviour:
@@ -983,7 +1009,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 1
-  Default: 0
+  Default: 1
   ID:
     data1: 769578370
     data2: 941047160
@@ -1006,10 +1032,10 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638209713325200777
+  lastModified: 638209740011245258
   FileSizes:
   - Name: Desktop
-    Value: 3384
+    Value: 3468
   Exists: 1
 --- !u!114 &2718813289708226679
 MonoBehaviour:
@@ -1111,6 +1137,30 @@ MonoBehaviour:
     data2: 3683751957
   Type: 1
   IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &3215751532239096652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Vind/VindAtmos
+  m_EditorClassIdentifier: 
+  Name: VindAtmos
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 4167877520
+    data2: 4236764039
+  Type: 0
+  IsGlobal: 0
   Labels: []
   Exists: 1
 --- !u!114 &3358458012784360955

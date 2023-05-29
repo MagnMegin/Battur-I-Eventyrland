@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4415870783319934650}
   - component: {fileID: 7188603321000465740}
+  - component: {fileID: 8244355770322477860}
+  - component: {fileID: 1493682322}
   m_Layer: 0
   m_Name: MusicTrigger
   m_TagString: Untagged
@@ -57,8 +59,53 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 1}
-      - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.9510565, y: 0.30901712}
+    - - {x: 16.040901, y: 25.617147}
+      - {x: -1.4047441, y: 31.46333}
+      - {x: -15.20118, y: 20.043404}
+      - {x: -1.5701661, y: 0.08126715}
+      - {x: -1.2327609, y: -2.1671066}
+      - {x: -0.13226545, y: -2.9691694}
+      - {x: 6.2564864, y: -9.100981}
+      - {x: 15.03989, y: -13.331886}
+      - {x: 28.875702, y: -0.9368839}
+      - {x: 31.73639, y: 5.816267}
+      - {x: 30.25848, y: 13.400204}
+      - {x: 22.790787, y: 20.137194}
+--- !u!114 &8244355770322477860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6736974628986397513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Emitters:
+  - Target: {fileID: 0}
+    Params:
+    - Name: 'DYSTER SKOG '
+      Value: 3
+  TriggerEvent: 5
+--- !u!114 &1493682322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6736974628986397513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Emitters:
+  - Target: {fileID: 0}
+    Params:
+    - Name: 'DYSTER SKOG '
+      Value: 0
+  TriggerEvent: 6
