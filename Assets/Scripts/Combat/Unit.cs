@@ -13,6 +13,7 @@ public class Unit : MonoBehaviour
     public int maxHP;
     public int currentHP;
 
+    public bool defenceDown = false;
     public bool NoHealthLeft;
 
     public CombatActions Actions;
@@ -25,7 +26,14 @@ public class Unit : MonoBehaviour
 
     public void TakeDamage(int dmg, Unit unit)
     {
-        unit.currentHP = unit.currentHP - dmg;
+        if (unit.defenceDown == true)
+        {
+            unit.currentHP = unit.currentHP - (dmg + 2);
+        }
+        else
+        {
+            unit.currentHP = unit.currentHP - dmg;
+        }
 
         if (unit.currentHP <= 0)
         {

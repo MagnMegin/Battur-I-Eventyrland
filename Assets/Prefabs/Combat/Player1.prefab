@@ -51,6 +51,7 @@ MonoBehaviour:
   currentPoints: 8
   maxHP: 30
   currentHP: 25
+  defenceDown: 0
   NoHealthLeft: 0
 --- !u!114 &8547631252224330958
 MonoBehaviour:

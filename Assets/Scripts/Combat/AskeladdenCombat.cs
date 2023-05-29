@@ -61,7 +61,13 @@ public class AskeladdenCombat : MonoBehaviour, CombatActions
 
     public void Ability2()
     {
-        throw new System.NotImplementedException();
+        CombatSystem CS = FindObjectOfType<CombatSystem>();
+        CS.enemyUnit.defenceDown = true;
+        CS.dialogueText.text = "Askeladden skremte " + CS.enemyUnit.unitName + "! Nå tar'n mer skade!";
+        CS.player1Buttons.SetActive(false);
+        CS.player2Buttons.SetActive(false);
+        CS._player1TurnDone = true;
+        CS.DamageEnemy();
     }
 
     public void BasicAttack()
