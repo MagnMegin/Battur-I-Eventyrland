@@ -1677,6 +1677,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartButton: {fileID: 853324553}
+  ButtonClick:
+    Guid:
+      Data1: -699001403
+      Data2: 1099489278
+      Data3: 1702662588
+      Data4: -1953283841
+    Path: event:/Meny/MenyKlikk
 --- !u!114 &2147083363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1696,12 +1703,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2147083357}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Parameter: 
+  Parameter: PressStart
   TriggerEvent: 2
   Value: 1

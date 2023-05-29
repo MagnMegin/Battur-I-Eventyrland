@@ -461,10 +461,10 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638209706757268329
+  lastModified: 638209713325009204
   FileSizes:
   - Name: Desktop
-    Value: 7723424
+    Value: 7723488
   Exists: 1
 --- !u!114 &-3363814943395068841
 MonoBehaviour:
@@ -597,7 +597,7 @@ MonoBehaviour:
     data1: 3294556145
     data2: 3683751957
   Type: 1
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &-1797278671059381963
@@ -799,12 +799,13 @@ MonoBehaviour:
   - {fileID: 2742091426282267823}
   - {fileID: 6548591047853373446}
   - {fileID: -7072809570691285788}
-  EditorParameters: []
+  EditorParameters:
+  - {fileID: 3705546235369966383}
   MasterBanks:
   - {fileID: -3670313327492152192}
   StringsBanks:
   - {fileID: 2510350537494216410}
-  cacheTime: 638209706757454890
+  cacheTime: 638209713325200777
   cacheVersion: 131603
 --- !u!114 &214088819567578823
 MonoBehaviour:
@@ -1005,7 +1006,7 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638209706757454890
+  lastModified: 638209713325200777
   FileSizes:
   - Name: Desktop
     Value: 3384
@@ -1109,7 +1110,7 @@ MonoBehaviour:
     data1: 3294556145
     data2: 3683751957
   Type: 1
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &3358458012784360955
@@ -1167,6 +1168,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &3705546235369966383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PressStart
+  m_EditorClassIdentifier: 
+  Name: PressStart
+  StudioPath: parameter:/PressStart
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3294556145
+    data2: 3683751957
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &3767297693546008119
 MonoBehaviour:
   m_ObjectHideFlags: 0
