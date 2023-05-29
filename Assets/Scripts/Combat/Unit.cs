@@ -26,6 +26,7 @@ public class Unit : MonoBehaviour
 
     public void TakeDamage(int dmg, Unit unit)
     {
+        CombatSystem CS = FindObjectOfType<CombatSystem>();
         if (unit.defenceDown == true)
         {
             unit.currentHP = unit.currentHP - (dmg + 2);
@@ -37,8 +38,19 @@ public class Unit : MonoBehaviour
 
         if (unit.currentHP <= 0)
         {
+
             NoHealthLeft = true;
             Debug.Log("Health = none");
+            if (unit == CS.player1Unit || CS.player2Unit)
+            {
+                Debug.Log("Player dead");
+                CS.state = BattleState.LOST;
+            }
+            else if (unit == CS.enemyUnit)
+            {
+                Debug.Log("Enemy Dead");
+                CS.state = BattleState.WON;
+            }
         }
         else
         {
@@ -46,13 +58,12 @@ public class Unit : MonoBehaviour
             Debug.Log("Health = plenty");
         }
 
-        CombatSystem CS = FindObjectOfType<CombatSystem>();
-
-        CS.DamageEnemy();
+        StartCoroutine(CS.DamageUpdate());
     }
 
-    public void Heal(int heal, Unit unit)
+    public IEnumerator Heal(int heal, Unit unit)
     {
+        yield return new WaitForSeconds(3f);
         unit.currentHP = unit.currentHP + heal;
 
         if (unit.currentHP > unit.maxHP)
@@ -62,7 +73,7 @@ public class Unit : MonoBehaviour
 
         CombatSystem CS = FindObjectOfType<CombatSystem>();
 
-        CS.HealPlayers();
+        StartCoroutine(CS.HealPlayers());
 
     }
 }

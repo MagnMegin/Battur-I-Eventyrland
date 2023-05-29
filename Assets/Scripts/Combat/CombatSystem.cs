@@ -10,6 +10,9 @@ public class CombatSystem : MonoBehaviour
 
     public bool _player1TurnDone = false;
     public bool _player2TurnDone = false;
+    public bool _enemyTurnDone = false;
+
+    public BasicTrollCombat trollCombatScript;
 
     public GameObject player1Prefab;
     public GameObject player2Prefab;
@@ -53,24 +56,20 @@ public class CombatSystem : MonoBehaviour
         player2HUD.SetHUD(player2Unit);
         enemyHUD.SetHUD(enemyUnit);
 
-        StartCoroutine(SetupBattle());
+        StartCoroutine(PlayerTurn());
+
+        trollCombatScript = FindObjectOfType<BasicTrollCombat>();
 
     }
 
-
-    IEnumerator SetupBattle()
+    IEnumerator PlayerTurn()
     {
-
         yield return new WaitForSeconds(3f);
 
-        state = BattleState.PLAYERTURN;
-        PlayerTurn();
-    }
-
-    void PlayerTurn()
-    {
         Debug.Log("PlayerTurn");
         dialogueText.text = "Velg en handling";
+
+        state = BattleState.PLAYERTURN;
 
         player1Buttons.SetActive(true);
         player2Buttons.SetActive(true);
@@ -82,11 +81,14 @@ public class CombatSystem : MonoBehaviour
 
 
 
-    public void DamageEnemy()
+    public IEnumerator DamageUpdate()
     {
-        
+        yield return new WaitForSeconds(3f);
+
         Unit U = gameObject.GetComponent<Unit>();
         enemyHUD.UpdateHP(enemyUnit);
+        player1HUD.UpdateHP(player1Unit);
+        player2HUD.UpdateHP(player2Unit);
 
         if (_player1TurnDone == false)
         {
@@ -98,13 +100,24 @@ public class CombatSystem : MonoBehaviour
         }
         else
         {
-            state = BattleState.ENEMYTURN;
+            if (_enemyTurnDone == true)
+            {
+                StartCoroutine (PlayerTurn());
+            }
+            else
+            {
+                state = BattleState.ENEMYTURN;
+                BasicTrollCombat TC = FindObjectOfType<BasicTrollCombat>();
+                StartCoroutine(TC.EnemyTurnStart());
+            }
         }
 
     }
 
-    public void HealPlayers()
+    public IEnumerator HealPlayers()
     {
+        yield return new WaitForSeconds(3f);
+
         Unit U = gameObject.GetComponent<Unit>();
         player1HUD.UpdateHP(player1Unit);
         player2HUD.UpdateHP(player2Unit);
@@ -120,6 +133,10 @@ public class CombatSystem : MonoBehaviour
         else
         {
             state = BattleState.ENEMYTURN;
+
+            BasicTrollCombat TC = FindObjectOfType<BasicTrollCombat>();
+            StartCoroutine(TC.EnemyTurnStart());
+
         }
 
     }

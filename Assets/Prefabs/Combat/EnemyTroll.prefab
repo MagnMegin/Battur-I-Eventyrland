@@ -133,8 +133,9 @@ MonoBehaviour:
   unitName: TrollSlime
   damage: 3
   currentPoints: 7
-  maxHP: 40
-  currentHP: 40
+  maxHP: 75
+  currentHP: 75
+  defenceDown: 0
   NoHealthLeft: 0
 --- !u!114 &8074261616796733825
 MonoBehaviour:
@@ -148,3 +149,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de099f4e70772f94fb9da99043ac0a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dmg: 0
+  _minDMG: 8
+  _maxDMG: 12
+  _chooseTarget: 0
+  _chooseAttackType: 0
+  unitScript: {fileID: 0}
+  combatScript: {fileID: 0}
