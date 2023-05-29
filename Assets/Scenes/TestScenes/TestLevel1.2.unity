@@ -243,6 +243,10 @@ PrefabInstance:
       propertyPath: Emitters.Array.data[0].Target
       value: 
       objectReference: {fileID: 1175889490}
+    - target: {fileID: 8244355770322477860, guid: ec2157454fbb9c84bb8ec29afdf696d8, type: 3}
+      propertyPath: Emitters.Array.data[0].Params.Array.data[0].Value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2157454fbb9c84bb8ec29afdf696d8, type: 3}
 --- !u!1001 &15998649
