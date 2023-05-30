@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+
 public enum BattleState { START, PLAYERTURN, PLAYERINTERACT, ENEMYTURN, ENEMYINTERACT, WON, LOST }
 public class CombatSystem : MonoBehaviour
 {
@@ -37,10 +38,9 @@ public class CombatSystem : MonoBehaviour
 
     public BattleState state;
 
-    private void Start()
-    {
-        state = BattleState.START;
 
+    void Awake()
+    {
         GameObject player1GO = Instantiate(player1Prefab, player1BattleSpot);
         player1Unit = player1GO.GetComponent<Unit>();
 
@@ -49,6 +49,12 @@ public class CombatSystem : MonoBehaviour
 
         GameObject enemyGO = Instantiate(enemyPrefab, enemyBattleSpot);
         enemyUnit = enemyGO.GetComponent<Unit>();
+    }
+
+
+    private void Start()
+    {
+        state = BattleState.START;
 
         dialogueText.text = enemyUnit.unitName + " skaper trøbbel for deg!";
 

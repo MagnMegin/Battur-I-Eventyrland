@@ -169,7 +169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &309727578
 RectTransform:
   m_ObjectHideFlags: 0
@@ -840,6 +840,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player1TurnDone: 0
   _player2TurnDone: 0
+  _enemyTurnDone: 0
+  trollCombatScript: {fileID: 0}
   player1Prefab: {fileID: 3884469475428784528, guid: 289aae79bfe18234fbd77b00d7f6faab, type: 3}
   player2Prefab: {fileID: 4236631004439272660, guid: dd8713abfa49bfa469ec4dc57495cd07, type: 3}
   enemyPrefab: {fileID: 7195021280464513982, guid: 6f3bb1ef64f089e4dbf154211e6916df, type: 3}
@@ -1412,6 +1414,7 @@ GameObject:
   - component: {fileID: 1152865398}
   - component: {fileID: 1152865397}
   - component: {fileID: 1152865396}
+  - component: {fileID: 1152865399}
   m_Layer: 5
   m_Name: AskSelect
   m_TagString: Untagged
@@ -1534,6 +1537,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152865394}
   m_CullTransparentMesh: 1
+--- !u!114 &1152865399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152865394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4a39318b9f4cea4784efe1ef437948a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myGameObject: {fileID: 0}
 --- !u!1 &1273174064
 GameObject:
   m_ObjectHideFlags: 0
