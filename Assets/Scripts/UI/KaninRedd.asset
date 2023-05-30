@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a14e81ea594ebe64a876cc7f4a953eae, type: 3}
-  m_Name: TimberPerson
+  m_Name: KaninRedd
   m_EditorClassIdentifier: 
-  characterName: LumberJack
+  characterName: Kanin
   characterDescription: 
-  characterDialogueSprite: {fileID: 21300000, guid: dda1b956efc281341b48ed0b00c1ab06, type: 3}
+  characterDialogueSprite: {fileID: 21300000, guid: c8c3b858dbc011b4a90e50120f8ebeb0, type: 3}
   lines:
-  - "Sagbruket er s\xF8rover"
+  - Hjelp! Trollet vil spise oss!
+  - "Vi har kun denne planken til \xE5 skjule hiet"

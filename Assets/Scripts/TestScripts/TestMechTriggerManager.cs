@@ -8,13 +8,22 @@ public class TestMechTriggerManager : MonoBehaviour
     public GameObject CollectedPlank1;
     public GameObject CollectedPlank2;
     public GameObject CollectedPlank3;
+    public GameObject TestPlank3;
     public GameObject skipUtenMech;
     public GameObject skipKlarTilBro;
     public GameObject BoatFixer1;
     public GameObject BoatFixer2;
+    public GameObject RabbitScared;
+    public GameObject RabbitAfterCombat;
+    public GameObject BossCharacter;
+
     private bool _mechShipHasBeenActivated;
     private bool _twoPlanksActive;
+    private bool _bossDefeated;
+    private bool _bossFightActivated;
     
+    public bool _talkedToRabbit;
+
     void Start()
     {
         
@@ -35,6 +44,21 @@ public class TestMechTriggerManager : MonoBehaviour
             BoatFixer1.SetActive(false);
             _twoPlanksActive = true;
         }
+        if (_talkedToRabbit == true)
+        {
+            BossCharacter.SetActive(true);
+            _bossFightActivated = true;
+            _talkedToRabbit = false;
+
+        }
+        if (BossCharacter.activeInHierarchy == false && !_bossDefeated && _bossFightActivated)
+        {
+            RabbitAfterCombat.SetActive(true);
+            TestPlank3.SetActive(true);
+            RabbitScared.SetActive(false);
+            _bossDefeated = true;
+        }
+
     }
 
 
