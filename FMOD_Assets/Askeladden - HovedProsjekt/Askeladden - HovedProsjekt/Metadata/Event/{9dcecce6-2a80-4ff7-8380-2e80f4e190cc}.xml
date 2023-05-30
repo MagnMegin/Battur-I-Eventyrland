@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{9dcecce6-2a80-4ff7-8380-2e80f4e190cc}">
 		<property name="name">
 			<value>Besvim</value>
@@ -8,7 +8,7 @@
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{c50b18b4-3a6e-486e-8253-4f8591228dd5}</destination>
+			<destination>{617667b8-943a-4013-be14-70ac8f089ac6}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{b8dc4b0c-dfa1-4a98-beae-132fe9520392}</destination>
@@ -32,7 +32,7 @@
 			<destination>{912f5212-ba73-4751-bf5c-808fade30777}</destination>
 		</relationship>
 		<relationship name="banks">
-			<destination>{c699b814-ce36-430d-81fa-157710c87fa5}</destination>
+			<destination>{77975fb6-fc67-4eb1-a87f-31c702c17200}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{b8dc4b0c-dfa1-4a98-beae-132fe9520392}">

@@ -194,6 +194,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartButton: {fileID: 4619174456918423654}
+  ButtonClick:
+    Guid:
+      Data1: -699001403
+      Data2: 1099489278
+      Data3: 1702662588
+      Data4: -1953283841
+    Path: event:/Meny/MenyKlikk
 --- !u!114 &4619174456381559104
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -19,14 +19,14 @@ MonoBehaviour:
     Data3: -658362958
     Data4: -1054836047
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1358
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2533
 --- !u!114 &-9127135786042063499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,15 +46,15 @@ MonoBehaviour:
     Data3: -325347394
     Data4: -664992135
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-8367840719227258236
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3533
+--- !u!114 &-8554698477519699483
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,23 +64,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Combat/CombatFX/Helbrede
+  m_Name: event:/Karakterer/Eivind/Combat/EivindBesvime2
   m_EditorClassIdentifier: 
-  Path: event:/Combat/CombatFX/Helbrede
+  Path: event:/Karakterer/Eivind/Combat/EivindBesvime2
   Guid:
-    Data1: 1752378136
-    Data2: 1091164315
-    Data3: -1719523199
-    Data4: -504161796
+    Data1: -1818879662
+    Data2: 1326038507
+    Data3: -1539995202
+    Data4: -1475195312
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4609
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2533
 --- !u!114 &-8364453305731535496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,15 +100,39 @@ MonoBehaviour:
     Data3: 247319452
     Data4: -1894214769
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-7700474520247844376
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-7446162247040486765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Karaktervalg/KarakterValg
+  m_EditorClassIdentifier: 
+  Name: KarakterValg
+  StudioPath: 
+  Min: 1
+  Max: 3
+  Default: 1
+  ID:
+    data1: 3847566135
+    data2: 1443598850
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-7090356446790272974
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,24 +142,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Combat/CombatFX/Besvim
+  m_Name: event:/Skog/Atmos/FUGLER MIKKEL
   m_EditorClassIdentifier: 
-  Path: event:/Combat/CombatFX/Besvim
+  Path: event:/Skog/Atmos/FUGLER MIKKEL
   Guid:
-    Data1: -1647391514
-    Data2: 1341598336
-    Data3: -2144436093
-    Data4: -862920204
+    Data1: 1935819403
+    Data2: 1201466799
+    Data3: -1276657511
+    Data4: -1796581441
   Banks:
-  - {fileID: -6858090691444617815}
-  IsStream: 0
+  - {fileID: -3670313327492152192}
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1962
---- !u!114 &-6917090508319693094
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 33093
+--- !u!114 &-7072809570691285788
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,24 +169,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Karakterer/Eivind/Combat/EivindBesvime
+  m_Name: event:/Combat/CombatMusic/CombatMusic
   m_EditorClassIdentifier: 
-  Path: event:/Karakterer/Eivind/Combat/EivindBesvime
+  Path: event:/Combat/CombatMusic/CombatMusic
   Guid:
-    Data1: -166525185
-    Data2: 1316219166
-    Data3: -557004876
-    Data4: 969678880
+    Data1: -1803166209
+    Data2: 1256970447
+    Data3: -302049383
+    Data4: -2085056747
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
+  MinDistance: 1
+  MaxDistance: 20
   Length: 0
---- !u!114 &-6858090691444617815
+--- !u!114 &-6197832984178237945
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,16 +195,175 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Combat.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Combat/CombatFX/Assets/Timing
   m_EditorClassIdentifier: 
-  Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Combat.bank
-  Name: Combat
-  StudioPath: bank:/Combat
-  lastModified: 638205203860000000
-  FileSizes:
-  - Name: Desktop
-    Value: 346688
+  Path: event:/Combat/CombatFX/Assets/Timing
+  Guid:
+    Data1: -104515314
+    Data2: 1243862697
+    Data3: -1577455722
+    Data4: 1574077922
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5417421237245218880}
+  - {fileID: 8293585644131782120}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &-5735090280029042036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CombatTiming/KarakterValg
+  m_EditorClassIdentifier: 
+  Name: KarakterValg
+  StudioPath: 
+  Min: 1
+  Max: 3
+  Default: 1
+  ID:
+    data1: 3847566135
+    data2: 1443598850
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-5656027764895053312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CombatBesvime/KarakterValg
+  m_EditorClassIdentifier: 
+  Name: KarakterValg
+  StudioPath: 
+  Min: 1
+  Max: 3
+  Default: 1
+  ID:
+    data1: 3847566135
+    data2: 1443598850
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-5592222895523874686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Eivind/Combat/EivindKaste
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Eivind/Combat/EivindKaste
+  Guid:
+    Data1: -448059168
+    Data2: 1206524820
+    Data3: -1891883331
+    Data4: 1384615839
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2533
+--- !u!114 &-5417421237245218880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Timing/KarakterValg
+  m_EditorClassIdentifier: 
+  Name: KarakterValg
+  StudioPath: 
+  Min: 1
+  Max: 3
+  Default: 1
+  ID:
+    data1: 3847566135
+    data2: 1443598850
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-4995431460373227049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Karakterer/Eivind/Combat/EivindBl\xE5s"
+  m_EditorClassIdentifier: 
+  Path: "event:/Karakterer/Eivind/Combat/EivindBl\xE5s"
+  Guid:
+    Data1: 680729649
+    Data2: 1237595464
+    Data3: -1611699543
+    Data4: -1883842561
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2533
+--- !u!114 &-4862023138213117019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CombatHelse/KarakterValg
+  m_EditorClassIdentifier: 
+  Name: KarakterValg
+  StudioPath: 
+  Min: 1
+  Max: 3
+  Default: 1
+  ID:
+    data1: 3847566135
+    data2: 1443598850
+  Type: 1
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &-4546874277870886913
 MonoBehaviour:
@@ -201,14 +384,14 @@ MonoBehaviour:
     Data3: -941214057
     Data4: 761645467
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 777
 --- !u!114 &-4367816546948669236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,14 +411,14 @@ MonoBehaviour:
     Data3: -719477574
     Data4: 507290230
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &-4335880602281417979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,14 +438,14 @@ MonoBehaviour:
     Data3: 1972875685
     Data4: 503952568
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2928
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3219
 --- !u!114 &-3670313327492152192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,12 +461,12 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638205203860000000
+  lastModified: 638209740011044094
   FileSizes:
   - Name: Desktop
-    Value: 1644
+    Value: 7726368
   Exists: 1
---- !u!114 &-2997832668228239957
+--- !u!114 &-3363814943395068841
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -293,52 +476,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Combat/CombatFX/Timing
+  m_Name: event:/Combat/CombatMusic/CombatEnd
   m_EditorClassIdentifier: 
-  Path: event:/Combat/CombatFX/Timing
+  Path: event:/Combat/CombatMusic/CombatEnd
   Guid:
-    Data1: -104515314
-    Data2: 1243862697
-    Data3: -1577455722
-    Data4: 1574077922
+    Data1: -1274827864
+    Data2: 1094743792
+    Data3: 574039472
+    Data4: -1324510879
   Banks:
-  - {fileID: -6858090691444617815}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -1119018290492988379}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 8000
---- !u!114 &-2860576422237541936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Karakterer/Eivind/Combat/EivindMottaHelse
-  m_EditorClassIdentifier: 
-  Path: event:/Karakterer/Eivind/Combat/EivindMottaHelse
-  Guid:
-    Data1: -715768065
-    Data2: 1314246644
-    Data3: -1433387346
-    Data4: 1367608212
-  Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
+  MinDistance: 1
+  MaxDistance: 20
   Length: 0
---- !u!114 &-2532858549708337395
+--- !u!114 &-2675734992362167612
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -347,17 +502,106 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/meny.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Skog/Atmos/Vind
   m_EditorClassIdentifier: 
-  Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/meny.bank
-  Name: meny
-  StudioPath: bank:/meny
-  lastModified: 638205187440000000
-  FileSizes:
-  - Name: Desktop
-    Value: 1587808
+  Path: event:/Skog/Atmos/Vind
+  Guid:
+    Data1: 1250424107
+    Data2: 1107250984
+    Data3: 2121478824
+    Data4: 901194136
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3215751532239096652}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 58000
+--- !u!114 &-2603813568567387226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Skog/Atmos/Skoglyd
+  m_EditorClassIdentifier: 
+  Path: event:/Skog/Atmos/Skoglyd
+  Guid:
+    Data1: 491301318
+    Data2: 1231249796
+    Data3: -1224580686
+    Data4: 1297647238
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2383513640413670722}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 58000
+--- !u!114 &-2383513640413670722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Skoglyd/Skoglyd
+  m_EditorClassIdentifier: 
+  Name: Skoglyd
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3061777020
+    data2: 1309441945
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
+--- !u!114 &-1988294880479089647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Skog/Musikk/Skog
+  m_EditorClassIdentifier: 
+  Path: event:/Skog/Musikk/Skog
+  Guid:
+    Data1: 1702452462
+    Data2: 1114952002
+    Data3: 1919460737
+    Data4: 976463313
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2502664914920512998}
+  - {fileID: -1209420751434146070}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 160000
 --- !u!114 &-1880051860601821042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,7 +622,7 @@ MonoBehaviour:
   ID:
     data1: 3294556145
     data2: 3683751957
-  Type: 0
+  Type: 1
   IsGlobal: 1
   Labels: []
   Exists: 1
@@ -401,15 +645,15 @@ MonoBehaviour:
     Data3: 1931100814
     Data4: -1290524999
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-1119018290492988379
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2533
+--- !u!114 &-1209420751434146070
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -419,16 +663,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Timing/Timing
+  m_Name: 'parameter:/Skog/DYSTER SKOG '
   m_EditorClassIdentifier: 
-  Name: Timing
+  Name: 'DYSTER SKOG '
   StudioPath: 
   Min: 0
-  Max: 2
+  Max: 1
   Default: 0
   ID:
-    data1: 800747564
-    data2: 3545062490
+    data1: 1307381016
+    data2: 1014327829
   Type: 1
   IsGlobal: 0
   Labels: []
@@ -452,13 +696,42 @@ MonoBehaviour:
     Data3: -1460021573
     Data4: 172727583
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2533
+--- !u!114 &-841546617961308380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Combat/CombatFX/CombatTiming/Karaktervalg
+  m_EditorClassIdentifier: 
+  Path: event:/Combat/CombatFX/CombatTiming/Karaktervalg
+  Guid:
+    Data1: -10468572
+    Data2: 1148086088
+    Data3: -656882774
+    Data4: -1253758684
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -7446162247040486765}
+  - {fileID: 2296367770523640255}
+  MinDistance: 1
+  MaxDistance: 20
   Length: 0
 --- !u!114 &-541344316915403948
 MonoBehaviour:
@@ -479,14 +752,14 @@ MonoBehaviour:
     Data3: 1728965022
     Data4: 627707700
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 513
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 777
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,17 +775,12 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 2510350537494216410}
   - {fileID: -3670313327492152192}
-  - {fileID: -2532858549708337395}
-  - {fileID: -6858090691444617815}
   EditorEvents:
-  - {fileID: 7074610000489235979}
   - {fileID: 3358458012784360955}
   - {fileID: 6969092881816573446}
   - {fileID: -8364453305731535496}
   - {fileID: -4367816546948669236}
-  - {fileID: -2997832668228239957}
   - {fileID: -923166432710719745}
-  - {fileID: -8367840719227258236}
   - {fileID: 8781431025709063870}
   - {fileID: 5730584944084656351}
   - {fileID: -4335880602281417979}
@@ -525,16 +793,45 @@ MonoBehaviour:
   - {fileID: 3849360426457845866}
   - {fileID: -1797278671059381963}
   - {fileID: 5051483842268046502}
-  - {fileID: -7700474520247844376}
-  - {fileID: -6917090508319693094}
-  - {fileID: -2860576422237541936}
+  - {fileID: -6197832984178237945}
+  - {fileID: 8349006516110850758}
+  - {fileID: 362218951083618184}
+  - {fileID: 5079154964707928081}
+  - {fileID: -841546617961308380}
+  - {fileID: -2675734992362167612}
+  - {fileID: -4995431460373227049}
+  - {fileID: 7466749933039890241}
+  - {fileID: 635882212437725763}
+  - {fileID: -8554698477519699483}
+  - {fileID: 6802448422802831105}
+  - {fileID: 8132310229665462343}
+  - {fileID: -7090356446790272974}
+  - {fileID: 6847802417445441601}
+  - {fileID: 7842937669372027860}
+  - {fileID: 5538959791920452362}
+  - {fileID: -3363814943395068841}
+  - {fileID: 3562566764026047733}
+  - {fileID: 7630984248354269191}
+  - {fileID: 5221979922479094849}
+  - {fileID: 8844843779996150501}
+  - {fileID: 8970533356511342073}
+  - {fileID: -2603813568567387226}
+  - {fileID: 3767297693546008119}
+  - {fileID: -5592222895523874686}
+  - {fileID: 5231088050436428818}
+  - {fileID: 344558922563364458}
+  - {fileID: 2023660511728737922}
+  - {fileID: -1988294880479089647}
+  - {fileID: 2742091426282267823}
+  - {fileID: 6548591047853373446}
+  - {fileID: -7072809570691285788}
   EditorParameters:
-  - {fileID: 5799610091465801258}
+  - {fileID: 3705546235369966383}
   MasterBanks:
   - {fileID: -3670313327492152192}
   StringsBanks:
   - {fileID: 2510350537494216410}
-  cacheTime: 638205203860000000
+  cacheTime: 638209740011245258
   cacheVersion: 131603
 --- !u!114 &214088819567578823
 MonoBehaviour:
@@ -555,14 +852,171 @@ MonoBehaviour:
     Data3: 1877867154
     Data4: -1731438952
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &344558922563364458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Combat/CombatFX/Assets/Besvim
+  m_EditorClassIdentifier: 
+  Path: event:/Combat/CombatFX/Assets/Besvim
+  Guid:
+    Data1: -1647391514
+    Data2: 1341598336
+    Data3: -2144436093
+    Data4: -862920204
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1962
+--- !u!114 &362218951083618184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Sidekarakterer/DialogMann
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Sidekarakterer/DialogMann
+  Guid:
+    Data1: -1067198183
+    Data2: 1230738710
+    Data3: -36138604
+    Data4: -320483343
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2533
+--- !u!114 &635882212437725763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Combat/CombatFX/CombatHelse
+  m_EditorClassIdentifier: 
+  Path: event:/Combat/CombatFX/CombatHelse
+  Guid:
+    Data1: -1295001266
+    Data2: 1133730535
+    Data3: -321572165
+    Data4: 867949332
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -4862023138213117019}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4609
+--- !u!114 &2023660511728737922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Askeladden/DialogAskeladden
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Askeladden/DialogAskeladden
+  Guid:
+    Data1: -141934354
+    Data2: 1202563587
+    Data3: 13098656
+    Data4: 1734991854
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &2296367770523640255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Karaktervalg/Timing
+  m_EditorClassIdentifier: 
+  Name: Timing
+  StudioPath: 
+  Min: 1
+  Max: 2
+  Default: 1
+  ID:
+    data1: 800747564
+    data2: 3545062490
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &2502664914920512998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Skog/SKOG
+  m_EditorClassIdentifier: 
+  Name: SKOG
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 769578370
+    data2: 941047160
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &2510350537494216410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,11 +1032,62 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638205203860000000
+  lastModified: 638209740011245258
   FileSizes:
   - Name: Desktop
-    Value: 2014
+    Value: 3468
   Exists: 1
+--- !u!114 &2718813289708226679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CombatTiming/Timing
+  m_EditorClassIdentifier: 
+  Name: Timing
+  StudioPath: 
+  Min: 1
+  Max: 2
+  Default: 1
+  ID:
+    data1: 800747564
+    data2: 3545062490
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &2742091426282267823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Eivind/Combat/EivindBesvime1
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Eivind/Combat/EivindBesvime1
+  Guid:
+    Data1: -166525185
+    Data2: 1316219166
+    Data3: -557004876
+    Data4: 969678880
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2533
 --- !u!114 &2853536399443436579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -602,14 +1107,14 @@ MonoBehaviour:
     Data3: 1357021065
     Data4: 1012616906
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2376
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2845
 --- !u!114 &2948249384625164221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,8 +1135,32 @@ MonoBehaviour:
   ID:
     data1: 3294556145
     data2: 3683751957
-  Type: 0
+  Type: 1
   IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &3215751532239096652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Vind/VindAtmos
+  m_EditorClassIdentifier: 
+  Name: VindAtmos
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 4167877520
+    data2: 4236764039
+  Type: 0
+  IsGlobal: 0
   Labels: []
   Exists: 1
 --- !u!114 &3358458012784360955
@@ -653,14 +1182,92 @@ MonoBehaviour:
     Data3: 2051755652
     Data4: -644213004
   Banks:
-  - {fileID: -2532858549708337395}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
   - {fileID: -1880051860601821042}
-  MinDistance: 0
-  MaxDistance: 0
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3562566764026047733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Skog/Lyddesign/Fotsteg
+  m_EditorClassIdentifier: 
+  Path: event:/Skog/Lyddesign/Fotsteg
+  Guid:
+    Data1: -1128421960
+    Data2: 1271119047
+    Data3: -289116028
+    Data4: 279297256
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3705546235369966383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PressStart
+  m_EditorClassIdentifier: 
+  Name: PressStart
+  StudioPath: parameter:/PressStart
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3294556145
+    data2: 3683751957
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &3767297693546008119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Combat/CombatMusic/CombatStart
+  m_EditorClassIdentifier: 
+  Path: event:/Combat/CombatMusic/CombatStart
+  Guid:
+    Data1: -1966485296
+    Data2: 1206844368
+    Data3: -592955729
+    Data4: 270408516
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
   Length: 0
 --- !u!114 &3849360426457845866
 MonoBehaviour:
@@ -681,14 +1288,14 @@ MonoBehaviour:
     Data3: 1121999526
     Data4: -1751533824
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 3918
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2928
 --- !u!114 &5051483842268046502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,13 +1315,122 @@ MonoBehaviour:
     Data3: 969675399
     Data4: -968455524
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &5079154964707928081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Introsekvens/IntroAtmos
+  m_EditorClassIdentifier: 
+  Path: event:/Introsekvens/IntroAtmos
+  Guid:
+    Data1: 220091167
+    Data2: 1237563453
+    Data3: 703147409
+    Data4: 1329938829
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 121858
+--- !u!114 &5221979922479094849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Combat/CombatFX/CombatBesvime
+  m_EditorClassIdentifier: 
+  Path: event:/Combat/CombatFX/CombatBesvime
+  Guid:
+    Data1: -558978622
+    Data2: 1104764498
+    Data3: 195545222
+    Data4: 519558811
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -5656027764895053312}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1962
+--- !u!114 &5231088050436428818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Sidekarakterer/DialogKvinne
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Sidekarakterer/DialogKvinne
+  Guid:
+    Data1: -1379632156
+    Data2: 1280769041
+    Data3: -220106104
+    Data4: 633817564
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2533
+--- !u!114 &5538959791920452362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Introsekvens/Fortellerstemme
+  m_EditorClassIdentifier: 
+  Path: event:/Introsekvens/Fortellerstemme
+  Guid:
+    Data1: -1029519198
+    Data2: 1111420858
+    Data3: 299500207
+    Data4: 299249738
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
   Length: 0
 --- !u!114 &5730584944084656351
 MonoBehaviour:
@@ -735,15 +1451,15 @@ MonoBehaviour:
     Data3: 249114798
     Data4: -800250138
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 612
---- !u!114 &5799610091465801258
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2331
+--- !u!114 &6548591047853373446
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -752,21 +1468,78 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PressStart
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Eivind/Combat/EivindMottaHelse1
   m_EditorClassIdentifier: 
-  Name: PressStart
-  StudioPath: parameter:/PressStart
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3294556145
-    data2: 3683751957
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
+  Path: event:/Karakterer/Eivind/Combat/EivindMottaHelse1
+  Guid:
+    Data1: -715768065
+    Data2: 1314246644
+    Data3: -1433387346
+    Data4: 1367608212
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3533
+--- !u!114 &6802448422802831105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Skog/Lyddesign/Fugler
+  m_EditorClassIdentifier: 
+  Path: event:/Skog/Lyddesign/Fugler
+  Guid:
+    Data1: -1806656929
+    Data2: 1279565841
+    Data3: -1430876994
+    Data4: 1184381723
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6847802417445441601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Skog/Atmos/Elv
+  m_EditorClassIdentifier: 
+  Path: event:/Skog/Atmos/Elv
+  Guid:
+    Data1: -1885605231
+    Data2: 1248169129
+    Data3: 165284012
+    Data4: 792155485
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6969092881816573446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -786,16 +1559,16 @@ MonoBehaviour:
     Data3: -1212664936
     Data4: 1902155177
   Banks:
-  - {fileID: -2532858549708337395}
+  - {fileID: -3670313327492152192}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
   - {fileID: 2948249384625164221}
-  MinDistance: 0
-  MaxDistance: 0
+  MinDistance: 1
+  MaxDistance: 20
   Length: 58000
---- !u!114 &7074610000489235979
+--- !u!114 &7466749933039890241
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -805,23 +1578,155 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/WatDis
+  m_Name: event:/Karakterer/Eivind/DialogEivind
   m_EditorClassIdentifier: 
-  Path: snapshot:/WatDis
+  Path: event:/Karakterer/Eivind/DialogEivind
   Guid:
-    Data1: -531720253
-    Data2: 1325196258
-    Data3: 1018194821
-    Data4: -809267553
+    Data1: 1956719167
+    Data2: 1325661865
+    Data3: 1329670562
+    Data4: 495326158
   Banks:
   - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &7630984248354269191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Introsekvens/IntroMusikk
+  m_EditorClassIdentifier: 
+  Path: event:/Introsekvens/IntroMusikk
+  Guid:
+    Data1: -766948928
+    Data2: 1258729903
+    Data3: -946525022
+    Data4: -1369377092
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
   Length: 0
+--- !u!114 &7842937669372027860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Skog/Atmos/FUGLER
+  m_EditorClassIdentifier: 
+  Path: event:/Skog/Atmos/FUGLER
+  Guid:
+    Data1: 1911160731
+    Data2: 1271215203
+    Data3: -437597800
+    Data4: -764680342
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 64372
+--- !u!114 &8132310229665462343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Eivind/Combat/EivindMottaHelse2
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Eivind/Combat/EivindMottaHelse2
+  Guid:
+    Data1: 1884543344
+    Data2: 1291640557
+    Data3: 1712264327
+    Data4: -97467479
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3533
+--- !u!114 &8293585644131782120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Timing/Timing
+  m_EditorClassIdentifier: 
+  Name: Timing
+  StudioPath: 
+  Min: 1
+  Max: 2
+  Default: 1
+  ID:
+    data1: 800747564
+    data2: 3545062490
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8349006516110850758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Combat/CombatFX/Assets/Helbrede
+  m_EditorClassIdentifier: 
+  Path: event:/Combat/CombatFX/Assets/Helbrede
+  Guid:
+    Data1: 1752378136
+    Data2: 1091164315
+    Data3: -1719523199
+    Data4: -504161796
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4609
 --- !u!114 &8781431025709063870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -841,11 +1746,67 @@ MonoBehaviour:
     Data3: -529681275
     Data4: 1647583296
   Banks:
-  - {fileID: -6858090691444617815}
+  - {fileID: -3670313327492152192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 725
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2533
+--- !u!114 &8844843779996150501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Combat/CombatFX/CombatTiming/CombatTiming
+  m_EditorClassIdentifier: 
+  Path: event:/Combat/CombatFX/CombatTiming/CombatTiming
+  Guid:
+    Data1: 312351939
+    Data2: 1126417470
+    Data3: 1574641064
+    Data4: -275350920
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 2718813289708226679}
+  - {fileID: -5735090280029042036}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
+--- !u!114 &8970533356511342073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Meny/MenyKlikk
+  m_EditorClassIdentifier: 
+  Path: event:/Meny/MenyKlikk
+  Guid:
+    Data1: -699001403
+    Data2: 1099489278
+    Data3: 1702662588
+    Data4: -1953283841
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 359

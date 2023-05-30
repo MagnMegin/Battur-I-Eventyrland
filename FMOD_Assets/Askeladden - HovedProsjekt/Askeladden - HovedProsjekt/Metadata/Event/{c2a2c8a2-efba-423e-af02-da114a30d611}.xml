@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{c2a2c8a2-efba-423e-af02-da114a30d611}">
 		<property name="name">
 			<value>Fortellerstemme</value>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{bf411220-5f82-485d-aff0-6682ff526734}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{77975fb6-fc67-4eb1-a87f-31c702c17200}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{c0f0b8a6-5ca6-4b11-88ea-1dbf082eefbb}">

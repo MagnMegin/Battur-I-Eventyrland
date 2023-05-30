@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{6610244b-fcfb-4bfd-844e-4b7af4169ad9}">
 		<property name="name">
 			<value>MenyMusikk</value>
@@ -35,7 +35,7 @@
 			<destination>{262679ae-8cf9-49de-820d-057a1db51735}</destination>
 		</relationship>
 		<relationship name="banks">
-			<destination>{02cd3380-d232-4e23-b4f3-b0e09d2a2f7a}</destination>
+			<destination>{77975fb6-fc67-4eb1-a87f-31c702c17200}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{5ab08de3-ccbc-48e2-8715-bbf361b3e587}">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="ParameterPreset" id="{aa990ba6-9392-42ed-abe0-469cf1d4a788}">
 		<property name="name">
 			<value>Timing</value>
@@ -15,11 +15,14 @@
 		<property name="parameterType">
 			<value>1</value>
 		</property>
+		<property name="minimum">
+			<value>1</value>
+		</property>
 		<property name="maximum">
 			<value>3</value>
 		</property>
 		<property name="initialValue">
-			<value>0</value>
+			<value>1</value>
 		</property>
 	</object>
 </objects>

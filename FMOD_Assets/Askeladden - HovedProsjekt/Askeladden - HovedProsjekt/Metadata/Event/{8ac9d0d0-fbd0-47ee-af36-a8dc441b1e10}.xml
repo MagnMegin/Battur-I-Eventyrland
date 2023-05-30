@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{8ac9d0d0-fbd0-47ee-af36-a8dc441b1e10}">
 		<property name="name">
 			<value>CombatStart</value>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{e06cff43-7c70-4d7d-95ff-9662c5e0c592}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{77975fb6-fc67-4eb1-a87f-31c702c17200}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{3314d932-6764-4c20-8d8c-e04b9464800c}">

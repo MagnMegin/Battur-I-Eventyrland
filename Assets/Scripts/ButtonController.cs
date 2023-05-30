@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,7 @@ using UnityEngine.UI;
 public class ButtonController : MonoBehaviour
 {
     public Button StartButton;
+    public EventReference ButtonClick;
 
     private Button _currentButton;
 
@@ -34,6 +36,7 @@ public class ButtonController : MonoBehaviour
         if (InputManager.MenuSelectDown())
         {
             _currentButton.onClick?.Invoke();
+            AudioManager.Instance.PlayOneShot(ButtonClick, Vector3.zero);
         }
     }
 

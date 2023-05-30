@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{8f9bf291-8ca9-4a65-ac08-da095d55372f}">
 		<property name="name">
 			<value>Elv</value>
@@ -31,6 +31,9 @@
 		<relationship name="timeline">
 			<destination>{ea267b45-330b-4230-8a24-3c7b41ebf5d2}</destination>
 		</relationship>
+		<relationship name="banks">
+			<destination>{77975fb6-fc67-4eb1-a87f-31c702c17200}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixer" id="{9a0b9f44-6879-4740-b9c9-fb794aeee62f}">
 		<relationship name="masterBus">
@@ -50,7 +53,7 @@
 			<destination>{751114ec-8f2e-477c-a5a1-6dd70da133f6}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{54416e94-d5a7-41e4-a5e5-174ecab4fbb0}</destination>
+			<destination>{768f80d4-69d2-4d8a-be34-b09ea4bb92d6}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{26b888b7-3c10-4fe2-8f99-43e5af8433a6}" />

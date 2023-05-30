@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{622ddb36-0dd9-42a4-b113-760f9fc212f6}">
+		<property name="name">
+			<value>DYSTER SKOG </value>
+		</property>
+		<relationship name="folder">
+			<destination>{3437f5eb-3332-4e82-b6be-fa267692733b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{828b117e-8c10-4375-bf4e-c39a5857f6cd}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{828b117e-8c10-4375-bf4e-c39a5857f6cd}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

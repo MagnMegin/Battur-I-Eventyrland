@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{9485ddff-d8cf-4aeb-9917-ffed158fb883}">
 		<property name="name">
 			<value>CombatMusic</value>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{64e50b9e-8846-495e-8c1b-0cfcbd77e2f0}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{77975fb6-fc67-4eb1-a87f-31c702c17200}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{5e3a7ac6-129e-4182-bbe0-115e224fad27}">

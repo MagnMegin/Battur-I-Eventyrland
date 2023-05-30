@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{71e9ff9b-3463-4bc5-98c9-eae56ae76bd2}">
 		<property name="name">
 			<value>Fugler</value>
@@ -37,6 +37,9 @@
 		<relationship name="timeline">
 			<destination>{68a23b5e-6b92-4458-8654-ee59efb0197c}</destination>
 		</relationship>
+		<relationship name="banks">
+			<destination>{77975fb6-fc67-4eb1-a87f-31c702c17200}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixer" id="{f9047810-7ba6-44cb-8417-f694818f2e8e}">
 		<relationship name="masterBus">
@@ -56,7 +59,7 @@
 			<destination>{b94848b9-d01f-4888-9e52-f74fc8eba485}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{54416e94-d5a7-41e4-a5e5-174ecab4fbb0}</destination>
+			<destination>{768f80d4-69d2-4d8a-be34-b09ea4bb92d6}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{7e95b9d2-f75a-4874-a40e-f718177b35fc}" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{94509a5f-a011-4c44-be8c-b6aa1b3b9846}">
 		<property name="name">
 			<value>Fugler</value>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{b897f213-3fed-43b2-a665-2cd9e75dde3a}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{77975fb6-fc67-4eb1-a87f-31c702c17200}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{93cb3173-d3ad-4f74-87b3-696560a2f567}">

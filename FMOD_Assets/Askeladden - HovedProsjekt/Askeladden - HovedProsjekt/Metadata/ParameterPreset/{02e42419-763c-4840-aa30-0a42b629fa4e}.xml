@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="ParameterPreset" id="{02e42419-763c-4840-aa30-0a42b629fa4e}">
 		<property name="name">
 			<value>PressStart</value>
@@ -12,6 +12,12 @@
 		</relationship>
 	</object>
 	<object class="GameParameter" id="{6b73b237-44d0-4feb-bf3f-410b2f0727aa}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
 		<property name="isGlobal">
 			<value>true</value>
 		</property>
