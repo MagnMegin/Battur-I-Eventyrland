@@ -6,14 +6,16 @@ using UnityEngine.Video;
 
 public class VideoController : MonoBehaviour
 {
+    public GameObject VideoFade;
     public bool PlayInEditor;
 
-    public bool VideoIsFinished => (_vidPlayer.frame == (long)_totalFrames - 1);
+    public bool VideoIsFinished => (_vidPlayer.frame == 1160);
 
     public event Action OnVideoEnd;
 
     private VideoPlayer _vidPlayer;
-    private ulong _totalFrames;
+    private long _totalFrames;
+    private bool _isEnding;
 
     private void Start()
     {
@@ -26,7 +28,7 @@ public class VideoController : MonoBehaviour
         #endif
 
         _vidPlayer = GetComponent<VideoPlayer>();
-        _totalFrames = _vidPlayer.frameCount;
+        _totalFrames = (long)_vidPlayer.frameCount;
     }
     private void Update()
     {
@@ -43,7 +45,11 @@ public class VideoController : MonoBehaviour
 
     public void EndVideo()
     {
-        Destroy(gameObject);
+        if (_isEnding) return;
+        _isEnding = true;
+
+        FadeController fade = Instantiate(VideoFade).GetComponent<FadeController>();
+        fade.DoFade(this.gameObject);
         OnVideoEnd?.Invoke();
     }
 }
