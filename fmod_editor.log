@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001975C34B628 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001972A0B8CC8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -17,3 +17,712 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937AB428
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL askeladden-2', format=5, channels=2, frequency=48000, lengthbytes=14016, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.210086.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937AB428
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL askeladden-1', format=5, channels=2, frequency=48000, lengthbytes=13152, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.179017.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937AB428
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL askeladden-3', format=5, channels=2, frequency=48000, lengthbytes=11872, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.194309.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937AB428
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL askladd gir-5', format=5, channels=2, frequency=48000, lengthbytes=19936, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.257671.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937AADF8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL askladd fårfår-3', format=5, channels=2, frequency=48000, lengthbytes=8032, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.291564.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937AADF8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL askladd fårfår-5', format=5, channels=2, frequency=48000, lengthbytes=11392, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.276879.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001966BDAFA28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL askladd girgir-4', format=5, channels=2, frequency=48000, lengthbytes=12384, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.290712.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001966BDAFA28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL askladd gir-3', format=5, channels=2, frequency=48000, lengthbytes=10752, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.256523.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001966DE53CF8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL askladd får får-4', format=5, channels=2, frequency=48000, lengthbytes=12000, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.264533.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937AB218
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='1 Knife Slash A by lmbubec Id-118792', format=5, channels=1, frequency=48000, lengthbytes=4544, lengthpcm=24640, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.500092.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000019729B2CB98
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL eivind dør-2', format=5, channels=2, frequency=48000, lengthbytes=10912, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.191985.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000019729B2CB98
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL eivind dør-3', format=5, channels=2, frequency=48000, lengthbytes=20608, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.221028.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000019729B2CB98
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL eivind dør-1', format=5, channels=2, frequency=48000, lengthbytes=22432, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.202628.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937A9B68
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL vind', format=5, channels=2, frequency=48000, lengthbytes=22528, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.072662.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937A9B68
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL eivind vind', format=5, channels=2, frequency=48000, lengthbytes=18752, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.099560.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937A9B68
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL vind-1', format=5, channels=2, frequency=48000, lengthbytes=13088, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.123758.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001966BED8BF8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cartoon, Shake, Cold, Freeze, Winter SND11737', format=5, channels=2, frequency=48000, lengthbytes=37440, lengthpcm=122856, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.794339.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001966BED8BF8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Human, Blow, Mouth, Blowing Hard SND12826', format=5, channels=2, frequency=48000, lengthbytes=35616, lengthpcm=140560, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.128201.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001966BED8BF8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cartoon, Shake, Cold, Freeze, Winter SND11737 1', format=5, channels=2, frequency=48000, lengthbytes=39360, lengthpcm=154160, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.794344.
+[LOG] SoundI::release                          :  (000001978DC22D48)
+[LOG] SoundI::release                          :     ASKL askeladden-2 (0000019665187888)
+[LOG] SoundI::release                          :  (000001978DC224A8)
+[LOG] SoundI::release                          :     ASKL askeladden-3 (0000019665188A68)
+[LOG] SoundI::release                          :  (000001978DC22058)
+[LOG] SoundI::release                          :     ASKL askeladden-1 (0000019665187D68)
+[LOG] SoundI::release                          :  (0000019793C172A8)
+[LOG] SoundI::release                          :     ASKL askladd gir-5 (0000019665188C08)
+[LOG] SoundI::release                          :  (0000019478480C08)
+[LOG] SoundI::release                          :     ASKL askladd gir-3 (000001966701B788)
+[LOG] SoundI::release                          :  (0000019718CCDDB8)
+[LOG] SoundI::release                          :     ASKL askladd girgir-4 (0000019665189288)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000019729B2DA08
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL eivind får krefter-2', format=5, channels=2, frequency=48000, lengthbytes=10720, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.289475.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000019729B2DA08
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL eivind får krefter-1', format=5, channels=2, frequency=48000, lengthbytes=9312, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.284947.
+[LOG] SoundI::release                          :  (0000019478481058)
+[LOG] SoundI::release                          :     ASKL askladd får får-4 (000001966701C488)
+[LOG] SoundI::release                          :  (0000019718CCC268)
+[LOG] SoundI::release                          :     ASKL askladd fårfår-3 (00000196651861C8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937AE188
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL eivind får krefter-4', format=5, channels=2, frequency=48000, lengthbytes=14528, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.268275.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937AE188
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL eivind får krefter-3', format=5, channels=2, frequency=48000, lengthbytes=19616, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.269271.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937AE188
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL eivind får krefter-5', format=5, channels=2, frequency=48000, lengthbytes=10720, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.212256.
+[LOG] SoundI::release                          :  (0000019718CCD3A8)
+[LOG] SoundI::release                          :     ASKL askladd fårfår-5 (0000019665188728)
+[LOG] SoundI::release                          :  (0000019478480368)
+[LOG] SoundI::release                          :     1 Knife Slash A by lmbubec Id-118792 (000001966701A8E8)
+[LOG] SoundI::release                          :  (0000019478A1AAD8)
+[LOG] SoundI::release                          :     ASKL eivind dør-1 (0000019667019568)
+[LOG] SoundI::release                          :  (0000019793C17588)
+[LOG] SoundI::release                          :     ASKL eivind dør-2 (000001966701BE08)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001973593DAD8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL eivind besvimer-2', format=5, channels=2, frequency=48000, lengthbytes=12288, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.238966.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001973593DAD8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL eivind besvimer-1', format=5, channels=2, frequency=48000, lengthbytes=17344, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.245654.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001973593DAD8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL eivind besvimer', format=5, channels=2, frequency=48000, lengthbytes=9120, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.245708.
+[LOG] SoundI::release                          :  (0000019478A1A0C8)
+[LOG] SoundI::release                          :     ASKL eivind dør-3 (000001966701CB08)
+[LOG] SoundI::release                          :  (000001966E846218)
+[LOG] SoundI::release                          :     ASKL eivind vind (0000019667019BE8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937B0078
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL spørsmål', format=5, channels=2, frequency=48000, lengthbytes=8448, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.136088.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937B0078
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL sur kvinne¨', format=5, channels=2, frequency=48000, lengthbytes=7744, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.193292.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937B0078
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL sur kvinne¨-1', format=5, channels=2, frequency=48000, lengthbytes=7168, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.169212.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937B0078
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL glad-1', format=5, channels=2, frequency=48000, lengthbytes=8704, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.185423.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937B0078
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL glad', format=5, channels=2, frequency=48000, lengthbytes=8000, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.202826.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000197937B0078
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL glad-2', format=5, channels=2, frequency=48000, lengthbytes=6528, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.161757.
+[LOG] SoundI::release                          :  (000001966E845DC8)
+[LOG] SoundI::release                          :     ASKL vind-1 (000001966701B108)
+[LOG] SoundI::release                          :  (000001978DC21368)
+[LOG] SoundI::release                          :     ASKL vind (000001966701AC28)
+[LOG] SoundI::release                          :  (000001966E8460A8)
+[LOG] SoundI::release                          :     Human, Blow, Mouth, Blowing Hard SND12826 (000001965CFA6758)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001966BDB0058
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL eivind dør-2', format=5, channels=2, frequency=48000, lengthbytes=10912, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.191985.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001966BDB0058
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL eivind dør-3', format=5, channels=2, frequency=48000, lengthbytes=20608, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.221028.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001966BDB0058
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL eivind dør-1', format=5, channels=2, frequency=48000, lengthbytes=22432, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.202628.
+[LOG] SoundI::release                          :  (000001966E846388)
+[LOG] SoundI::release                          :     Cartoon, Shake, Cold, Freeze, Winter SND11737 1 (000001965CFA68F8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001966DE7A4A8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Magic, Angelic, Healing Spell, Power Up, Holy, Ethereal, Video Game, JRPG 04 SND87836', format=5, channels=2, frequency=48000, lengthbytes=48928, lengthpcm=221246, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.138213.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001966DE7A4A8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL askladd girgir-4', format=5, channels=2, frequency=48000, lengthbytes=12384, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.290712.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7630656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 95712
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000022827FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF703B39D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF703B3990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF703B3AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF703B3B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001966DE7A4A8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ASKL askladd gir-3', format=5, channels=2, frequency=48000, lengthbytes=10752, lengthpcm=121621, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.256523.
+[LOG] SoundI::release                          :  (000001966E845F38)
+[LOG] SoundI::release                          :     Cartoon, Shake, Cold, Freeze, Winter SND11737 (000001965CFA7798)
+[LOG] SoundI::release                          :  (000001966E846AB8)
+[LOG] SoundI::release                          :     ASKL eivind får krefter-5 (0000019665186028)
+[LOG] SoundI::release                          :  (000001966E846C28)
+[LOG] SoundI::release                          :     ASKL eivind besvimer-1 (0000019665187D68)
+[LOG] SoundI::release                          :  (000001966E845248)
+[LOG] SoundI::release                          :     ASKL eivind besvimer (0000019665188728)
+[LOG] SoundI::release                          :  (000001966E845698)
+[LOG] SoundI::release                          :     ASKL sur kvinne¨-1 (00000196651895C8)
+[LOG] SoundI::release                          :  (000001966E846F08)
+[LOG] SoundI::release                          :     ASKL sur kvinne¨ (0000019665189288)
+[LOG] SoundI::release                          :  (000001966E846D98)
+[LOG] SoundI::release                          :     ASKL spørsmål (0000019665188F48)
+[LOG] SoundI::release                          :  (000001966E8453B8)
+[LOG] SoundI::release                          :     ASKL glad-2 (000001966701BE08)
+[LOG] SoundI::release                          :  (000001966E845C58)
+[LOG] SoundI::release                          :     ASKL glad-1 (000001966701C488)
+[LOG] SoundI::release                          :  (000001966E8450D8)
+[LOG] SoundI::release                          :     ASKL glad (0000019667019568)
+[LOG] SoundI::release                          :  (000001966E846948)
+[LOG] SoundI::release                          :     ASKL eivind får krefter-3 (000001965CFA5D98)
+[LOG] SoundI::release                          :  (000001966E845528)
+[LOG] SoundI::release                          :     ASKL eivind besvimer-2 (0000019665186EC8)
+[LOG] SoundI::release                          :  (000001966E8467D8)
+[LOG] SoundI::release                          :     ASKL eivind får krefter-4 (000001965CFA87D8)
+[LOG] SoundI::release                          :  (000001966E845978)
+[LOG] SoundI::release                          :     ASKL eivind dør-1 (000001966701B788)
+[LOG] SoundI::release                          :  (000001966E8460A8)
+[LOG] SoundI::release                          :     ASKL eivind dør-2 (000001966701AC28)
+[LOG] SoundI::release                          :  (000001966E845DC8)
+[LOG] SoundI::release                          :     ASKL eivind dør-3 (0000019667019228)
+[LOG] SoundI::release                          :  (000001966E845AE8)
+[LOG] SoundI::release                          :     Magic, Angelic, Healing Spell, Power Up, Holy, Ethereal, Video Game, JRPG 04 SND87836 (0000019667019BE8)
+[LOG] SoundI::release                          :  (000001966E845808)
+[LOG] SoundI::release                          :     ASKL askladd gir-3 (000001966701AF68)
+[LOG] SoundI::release                          :  (000001966E846218)
+[LOG] SoundI::release                          :     ASKL askladd girgir-4 (000001966701A8E8)
+[LOG] SoundI::release                          :  (000001966E846668)
+[LOG] SoundI::release                          :     ASKL eivind får krefter-1 (000001965CFA7C78)
+[LOG] SoundI::release                          :  (000001966E8464F8)
+[LOG] SoundI::release                          :     ASKL eivind får krefter-2 (000001965CFA6C38)
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.
