@@ -133,11 +133,17 @@
 		</property>
 	</object>
 	<object class="SingleSound" id="{b91e545e-4ca1-4a8a-a02e-8c65ced6a64e}">
+		<property name="name">
+			<value>asklgive1</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{1736229d-cf99-4fe9-9b4d-d2e6a216163f}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{e779e82e-bf35-42de-a91d-da17525a5a69}">
+		<property name="name">
+			<value>asklgive2</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{297f0024-1339-470d-9446-f6f877dd7b85}</destination>
 		</relationship>
