@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a14e81ea594ebe64a876cc7f4a953eae, type: 3}
+  m_Name: KaninRedd
+  m_EditorClassIdentifier: 
+  characterName: Kanin
+  characterDescription: 
+  characterDialogueSprite: {fileID: 21300000, guid: c8c3b858dbc011b4a90e50120f8ebeb0, type: 3}
+  lines:
+  - Hjelp! Trollet vil spise oss!
+  - "Vi har kun denne planken til \xE5 skjule hiet"
+  TalkingEvent:
+    Guid:
+      Data1: 1715599421
+      Data2: 1189448467
+      Data3: -1096028541
+      Data4: 1554253065
+    Path: event:/Karakterer/Kanin/rabbit

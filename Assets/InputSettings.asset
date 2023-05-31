@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b8a73894be1dd24d89b2aa5db5c543f, type: 3}
   m_Name: InputSettings
   m_EditorClassIdentifier: 
+  PauseButton: 27
   XMovementAxis: Horizontal
   YMovementAxis: Vertical
   PrimaryInteraction: 101
