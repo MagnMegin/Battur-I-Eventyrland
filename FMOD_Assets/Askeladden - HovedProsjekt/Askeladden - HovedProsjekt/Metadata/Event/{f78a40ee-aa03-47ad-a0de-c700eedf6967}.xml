@@ -138,21 +138,33 @@
 		</property>
 	</object>
 	<object class="SingleSound" id="{2ba27a4b-e3a8-449f-89af-3c0a9aa4f7de}">
+		<property name="name">
+			<value>askl</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{a231d029-2150-4813-8e91-8f99af5b2317}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{5e1ed5c0-9e0f-438a-82c3-1a120237f150}">
+		<property name="name">
+			<value>askl</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{3be5fcd0-3d27-4288-b9a2-ad33f36bd402}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{511ddfc5-286c-445d-b0ff-961bec934e46}">
+		<property name="name">
+			<value>askl</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{57e207a9-7cf7-4928-8a4c-49ebac8ae83b}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{94a796f3-22a0-413e-9961-b9e3e434ee67}">
+		<property name="name">
+			<value>askl</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{519e72f5-8fc3-418d-9dd3-380ce43262c9}</destination>
 		</relationship>

@@ -19,3 +19,10 @@ MonoBehaviour:
   - Hmm du trenger en planke til
   - "Kanskje p\xE5 andre siden av elven?"
   - "Du kan flytte b\xE5ten din til \xE5 bli en bro!"
+  TalkingEvent:
+    Guid:
+      Data1: -1067198183
+      Data2: 1230738710
+      Data3: -36138604
+      Data4: -320483343
+    Path: event:/Karakterer/Sidekarakterer/DialogMann

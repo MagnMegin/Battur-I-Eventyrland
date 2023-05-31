@@ -24,3 +24,10 @@ MonoBehaviour:
   - Men eg er jo ingen helt.
   - "Gje meg nokon sekund \xE5 tenkje p\xE5 det."
   - Eg er med. Kva treng du at eg gjer?
+  TalkingEvent:
+    Guid:
+      Data1: 1956719167
+      Data2: 1325661865
+      Data3: 1329670562
+      Data4: 495326158
+    Path: event:/Karakterer/Eivind/DialogEivind

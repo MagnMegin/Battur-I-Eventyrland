@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,4 +11,5 @@ public class CharacterInfo : ScriptableObject
     public string characterDescription;
     public Sprite characterDialogueSprite;
     public string[] lines;
+    public EventReference TalkingEvent;
 }

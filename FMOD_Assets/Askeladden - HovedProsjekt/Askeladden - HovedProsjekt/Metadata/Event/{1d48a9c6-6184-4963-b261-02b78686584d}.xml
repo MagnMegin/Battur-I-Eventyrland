@@ -191,9 +191,6 @@
 		<relationship name="markerTrack">
 			<destination>{1b19cf44-8599-4ac6-8c89-e6783532b968}</destination>
 		</relationship>
-		<relationship name="triggerConditions">
-			<destination>{65eb0431-5dc2-45ef-bf82-806e2070f924}</destination>
-		</relationship>
 	</object>
 	<object class="NamedMarker" id="{5d197227-457a-4cc1-a32d-2f1a3365ed76}">
 		<property name="position">
@@ -231,17 +228,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{a25c6d2d-e191-4d66-b9d8-1592f606c11d}" />
-	<object class="ParameterCondition" id="{65eb0431-5dc2-45ef-bf82-806e2070f924}">
-		<property name="minimum">
-			<value>1</value>
-		</property>
-		<property name="maximum">
-			<value>1</value>
-		</property>
-		<relationship name="parameter">
-			<destination>{e02fe71a-6d75-4c2c-8a40-1a39477ce99c}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusFader" id="{cbee652e-2a3f-42c0-baac-91c0d557ee06}" />
 	<object class="AutomationCurve" id="{e99f6982-c94e-4ca0-b4ba-4d4aad7f5159}">
 		<relationship name="parameter">

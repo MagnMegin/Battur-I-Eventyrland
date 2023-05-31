@@ -19,3 +19,10 @@ MonoBehaviour:
   - Hei!
   - En planke?
   - "Jo, det kan v\xE6re i en l\xF8vhaug"
+  TalkingEvent:
+    Guid:
+      Data1: -1379632156
+      Data2: 1280769041
+      Data3: -220106104
+      Data4: 633817564
+    Path: event:/Karakterer/Sidekarakterer/DialogKvinne

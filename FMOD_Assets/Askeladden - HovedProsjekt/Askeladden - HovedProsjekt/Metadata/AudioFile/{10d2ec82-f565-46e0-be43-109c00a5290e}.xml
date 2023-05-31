@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{10d2ec82-f565-46e0-be43-109c00a5290e}">
+		<property name="assetPath">
+			<value>Gress 4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.49637188208616778</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3dbd60c1-f6f2-4982-8641-70c5407585f4}</destination>
+		</relationship>
+	</object>
+</objects>

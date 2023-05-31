@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{6e2fe21a-0f32-450b-9ee5-c474d3123c4e}">
+		<property name="name">
+			<value>ElvVolum</value>
+		</property>
+		<relationship name="folder">
+			<destination>{3437f5eb-3332-4e82-b6be-fa267692733b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{276e907e-ff05-4a03-abae-7eb2f355076b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{276e907e-ff05-4a03-abae-7eb2f355076b}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

@@ -54,6 +54,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3533
+--- !u!114 &-8608869316363354883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karakterer/Kanin/rabbit
+  m_EditorClassIdentifier: 
+  Path: event:/Karakterer/Kanin/rabbit
+  Guid:
+    Data1: 1715599421
+    Data2: 1189448467
+    Data3: -1096028541
+    Data4: 1554253065
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &-8554698477519699483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +135,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &-7565166165083659657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ElvVolum
+  m_EditorClassIdentifier: 
+  Name: ElvVolum
+  StudioPath: parameter:/ElvVolum
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 4184751772
+    data2: 2853075725
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-7446162247040486765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,6 +290,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-5693493727640749544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Skog/Lyddesign/birdflying
+  m_EditorClassIdentifier: 
+  Path: event:/Skog/Lyddesign/birdflying
+  Guid:
+    Data1: -1806656929
+    Data2: 1279565841
+    Data3: -1430876994
+    Data4: 1184381723
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2750
 --- !u!114 &-5656027764895053312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,10 +539,34 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638210407576071698
+  lastModified: 638211287952816343
   FileSizes:
   - Name: Desktop
-    Value: 7726368
+    Value: 8356928
+  Exists: 1
+--- !u!114 &-3556529851870537915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ElvTransmitter/ElvVolum
+  m_EditorClassIdentifier: 
+  Name: ElvVolum
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 4184751772
+    data2: 2853075725
+  Type: 0
+  IsGlobal: 1
+  Labels: []
   Exists: 1
 --- !u!114 &-3363814943395068841
 MonoBehaviour:
@@ -653,6 +755,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2533
+--- !u!114 &-1619771490369571199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/surface
+  m_EditorClassIdentifier: 
+  Name: surface
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3492234721
+    data2: 2874600841
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-1209420751434146070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -733,6 +859,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-757241987658491945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Skog/Lyddesign/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Skog/Lyddesign/Footsteps
+  Guid:
+    Data1: 974207133
+    Data2: 1136311354
+    Data3: 733004477
+    Data4: -1528356966
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -1619771490369571199}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 261
 --- !u!114 &-541344316915403948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,14 +957,10 @@ MonoBehaviour:
   - {fileID: 7466749933039890241}
   - {fileID: 635882212437725763}
   - {fileID: -8554698477519699483}
-  - {fileID: 6802448422802831105}
   - {fileID: 8132310229665462343}
   - {fileID: -7090356446790272974}
-  - {fileID: 6847802417445441601}
-  - {fileID: 7842937669372027860}
   - {fileID: 5538959791920452362}
   - {fileID: -3363814943395068841}
-  - {fileID: 3562566764026047733}
   - {fileID: 7630984248354269191}
   - {fileID: 5221979922479094849}
   - {fileID: 8844843779996150501}
@@ -825,13 +975,19 @@ MonoBehaviour:
   - {fileID: 2742091426282267823}
   - {fileID: 6548591047853373446}
   - {fileID: -7072809570691285788}
+  - {fileID: -8608869316363354883}
+  - {fileID: -5693493727640749544}
+  - {fileID: -757241987658491945}
+  - {fileID: 8979466477387838619}
   EditorParameters:
   - {fileID: 3705546235369966383}
+  - {fileID: -7565166165083659657}
+  - {fileID: 1781054338168209239}
   MasterBanks:
   - {fileID: -3670313327492152192}
   StringsBanks:
   - {fileID: 2510350537494216410}
-  cacheTime: 638210407576081939
+  cacheTime: 638211287952963594
   cacheVersion: 131603
 --- !u!114 &214088819567578823
 MonoBehaviour:
@@ -942,6 +1098,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4609
+--- !u!114 &1781054338168209239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/surface
+  m_EditorClassIdentifier: 
+  Name: surface
+  StudioPath: parameter:/Surface
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3492234721
+    data2: 2874600841
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &2023660511728737922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1032,10 +1212,10 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638210407576081939
+  lastModified: 638211287952963594
   FileSizes:
   - Name: Desktop
-    Value: 3468
+    Value: 3576
   Exists: 1
 --- !u!114 &2718813289708226679
 MonoBehaviour:
@@ -1188,33 +1368,6 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters:
   - {fileID: -1880051860601821042}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &3562566764026047733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Skog/Lyddesign/Fotsteg
-  m_EditorClassIdentifier: 
-  Path: event:/Skog/Lyddesign/Fotsteg
-  Guid:
-    Data1: -1128421960
-    Data2: 1271119047
-    Data3: -289116028
-    Data4: 279297256
-  Banks:
-  - {fileID: -3670313327492152192}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -1486,60 +1639,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3533
---- !u!114 &6802448422802831105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Skog/Lyddesign/Fugler
-  m_EditorClassIdentifier: 
-  Path: event:/Skog/Lyddesign/Fugler
-  Guid:
-    Data1: -1806656929
-    Data2: 1279565841
-    Data3: -1430876994
-    Data4: 1184381723
-  Banks:
-  - {fileID: -3670313327492152192}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &6847802417445441601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Skog/Atmos/Elv
-  m_EditorClassIdentifier: 
-  Path: event:/Skog/Atmos/Elv
-  Guid:
-    Data1: -1885605231
-    Data2: 1248169129
-    Data3: 165284012
-    Data4: 792155485
-  Banks:
-  - {fileID: -3670313327492152192}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &6969092881816573446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1561,7 +1660,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -3670313327492152192}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters:
   - {fileID: 2948249384625164221}
@@ -1622,33 +1721,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &7842937669372027860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Skog/Atmos/FUGLER
-  m_EditorClassIdentifier: 
-  Path: event:/Skog/Atmos/FUGLER
-  Guid:
-    Data1: 1911160731
-    Data2: 1271215203
-    Data3: -437597800
-    Data4: -764680342
-  Banks:
-  - {fileID: -3670313327492152192}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 64372
 --- !u!114 &8132310229665462343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1810,3 +1882,31 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 359
+--- !u!114 &8979466477387838619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Skog/Atmos/ElvTransmitter
+  m_EditorClassIdentifier: 
+  Path: event:/Skog/Atmos/ElvTransmitter
+  Guid:
+    Data1: 1511598548
+    Data2: 1082980371
+    Data3: 1234387618
+    Data4: -1472330019
+  Banks:
+  - {fileID: -3670313327492152192}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3556529851870537915}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 19927

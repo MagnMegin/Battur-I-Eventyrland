@@ -26,3 +26,10 @@ MonoBehaviour:
   - "Gje meg nokon sekund \xE5 tenkje p\xE5 det."
   - "Eg er med. Men fyrst m\xE5 vi reparere b\xE5ten!"
   - Kanskje han gamle kroken der kan hjelpe!
+  TalkingEvent:
+    Guid:
+      Data1: 1956719167
+      Data2: 1325661865
+      Data3: 1329670562
+      Data4: 495326158
+    Path: event:/Karakterer/Eivind/DialogEivind
