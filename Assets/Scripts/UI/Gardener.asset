@@ -17,8 +17,8 @@ MonoBehaviour:
   characterDialogueSprite: {fileID: 21300000, guid: dda1b956efc281341b48ed0b00c1ab06, type: 3}
   lines:
   - Hei!
-  - En planke?
-  - "Jo, det kan v\xE6re i en l\xF8vhaug"
+  - Du trenger en planke?
+  - "Tja, det kan v\xE6re en i en l\xF8vhaug"
   TalkingEvent:
     Guid:
       Data1: -1379632156

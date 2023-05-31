@@ -16,16 +16,14 @@ MonoBehaviour:
   characterDescription: Mannen med sju vintre og femten sommerer
   characterDialogueSprite: {fileID: 21300000, guid: 5700ef0a313400d4cab4ded0aecbe806, type: 3}
   lines:
-  - Mitt navn er Eivind!
-  - Eg er mannen med sju vinterar og femten sommarar.
-  - "Kan eg sitte p\xE5?"
-  - "Men trasig at b\xE5ten din kr\xE6sja"
+  - Mitt namn er Eivind!
+  - Eg er mannen med sju vintrar og femten somrar
+  - "Kan eg sitje p\xE5?"
+  - "Trasig at b\xE5ten din krasja"
   - Prinsessa har blitt kidnappa?
   - "Og du vil ha hjelp fr\xE5 meg?"
-  - Men eg er jo ingen helt.
-  - "Gje meg nokon sekund \xE5 tenkje p\xE5 det."
-  - "Eg er med. Men fyrst m\xE5 vi reparere b\xE5ten!"
-  - Kanskje han gamle kroken der kan hjelpe!
+  - "Eg er med! Men fyrst m\xE5 vi reparere b\xE5ten!"
+  - Kanskje han gamle kroken der kan hjelpe?
   TalkingEvent:
     Guid:
       Data1: 1956719167
