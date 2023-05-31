@@ -8,15 +8,11 @@ public class AskeladdenCombat : MonoBehaviour
     public int _heal;
     public Unit unitScript;
     public CombatSystem combatScript;
-    public GameObject _thisObject;
 
 
     void Start()
     {
 
-
-
-        _thisObject.SetActive(true);
         unitScript = gameObject.GetComponent<Unit>();
         combatScript = FindObjectOfType<CombatSystem>();
 

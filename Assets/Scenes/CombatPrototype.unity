@@ -169,7 +169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &309727578
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3295,6 +3295,7 @@ GameObject:
   - component: {fileID: 4954944673069281638}
   - component: {fileID: 4954944673069281637}
   - component: {fileID: 4954944673069281636}
+  - component: {fileID: 4954944673069281639}
   m_Layer: 5
   m_Name: Ask Ability2
   m_TagString: Untagged
@@ -3417,6 +3418,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4954944673069281634}
   m_CullTransparentMesh: 1
+--- !u!114 &4954944673069281639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4954944673069281634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40007cb4377e4f41af6e9373add99d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4954944673454864625
 GameObject:
   m_ObjectHideFlags: 0
@@ -3598,6 +3611,7 @@ GameObject:
   - component: {fileID: 4954944673856981447}
   - component: {fileID: 4954944673856981446}
   - component: {fileID: 4954944673856981445}
+  - component: {fileID: 4954944673856981448}
   m_Layer: 5
   m_Name: Ask Ability1
   m_TagString: Untagged
@@ -3720,6 +3734,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4954944673856981443}
   m_CullTransparentMesh: 1
+--- !u!114 &4954944673856981448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4954944673856981443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40007cb4377e4f41af6e9373add99d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4954944673993099506
 GameObject:
   m_ObjectHideFlags: 0
@@ -4002,6 +4028,7 @@ GameObject:
   - component: {fileID: 4954944674951988172}
   - component: {fileID: 4954944674951988171}
   - component: {fileID: 4954944674951988170}
+  - component: {fileID: 4954944674951988173}
   m_Layer: 5
   m_Name: Ask Basic
   m_TagString: Untagged
@@ -4074,16 +4101,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8547631252224330958, guid: 289aae79bfe18234fbd77b00d7f6faab, type: 3}
-        m_TargetAssemblyTypeName: AskeladdenCombat, Assembly-CSharp
-        m_MethodName: BasicAttack
-        m_Mode: 1
+      - m_Target: {fileID: 11500000, guid: c40007cb4377e4f41af6e9373add99d6, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: set_name
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: CallMethodOnPlayer1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &4954944674951988171
@@ -4124,6 +4151,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4954944674951988168}
   m_CullTransparentMesh: 1
+--- !u!114 &4954944674951988173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4954944674951988168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40007cb4377e4f41af6e9373add99d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9014919523279792024
 GameObject:
   m_ObjectHideFlags: 0
@@ -4191,6 +4230,7 @@ GameObject:
   - component: {fileID: 9014919523584015227}
   - component: {fileID: 9014919523584015224}
   - component: {fileID: 9014919523584015225}
+  - component: {fileID: 9014919523584015228}
   m_Layer: 5
   m_Name: Kompanjong Basic
   m_TagString: Untagged
@@ -4292,6 +4332,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9014919523584014983}
   m_CullTransparentMesh: 1
+--- !u!114 &9014919523584015228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014919523584014983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40007cb4377e4f41af6e9373add99d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &9014919524123908808
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4325,6 +4377,7 @@ GameObject:
   - component: {fileID: 9014919524123908813}
   - component: {fileID: 9014919524123908810}
   - component: {fileID: 9014919524123908811}
+  - component: {fileID: 9014919524123908814}
   m_Layer: 5
   m_Name: Kompanjong Ability2
   m_TagString: Untagged
@@ -4414,6 +4467,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9014919524123908809}
   m_CullTransparentMesh: 1
+--- !u!114 &9014919524123908814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014919524123908809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40007cb4377e4f41af6e9373add99d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &9014919524720287232
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4561,6 +4626,7 @@ GameObject:
   - component: {fileID: 9014919524735576056}
   - component: {fileID: 9014919524735576057}
   - component: {fileID: 9014919524735575814}
+  - component: {fileID: 9014919524735576058}
   m_Layer: 5
   m_Name: Kompanjong Ability1
   m_TagString: Untagged
@@ -4671,6 +4737,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &9014919524735576058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014919524735575812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40007cb4377e4f41af6e9373add99d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &9014919524844171208
 MonoBehaviour:
   m_ObjectHideFlags: 0

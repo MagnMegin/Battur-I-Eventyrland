@@ -43,9 +43,11 @@ public class CombatSystem : MonoBehaviour
     {
         GameObject player1GO = Instantiate(player1Prefab, player1BattleSpot);
         player1Unit = player1GO.GetComponent<Unit>();
+        ButtonAcessPanel.Player1 = player1GO;
 
         GameObject player2GO = Instantiate(player2Prefab, player2BattleSpot);
         player2Unit = player2GO.GetComponent<Unit>();
+        ButtonAcessPanel.Player1 = player2GO;
 
         GameObject enemyGO = Instantiate(enemyPrefab, enemyBattleSpot);
         enemyUnit = enemyGO.GetComponent<Unit>();
