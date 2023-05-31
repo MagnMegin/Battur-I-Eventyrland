@@ -17,3 +17,10 @@ MonoBehaviour:
   characterDialogueSprite: {fileID: 21300000, guid: 92b367ea624179841912100a0ae4807e, type: 3}
   lines:
   - Tid for deng!
+  TalkingEvent:
+    Guid:
+      Data1: -1135937142
+      Data2: 1091029194
+      Data3: 1877867154
+      Data4: -1731438952
+    Path: event:/Karakterer/Troll/Combat/TrollVoice

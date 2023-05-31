@@ -17,3 +17,10 @@ MonoBehaviour:
   characterDialogueSprite: {fileID: 21300000, guid: dda1b956efc281341b48ed0b00c1ab06, type: 3}
   lines:
   - "Sagbruket er s\xF8rover"
+  TalkingEvent:
+    Guid:
+      Data1: -1067198183
+      Data2: 1230738710
+      Data3: -36138604
+      Data4: -320483343
+    Path: event:/Karakterer/Sidekarakterer/DialogMann

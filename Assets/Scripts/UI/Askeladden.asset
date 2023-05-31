@@ -16,3 +16,10 @@ MonoBehaviour:
   characterDescription: 
   characterDialogueSprite: {fileID: 21300000, guid: f08f8003d93165947b6c2b8aa1b3b528, type: 3}
   lines: []
+  TalkingEvent:
+    Guid:
+      Data1: -141934354
+      Data2: 1202563587
+      Data3: 13098656
+      Data4: 1734991854
+    Path: event:/Karakterer/Askeladden/DialogAskeladden

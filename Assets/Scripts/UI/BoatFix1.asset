@@ -21,3 +21,10 @@ MonoBehaviour:
   - "Ikke kan b\xE5ten flyte til lands eller vanns"
   - "Finn 3 solide eikeplanker og jeg kan reparere b\xE5ten!"
   - "Jeg ville lett i s\xF8r og vestover"
+  TalkingEvent:
+    Guid:
+      Data1: -1067198183
+      Data2: 1230738710
+      Data3: -36138604
+      Data4: -320483343
+    Path: event:/Karakterer/Sidekarakterer/DialogMann

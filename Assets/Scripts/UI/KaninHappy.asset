@@ -18,3 +18,10 @@ MonoBehaviour:
   lines:
   - Du har reddet oss!
   - Da trenger vi ikke planken mer
+  TalkingEvent:
+    Guid:
+      Data1: 1715599421
+      Data2: 1189448467
+      Data3: -1096028541
+      Data4: 1554253065
+    Path: event:/Karakterer/Kanin/rabbit

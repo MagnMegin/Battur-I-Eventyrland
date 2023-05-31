@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 using System;
 using UnityEngine.Events;
+using FMODUnity;
 
 public class Dialogue : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class Dialogue : MonoBehaviour
     public event Action onDialogueStart;
 
     public string[] lines;
+    public EventReference TalkingEvent;
 
     private int index;
     private bool dialogueInProgress = false;
@@ -76,6 +78,8 @@ public class Dialogue : MonoBehaviour
 
     IEnumerator TypeLine() //This makes the dialogue text appear one letter after the other
     {
+        // Play talking sound
+        AudioManager.Instance.PlayOneShot(TalkingEvent, Vector3.zero);
         yield return new WaitForSeconds(0.2f);
         //This foreach loop breaks all text down to their own letters
         foreach (char c in lines[index].ToCharArray())
@@ -99,6 +103,7 @@ public class Dialogue : MonoBehaviour
             EndDialogue();
             dialogueInProgress = false;
         }
+        
     }
 
     void LoadRightCharacterInfo(CharacterInfo info)
@@ -106,6 +111,7 @@ public class Dialogue : MonoBehaviour
         lines = info.lines;
         rightCharacterNameTextbox.text = info.characterName;
         rightCharacterPicture.sprite = info.characterDialogueSprite;
+        TalkingEvent = info.TalkingEvent;
     }
 
     void CleanUpDialogue() //Readies dialogue UI for use
