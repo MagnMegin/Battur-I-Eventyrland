@@ -230,6 +230,8 @@ MonoBehaviour:
       Data3: 733004477
       Data4: -1528356966
     Path: event:/Skog/Lyddesign/Footsteps
+  WalkSoundParameter: 0
+  WalkSoundVolume: 0
 --- !u!1 &6711399566309240077
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,6 +21,7 @@ public class AskeladdenController : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         _walkSoundInstance = AudioManager.Instance.CreateEventInstance(WalkSoundRef);
         RuntimeManager.StudioSystem.setParameterByName("Surface", WalkSoundParameter);
+        _walkSoundInstance.setParameterByName("FootstepsVolum", 0.8f);
     }
 
     private void Update()
