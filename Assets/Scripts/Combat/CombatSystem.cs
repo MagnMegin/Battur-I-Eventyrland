@@ -47,7 +47,7 @@ public class CombatSystem : MonoBehaviour
 
         GameObject player2GO = Instantiate(player2Prefab, player2BattleSpot);
         player2Unit = player2GO.GetComponent<Unit>();
-        ButtonAcessPanel.Player1 = player2GO;
+        ButtonAcessPanel.Player2 = player2GO;
 
         GameObject enemyGO = Instantiate(enemyPrefab, enemyBattleSpot);
         enemyUnit = enemyGO.GetComponent<Unit>();
@@ -77,12 +77,25 @@ public class CombatSystem : MonoBehaviour
         Debug.Log("PlayerTurn");
         dialogueText.text = "Velg en handling";
 
+        player1Unit.currentPoints = player1Unit.currentPoints + 2;
+        if (player1Unit.currentPoints > player1Unit.maxPoints)
+        {
+            player1Unit.currentPoints = player1Unit.maxPoints;
+        }
+
+        player2Unit.currentPoints = player2Unit.currentPoints + 2;
+        if (player2Unit.currentPoints > player2Unit.maxPoints)
+        {
+            player2Unit.currentPoints = player2Unit.maxPoints;
+        }
+
         state = BattleState.PLAYERTURN;
 
         player1Buttons.SetActive(true);
         player2Buttons.SetActive(true);
         _player1TurnDone = false;
         _player2TurnDone = false;
+        _enemyTurnDone = false;
     }
 
 
@@ -91,12 +104,12 @@ public class CombatSystem : MonoBehaviour
 
     public IEnumerator DamageUpdate()
     {
-        yield return new WaitForSeconds(3f);
-
         Unit U = gameObject.GetComponent<Unit>();
         enemyHUD.UpdateHP(enemyUnit);
         player1HUD.UpdateHP(player1Unit);
         player2HUD.UpdateHP(player2Unit);
+
+        yield return new WaitForSeconds(3f);
 
         if (_player1TurnDone == false)
         {

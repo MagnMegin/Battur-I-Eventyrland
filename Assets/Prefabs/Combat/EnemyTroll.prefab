@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8620675206894630319}
   - component: {fileID: 807380249409627902}
   m_Layer: 0
-  m_Name: Manzana Faces_2
+  m_Name: sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,9 +25,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299267374644878053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 2.68, z: 0}
+  m_LocalScale: {x: 0.23, y: 0.23, z: 0.23}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 94945632945142452}
   m_RootOrder: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1659831935, guid: 0a46e9a297a625b4bb1b32125d4c1eba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 830cc3657de6bda44b6cb22c00fd869e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -130,12 +130,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211f7c4d51560f34f9ed9a3914ab2fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: TrollSlime
+  unitName: Trollet Bernt
   damage: 3
   currentPoints: 7
   maxHP: 75
   currentHP: 75
   defenceDown: 0
+  _frozen: 0
+  _burning: 0
   NoHealthLeft: 0
 --- !u!114 &8074261616796733825
 MonoBehaviour:
@@ -154,5 +156,10 @@ MonoBehaviour:
   _maxDMG: 12
   _chooseTarget: 0
   _chooseAttackType: 0
+  _defenceCooldown: 3
+  _currentDefenceTime: 0
+  _statusCooldown: 2
+  _currentCooldownTime: 0
+  _burningDamage: 3
   unitScript: {fileID: 0}
   combatScript: {fileID: 0}

@@ -9,6 +9,11 @@ public class BasicTrollCombat : MonoBehaviour
     public int _maxDMG;
     public int _chooseTarget;
     public int _chooseAttackType;
+    public int _defenceCooldown;
+    public int _currentDefenceTime;
+    public int _statusCooldown;
+    public int _currentCooldownTime;
+    public int _burningDamage;
     public Unit unitScript;
     public CombatSystem combatScript;
 
@@ -27,99 +32,151 @@ public class BasicTrollCombat : MonoBehaviour
         yield return new WaitForSeconds(3f);
 
         DefenceDownTimer();
+        BurningTimer();
+        FrozenTimer();
+
 
         Unit U = gameObject.GetComponent<Unit>();
         CombatSystem CS = FindObjectOfType<CombatSystem>();
-        _chooseTarget = Random.Range(1, 2);
-        _chooseAttackType = Random.Range(1, 2);
-        if (_chooseTarget == 1)
+
+        if (CS.enemyUnit._frozen == true)
         {
-            Debug.Log("Player 1 chosen");
-            if (_chooseAttackType == 1)
-            {
-
-                //Punch//
-                Debug.Log("Punch");
-                CS.state = BattleState.ENEMYINTERACT;
-
-                _dmg = Random.Range(_minDMG, _maxDMG);
-                Debug.Log("Random damage = " + _dmg);
-
-                CS._enemyTurnDone = true;
-
-                U.TakeDamage(_dmg, CS.player1Unit);
-
-            }
-            else if (_chooseAttackType == 2)
-            {
-
-                //Branch throw//
-                Debug.Log("Branch");
-                CS.state = BattleState.ENEMYINTERACT;
-
-                _dmg = Random.Range(_minDMG, _maxDMG);
-                Debug.Log("Random damage = " + _dmg);
-
-                CS._enemyTurnDone = true;
-
-                U.TakeDamage(_dmg, CS.player1Unit);
-
-            }
-            else
-            {
-                Debug.Log("Failed to choose attack");
-            }
-
-        }
-        else if (_chooseTarget == 2)
-        {
-            Debug.Log("Player 2 chosen");
-            if (Random.Range(1, 2) > 1)
-            {
-                //Punch//
-                Debug.Log("Punch");
-                CS.state = BattleState.ENEMYINTERACT;
-
-                _dmg = Random.Range(_minDMG, _maxDMG);
-                Debug.Log("Random damage = " + _dmg);
-
-                CS._enemyTurnDone = true;
-
-                U.TakeDamage(_dmg, CS.player1Unit);
-
-            }
-            else if (Random.Range(1, 2) < 1)
-            {
-
-                //Branch throw//
-                Debug.Log("Branch");
-                CS.state = BattleState.ENEMYINTERACT;
-
-                _dmg = Random.Range(_minDMG, _maxDMG);
-                Debug.Log("Random damage = " + _dmg);
-
-                CS._enemyTurnDone = true;
-
-                U.TakeDamage(_dmg, CS.player1Unit);
-
-            }
-            else
-            {
-                Debug.Log("Failed to choose attack");
-            }
-
+                CS.dialogueText.text = CS.enemyUnit.unitName + " er frossen og kan ikke gjøre noe!";
         }
         else
-        {
-            Debug.Log("Failed to choose target");
-        }
+        { 
+           _chooseTarget = Random.Range(1, 3);
+            _chooseAttackType = Random.Range(1, 3);
+            if (_chooseTarget == 1)
+            {
+                Debug.Log("Player 1 chosen");
+                if (_chooseAttackType == 1)
+                {
+                        
+                    //Punch//
+                    Debug.Log("Punch");
+                    CS.state = BattleState.ENEMYINTERACT;
+                        
+                    _dmg = Random.Range(_minDMG, _maxDMG);
+                    Debug.Log("Random damage = " + _dmg);
+                        
+                    CS._enemyTurnDone = true;
 
+                    U.TakeDamage(_dmg, CS.player1Unit);
+
+                }
+                else if (_chooseAttackType == 2)
+                {
+
+                    //Branch throw//
+                    Debug.Log("Branch");
+                    CS.state = BattleState.ENEMYINTERACT;
+
+                    _dmg = Random.Range(_minDMG, _maxDMG);
+                    Debug.Log("Random damage = " + _dmg);
+
+                    CS._enemyTurnDone = true;
+
+                    U.TakeDamage(_dmg, CS.player1Unit);
+
+                }
+                else
+                {
+                    Debug.Log("Failed to choose attack");
+                }
+
+            }
+            else if (_chooseTarget == 2)
+            {
+                Debug.Log("Player 2 chosen");
+                if (_chooseAttackType == 1)
+                {
+                    //Punch//
+                    Debug.Log("Punch");
+                    CS.state = BattleState.ENEMYINTERACT;
+
+                    _dmg = Random.Range(_minDMG, _maxDMG);
+                    Debug.Log("Random damage = " + _dmg);
+
+                    CS._enemyTurnDone = true;
+
+                    U.TakeDamage(_dmg, CS.player1Unit);
+
+                }
+                else if (_chooseAttackType == 2)
+                {
+
+                    //Branch throw//
+                    Debug.Log("Branch");
+                    CS.state = BattleState.ENEMYINTERACT;
+
+                    _dmg = Random.Range(_minDMG, _maxDMG);
+                    Debug.Log("Random damage = " + _dmg);
+
+                    CS._enemyTurnDone = true;
+
+                    U.TakeDamage(_dmg, CS.player1Unit);
+
+                }
+                else
+                {
+                Debug.Log("Failed to choose attack");
+                }
+
+            }
+            else
+            {
+                Debug.Log("Failed to choose target");
+            }
+
+        }
     }
 
     public void DefenceDownTimer()
     {
+        CombatSystem CS = FindObjectOfType<CombatSystem>();
 
+        if (_currentDefenceTime > 0)
+        {
+            _currentDefenceTime = _currentDefenceTime - 1;
+        }
+        else
+        {
+            CS.enemyUnit.defenceDown = false;
+            CS.dialogueText.text = CS.enemyUnit.unitName + " er ikke redd noe mer...";
+        }
     }
 
+    public void FrozenTimer()
+    {
+        CombatSystem CS = FindObjectOfType<CombatSystem>();
+        if (_currentCooldownTime > 0)
+        {
+            _currentCooldownTime = _currentCooldownTime - 1;
+        }
+        else if (CS.enemyUnit._frozen == true)
+        {
+            CS.enemyUnit._frozen = false;
+            CS.dialogueText.text = CS.enemyUnit.unitName + " har tint...";
+        }
+    }
+
+    public void BurningTimer()
+    {
+        Unit U = gameObject.GetComponent<Unit>();
+        CombatSystem CS = FindObjectOfType<CombatSystem>();
+
+        if (_currentCooldownTime > 0)
+        {
+            _currentCooldownTime = _currentCooldownTime - 1;
+            U.TakeDamage(_burningDamage, CS.enemyUnit);
+        }
+        else
+        {
+            CS.enemyUnit._burning = false;
+            CS.dialogueText.text = "Brannen på " + CS.enemyUnit.unitName + " har slukna...";
+        }
+
+    }
 
 }

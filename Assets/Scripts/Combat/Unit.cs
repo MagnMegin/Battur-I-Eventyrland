@@ -8,12 +8,16 @@ public class Unit : MonoBehaviour
     public string unitName;
 
     public int damage;
+    public int maxPoints;
     public int currentPoints;
+    public int ability1Cost;
 
     public int maxHP;
     public int currentHP;
 
     public bool defenceDown = false;
+    public bool _frozen = false;
+    public bool _burning = false;
     public bool NoHealthLeft;
 
     public CombatActions Actions;

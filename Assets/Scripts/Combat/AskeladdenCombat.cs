@@ -8,6 +8,7 @@ public class AskeladdenCombat : MonoBehaviour
     public int _heal;
     public Unit unitScript;
     public CombatSystem combatScript;
+    public BasicTrollCombat trollScript;
 
 
     void Start()
@@ -15,6 +16,7 @@ public class AskeladdenCombat : MonoBehaviour
 
         unitScript = gameObject.GetComponent<Unit>();
         combatScript = FindObjectOfType<CombatSystem>();
+        trollScript = FindObjectOfType<BasicTrollCombat>();
 
       //  SetupDMG(combatScript.player1Unit);
 
@@ -25,8 +27,14 @@ public class AskeladdenCombat : MonoBehaviour
     }
     public void Ability1()
     {
-        Debug.Log("Pick heal target");
         CombatSystem CS = FindObjectOfType<CombatSystem>();
+        if (CS.player1Unit.currentPoints > CS.player1Unit.ability1Cost)
+        {
+            CS.dialogueText.text = CS.player1Unit.unitName + " har ikke nok evne poeng til å gjøre det!";
+        }
+
+
+        Debug.Log("Pick heal target");
         CS.healPick.SetActive(true);
         CS.player1Buttons.SetActive(false);
         CS.player2Buttons.SetActive(false);
@@ -65,6 +73,7 @@ public class AskeladdenCombat : MonoBehaviour
         CS.player1Buttons.SetActive(false);
         CS.player2Buttons.SetActive(false);
         CS.state = BattleState.PLAYERINTERACT;
+        StartCoroutine(Ability2Interaction());
     }
 
     public IEnumerator Ability2Interaction()
@@ -72,7 +81,9 @@ public class AskeladdenCombat : MonoBehaviour
         yield return new WaitForSeconds(3f);
 
         CombatSystem CS = FindObjectOfType<CombatSystem>();
+        BasicTrollCombat Troll = FindObjectOfType<BasicTrollCombat>();
         CS.enemyUnit.defenceDown = true;
+        Troll._currentDefenceTime = Troll._defenceCooldown;
         CS.dialogueText.text = "Askeladden skremte " + CS.enemyUnit.unitName + "! Nå tar'n mer skade!";
         CS._player1TurnDone = true;
 

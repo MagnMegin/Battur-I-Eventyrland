@@ -48,10 +48,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: Askeladden
   damage: 5
-  currentPoints: 8
+  maxPoints: 10
+  currentPoints: 10
   maxHP: 30
   currentHP: 30
   defenceDown: 0
+  _frozen: 0
+  _burning: 0
   NoHealthLeft: 0
 --- !u!114 &8547631252224330958
 MonoBehaviour:
@@ -69,7 +72,7 @@ MonoBehaviour:
   _heal: 6
   unitScript: {fileID: 0}
   combatScript: {fileID: 0}
-  _thisObject: {fileID: 3884469475428784528}
+  trollScript: {fileID: 0}
 --- !u!1 &4915218405264926923
 GameObject:
   m_ObjectHideFlags: 0
