@@ -159,7 +159,7 @@ MonoBehaviour:
     name: GressKlump
   - gameObject: {fileID: 6325071280230292107, guid: 157ba289a537fec41b6ade851061bfa3, type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 89.32355
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -175,7 +175,7 @@ MonoBehaviour:
     name: GressTust_Liten
   - gameObject: {fileID: 6697105014589345925, guid: 924f74ea4d1a4d44496cbf31b0af3f08, type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 1
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
