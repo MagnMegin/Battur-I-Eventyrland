@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Gammel Krok
   characterDescription: 
-  characterDialogueSprite: {fileID: 21300000, guid: dda1b956efc281341b48ed0b00c1ab06, type: 3}
+  characterDialogueSprite: {fileID: 21300000, guid: 0b7f31f5abfa5f840bf6579b393b4290, type: 3}
   lines:
   - Hmm du trenger en planke til
   - "Kanskje p\xE5 andre siden av elven?"

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Askeladden
   characterDescription: 
-  characterDialogueSprite: {fileID: 21300000, guid: f08f8003d93165947b6c2b8aa1b3b528, type: 3}
+  characterDialogueSprite: {fileID: 21300000, guid: 219f4612c8637ac448c60c914c083fea, type: 3}
   lines: []
   TalkingEvent:
     Guid:

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Eivind
   characterDescription: Mannen med sju vintre og femten sommerer
-  characterDialogueSprite: {fileID: 21300000, guid: 5700ef0a313400d4cab4ded0aecbe806, type: 3}
+  characterDialogueSprite: {fileID: 21300000, guid: 1924079f20c726541aff7b059576970b, type: 3}
   lines:
   - Mitt namn er Eivind!
   - Eg er mannen med sju vintrar og femten somrar
