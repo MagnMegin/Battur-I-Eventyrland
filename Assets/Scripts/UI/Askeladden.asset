@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a14e81ea594ebe64a876cc7f4a953eae, type: 3}
+  m_Name: Askeladden
+  m_EditorClassIdentifier: 
+  characterName: Askeladden
+  characterDescription: 
+  characterDialogueSprite: {fileID: 21300000, guid: 219f4612c8637ac448c60c914c083fea, type: 3}
+  lines: []
+  TalkingEvent:
+    Guid:
+      Data1: -141934354
+      Data2: 1202563587
+      Data3: 13098656
+      Data4: 1734991854
+    Path: event:/Karakterer/Askeladden/DialogAskeladden

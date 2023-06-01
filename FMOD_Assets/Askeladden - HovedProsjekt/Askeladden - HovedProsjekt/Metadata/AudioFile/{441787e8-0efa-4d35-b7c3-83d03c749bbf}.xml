@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{441787e8-0efa-4d35-b7c3-83d03c749bbf}">
+		<property name="assetPath">
+			<value>Throwing  Whip Effect by denao270 Id-346373.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.12487528344671202</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3dbd60c1-f6f2-4982-8641-70c5407585f4}</destination>
+		</relationship>
+	</object>
+</objects>

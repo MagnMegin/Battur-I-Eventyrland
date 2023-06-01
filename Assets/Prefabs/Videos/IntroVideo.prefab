@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Trykk SPACE for \xE5 hoppe over"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1150c0e5371142d4d92d3642077946ae, type: 2}
+  m_sharedMaterial: {fileID: 6281787625513919512, guid: 1150c0e5371142d4d92d3642077946ae, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -320,7 +320,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129681569701725711}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: c73f6e9ab2259ae459547f7b7674a2e6, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 565c0cb2d898c7f469d483b444f1b4bd, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -359,4 +359,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d4bc14702d86604eaee41d566588465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayInEditor: 0
+  VideoFade: {fileID: 1129681569701725711, guid: e9336fd4fc305784b80b220e30ff2edc, type: 3}
+  PlayInEditor: 1

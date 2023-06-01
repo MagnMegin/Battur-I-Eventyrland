@@ -30,6 +30,9 @@ public class GameManager : MonoBehaviour
     // Intro Video
     public GameObject IntroVideo;
 
+    // Map
+    public GameObject MapPrefab;
+
     #region Singleton
     private void Awake()
     {
@@ -58,6 +61,8 @@ public class GameManager : MonoBehaviour
     {
         FindPlayerCharacter(); // Gets player character reference
         PlayIntroVideo();
+        Dialogue.Instance.onDialogueStart += OnDialogueStart;
+        Dialogue.Instance.onDialogueOver += SetControlSchemeFromScene;
     }
     #endregion
 
@@ -104,6 +109,11 @@ public class GameManager : MonoBehaviour
     {
         InputManager.CurrentScheme = SceneBaseControlScheme;
     }
+
+    private void OnDialogueStart()
+    {
+        InputManager.CurrentScheme = InputManager.ControlScheme.Menu;
+    }
     #endregion
 
     #region Video
@@ -111,12 +121,27 @@ public class GameManager : MonoBehaviour
     {
         VideoController video = Instantiate(videoObject).GetComponent<VideoController>();
         InputManager.CurrentScheme = InputManager.ControlScheme.Cutscene;
+        
+        AudioManager.Instance.PauseMusic();
+        AudioManager.Instance.PauseAmbiance();
+
         video.OnVideoEnd += SetControlSchemeFromScene;
+        video.OnVideoEnd += AudioManager.Instance.ResumeMusic;
+        video.OnVideoEnd += AudioManager.Instance.ResumeAmbiance;
     }
 
     private void PlayIntroVideo()
     {
         PlayVideo(IntroVideo);
+    }
+    #endregion
+
+    #region Map
+    public static void OpenMap()
+    {
+        Map map = Instantiate(Instance.MapPrefab).GetComponent<Map>();
+        InputManager.CurrentScheme = InputManager.ControlScheme.Menu;
+        map.OnMapClose += Instance.SetControlSchemeFromScene;
     }
     #endregion
 

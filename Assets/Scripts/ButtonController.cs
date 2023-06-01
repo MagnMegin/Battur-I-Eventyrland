@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,10 +7,11 @@ using UnityEngine.UI;
 public class ButtonController : MonoBehaviour
 {
     public Button StartButton;
+    public EventReference ButtonClick;
 
     private Button _currentButton;
 
-    private void Start()
+    private void OnEnable()
     {
         if (StartButton == null)
         {
@@ -20,6 +22,13 @@ public class ButtonController : MonoBehaviour
         _currentButton.Select();
     }
 
+    private IEnumerator Start()
+    {
+        // Sometimes button is not selected during enable so this is here for backup
+        yield return null;
+        _currentButton.Select();
+    }
+
     private void Update()
     {
         Vector2Int buttonDirection = InputManager.GetMenuNavigationDown();
@@ -27,6 +36,7 @@ public class ButtonController : MonoBehaviour
         if (InputManager.MenuSelectDown())
         {
             _currentButton.onClick?.Invoke();
+            AudioManager.Instance.PlayOneShot(ButtonClick, Vector3.zero);
         }
     }
 

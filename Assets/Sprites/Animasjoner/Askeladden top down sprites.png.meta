@@ -1,0 +1,321 @@
+fileFormatVersion: 2
+guid: bc2ef533a5e54c944b78820599733d9e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 700
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Askeladden top down sprites_0
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 2928
+        width: 830
+        height: 1730
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07633318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4c0f25ae28bf34391e3a1b3cd38d18
+      internalID: -1728071219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Askeladden top down sprites_1
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 2928
+        width: 830
+        height: 1730
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07633318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa884ca4e0062e146b1b2a2e72d039b5
+      internalID: 1353340581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Askeladden top down sprites_2
+      rect:
+        serializedVersion: 2
+        x: 2726
+        y: 2928
+        width: 830
+        height: 1730
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07633318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa0402ca9a3891459fe6bdebb4b9728
+      internalID: 1600873035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Askeladden top down sprites_3
+      rect:
+        serializedVersion: 2
+        x: 4041
+        y: 2870
+        width: 830
+        height: 1730
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07633318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0268660380010634cacaefa2aedda6f6
+      internalID: -913204418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Askeladden top down sprites_4
+      rect:
+        serializedVersion: 2
+        x: 5217
+        y: 2877
+        width: 830
+        height: 1730
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07633318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e197152140db042852fc1b558a5fcf
+      internalID: -153462499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Askeladden top down sprites_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 515
+        width: 900
+        height: 1730
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07633318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a86a662058308419daaebcd5982020
+      internalID: -1437511378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Askeladden top down sprites_6
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 515
+        width: 900
+        height: 1730
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07633318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1507f620c579c41ba525686daa97ed
+      internalID: 964513025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Askeladden top down sprites_7
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 515
+        width: 998
+        height: 1730
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07633318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8afe473be39ce46bb8e09e07081124
+      internalID: -1907544740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Askeladden top down sprites_8
+      rect:
+        serializedVersion: 2
+        x: 4573
+        y: 523
+        width: 830
+        height: 1730
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07633318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a1266e5f24a7044a25c659fb8ca518
+      internalID: 1707127788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Askeladden top down sprites_7: -1907544740
+      Askeladden top down sprites_3: -913204418
+      Askeladden top down sprites_1: 1353340581
+      Askeladden top down sprites_8: 1707127788
+      Askeladden top down sprites_2: 1600873035
+      Askeladden top down sprites_4: -153462499
+      Askeladden top down sprites_0: -1728071219
+      Askeladden top down sprites_6: 964513025
+      Askeladden top down sprites_5: -1437511378
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

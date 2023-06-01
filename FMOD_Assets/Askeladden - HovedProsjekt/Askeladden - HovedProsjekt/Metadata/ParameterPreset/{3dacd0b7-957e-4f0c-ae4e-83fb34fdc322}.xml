@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{3dacd0b7-957e-4f0c-ae4e-83fb34fdc322}">
+		<property name="name">
+			<value>MenyatmosVolum</value>
+		</property>
+		<relationship name="folder">
+			<destination>{3437f5eb-3332-4e82-b6be-fa267692733b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{56abd3c9-ab55-4e53-ae73-eae9a31a4f59}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{56abd3c9-ab55-4e53-ae73-eae9a31a4f59}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+	</object>
+</objects>

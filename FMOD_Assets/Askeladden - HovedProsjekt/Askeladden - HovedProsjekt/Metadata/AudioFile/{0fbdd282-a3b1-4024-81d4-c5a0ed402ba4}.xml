@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{0fbdd282-a3b1-4024-81d4-c5a0ed402ba4}">
+		<property name="assetPath">
+			<value>Cartoon, Boing, Action Jump, Boing, Jaw Harp SND59600 1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.5215624999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3dbd60c1-f6f2-4982-8641-70c5407585f4}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseScreen : MonoBehaviour
 {
@@ -19,12 +20,14 @@ public class PauseScreen : MonoBehaviour
             Destroy(this);
         }
     }
+    #endregion
 
+    #region Initialization
     private void Start()
     {
-        Disable();
         GameManager.OnPause += Enable;
         GameManager.OnResume += Disable;
+        Disable();
     }
     #endregion
 
@@ -37,6 +40,19 @@ public class PauseScreen : MonoBehaviour
     private void Disable()
     {
         gameObject.SetActive(false);
+    }
+    #endregion
+
+    #region Button Functions
+    public void ToMenu()
+    {
+        SceneManager.LoadSceneAsync("MainMenu");
+        GameManager.Instance.ResumeGame();
+    }
+
+    public void Resume()
+    {
+        GameManager.Instance.ResumeGame();
     }
     #endregion
 }

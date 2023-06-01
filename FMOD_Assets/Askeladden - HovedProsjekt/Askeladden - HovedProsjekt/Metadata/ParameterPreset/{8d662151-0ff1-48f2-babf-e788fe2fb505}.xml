@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{8d662151-0ff1-48f2-babf-e788fe2fb505}">
+		<property name="name">
+			<value>AskeladdenVolum</value>
+		</property>
+		<relationship name="folder">
+			<destination>{3437f5eb-3332-4e82-b6be-fa267692733b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{0bbcbaa6-48af-458f-a8f3-5e654f2b20e2}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{0bbcbaa6-48af-458f-a8f3-5e654f2b20e2}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
