@@ -223,6 +223,13 @@ MonoBehaviour:
   MoveSpeed: 5
   Anim: {fileID: 1807012136}
   Renderer: {fileID: 6711399566309240079}
+  WalkSoundRef:
+    Guid:
+      Data1: 974207133
+      Data2: 1136311354
+      Data3: 733004477
+      Data4: -1528356966
+    Path: event:/Skog/Lyddesign/Footsteps
 --- !u!1 &6711399566309240077
 GameObject:
   m_ObjectHideFlags: 0
