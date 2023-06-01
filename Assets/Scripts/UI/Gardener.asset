@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Gardener
   characterDescription: 
-  characterDialogueSprite: {fileID: 21300000, guid: dda1b956efc281341b48ed0b00c1ab06, type: 3}
+  characterDialogueSprite: {fileID: 21300000, guid: 447b6b3a7223c1f4db072480cbf515f6, type: 3}
   lines:
   - Hei!
-  - En planke?
-  - "Jo, det kan v\xE6re i en l\xF8vhaug"
+  - Du trenger en planke?
+  - "Det kan v\xE6re en i en l\xF8vhaug"
   TalkingEvent:
     Guid:
       Data1: -1379632156
