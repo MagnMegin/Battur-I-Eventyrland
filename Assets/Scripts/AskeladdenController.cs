@@ -8,6 +8,7 @@ public class AskeladdenController : MonoBehaviour
     public Animator Anim;
     public SpriteRenderer Renderer;
     public EventReference WalkSoundRef;
+    public int WalkSoundParameter;
     
     private Vector3 _moveDirection;
     private Rigidbody2D _rb;
@@ -19,6 +20,7 @@ public class AskeladdenController : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _walkSoundInstance = AudioManager.Instance.CreateEventInstance(WalkSoundRef);
+        RuntimeManager.StudioSystem.setParameterByName("Surface", WalkSoundParameter);
     }
 
     private void Update()

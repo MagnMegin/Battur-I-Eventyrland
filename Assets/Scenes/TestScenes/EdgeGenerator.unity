@@ -438,6 +438,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9078859383590609782, guid: 48cfd1e99eef82a48837689d67ef1906, type: 3}
+      propertyPath: WalkSoundParameter
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48cfd1e99eef82a48837689d67ef1906, type: 3}
 --- !u!1001 &5152937659203330665
