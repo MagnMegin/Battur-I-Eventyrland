@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{b3479e42-60ba-4389-8d62-8ce26dfae78e}">
+		<property name="name">
+			<value>KaninVolum</value>
+		</property>
+		<relationship name="folder">
+			<destination>{3437f5eb-3332-4e82-b6be-fa267692733b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{b5c15488-5c21-44d9-8458-27f6472178c6}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{b5c15488-5c21-44d9-8458-27f6472178c6}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
