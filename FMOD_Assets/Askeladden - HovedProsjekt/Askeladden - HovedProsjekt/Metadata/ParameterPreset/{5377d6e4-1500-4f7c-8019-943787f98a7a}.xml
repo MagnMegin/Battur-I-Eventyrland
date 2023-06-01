@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{5377d6e4-1500-4f7c-8019-943787f98a7a}">
+		<property name="name">
+			<value>TrollVolum</value>
+		</property>
+		<relationship name="folder">
+			<destination>{3437f5eb-3332-4e82-b6be-fa267692733b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{6ceba1f4-3d74-4755-be52-d2980f4a68ab}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{6ceba1f4-3d74-4755-be52-d2980f4a68ab}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

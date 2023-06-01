@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{b8a90f7f-6117-459f-8155-85886f9b73d6}">
+		<property name="name">
+			<value>FuglerVolum</value>
+		</property>
+		<relationship name="folder">
+			<destination>{3437f5eb-3332-4e82-b6be-fa267692733b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{037dcd74-ef0d-40a6-ae13-ab27e0494e7c}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{037dcd74-ef0d-40a6-ae13-ab27e0494e7c}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+	</object>
+</objects>
