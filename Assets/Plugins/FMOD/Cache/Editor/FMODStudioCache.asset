@@ -964,10 +964,10 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638212268996187047
+  lastModified: 638212313909069485
   FileSizes:
   - Name: Desktop
-    Value: 10355040
+    Value: 10355264
   Exists: 1
 --- !u!114 &-3556529851870537915
 MonoBehaviour:
@@ -1533,6 +1533,7 @@ MonoBehaviour:
   Parameters:
   - {fileID: -1619771490369571199}
   - {fileID: 744590435003402339}
+  - {fileID: 5903753223088451979}
   MinDistance: 1
   MaxDistance: 20
   Length: 760
@@ -1740,7 +1741,7 @@ MonoBehaviour:
   - {fileID: -3670313327492152192}
   StringsBanks:
   - {fileID: 2510350537494216410}
-  cacheTime: 638212268996440021
+  cacheTime: 638212313909256429
   cacheVersion: 131603
 --- !u!114 &95980299302218347
 MonoBehaviour:
@@ -2236,10 +2237,10 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638212268996440021
+  lastModified: 638212313909256429
   FileSizes:
   - Name: Desktop
-    Value: 4108
+    Value: 4156
   Exists: 1
 --- !u!114 &2718813289708226679
 MonoBehaviour:
@@ -2861,6 +2862,30 @@ MonoBehaviour:
     data2: 3367262531
   Type: 0
   IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &5903753223088451979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Footsteps Rate
+  m_EditorClassIdentifier: 
+  Name: Footsteps Rate
+  StudioPath: 
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 3642224497
+    data2: 2609567829
+  Type: 0
+  IsGlobal: 0
   Labels: []
   Exists: 1
 --- !u!114 &6192558306902192068
