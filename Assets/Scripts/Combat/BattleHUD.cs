@@ -26,9 +26,9 @@ public class BattleHUD : MonoBehaviour
         // unit.currentHP = unit.currentHP - damageTaken;
     }
 
-    public void UpdatePoints(Unit unit, int points)
+    public void UpdatePoints(Unit unit)
     {
-        unit.currentPoints = unit.currentPoints + points;
+        pointsText.text = "" + unit.currentPoints;
     }
 
 }

@@ -11,6 +11,7 @@ public class Unit : MonoBehaviour
     public int maxPoints;
     public int currentPoints;
     public int ability1Cost;
+    public int ability2Cost;
 
     public int maxHP;
     public int currentHP;
@@ -67,7 +68,7 @@ public class Unit : MonoBehaviour
 
     public IEnumerator Heal(int heal, Unit unit)
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         unit.currentHP = unit.currentHP + heal;
 
         if (unit.currentHP > unit.maxHP)

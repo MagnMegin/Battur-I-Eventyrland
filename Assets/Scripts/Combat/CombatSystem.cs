@@ -12,8 +12,11 @@ public class CombatSystem : MonoBehaviour
     public bool _player1TurnDone = false;
     public bool _player2TurnDone = false;
     public bool _enemyTurnDone = false;
+    public int _pointsRegain;
 
     public BasicTrollCombat trollCombatScript;
+    public AskeladdenCombat askCombatScript;
+    public SomreVintreCombat eivindCombatScript;
 
     public GameObject player1Prefab;
     public GameObject player2Prefab;
@@ -72,35 +75,49 @@ public class CombatSystem : MonoBehaviour
 
     IEnumerator PlayerTurn()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         Debug.Log("PlayerTurn");
         dialogueText.text = "Velg en handling";
 
-        player1Unit.currentPoints = player1Unit.currentPoints + 2;
+        player1Unit.currentPoints += _pointsRegain;
         if (player1Unit.currentPoints > player1Unit.maxPoints)
         {
             player1Unit.currentPoints = player1Unit.maxPoints;
         }
 
-        player2Unit.currentPoints = player2Unit.currentPoints + 2;
+        player2Unit.currentPoints += _pointsRegain;
         if (player2Unit.currentPoints > player2Unit.maxPoints)
         {
             player2Unit.currentPoints = player2Unit.maxPoints;
         }
+        UpdatePointsHUD();
 
         state = BattleState.PLAYERTURN;
+
+        AskeladdenCombat ASK = FindObjectOfType<AskeladdenCombat>();
+        SomreVintreCombat EIVIND = FindObjectOfType<SomreVintreCombat>();
 
         player1Buttons.SetActive(true);
         player2Buttons.SetActive(true);
         _player1TurnDone = false;
         _player2TurnDone = false;
         _enemyTurnDone = false;
+
+        ASK.Anim.SetBool("Heltemot", false);
+        ASK.Anim.SetBool("Stenknus", false);
+        ASK.Anim.SetBool("Sverd", false);
+        EIVIND.Anim.SetBool("Blås", false);
+        EIVIND.Anim.SetBool("Ball", false);
     }
 
 
 
-
+    public void UpdatePointsHUD()
+    {
+        player1HUD.UpdatePoints(player1Unit);
+        player2HUD.UpdatePoints(player2Unit);
+    }
 
     public IEnumerator DamageUpdate()
     {
@@ -109,7 +126,7 @@ public class CombatSystem : MonoBehaviour
         player1HUD.UpdateHP(player1Unit);
         player2HUD.UpdateHP(player2Unit);
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         if (_player1TurnDone == false)
         {
@@ -137,7 +154,7 @@ public class CombatSystem : MonoBehaviour
 
     public IEnumerator HealPlayers()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         Unit U = gameObject.GetComponent<Unit>();
         player1HUD.UpdateHP(player1Unit);

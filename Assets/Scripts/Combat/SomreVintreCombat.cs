@@ -12,7 +12,7 @@ public class SomreVintreCombat : MonoBehaviour
     public Unit unitScript;
     public CombatSystem combatScript;
     public BasicTrollCombat trollScript;
-
+    public Animator Anim;
 
 
     void Start()
@@ -24,20 +24,28 @@ public class SomreVintreCombat : MonoBehaviour
     }
     public void Ability1()
     {
-        Debug.Log("Trykk masse på Q for å blåse hardere!");
         CombatSystem CS = FindObjectOfType<CombatSystem>();
-        CS.player1Buttons.SetActive(false);
-        CS.player2Buttons.SetActive(false);
-        CS.state = BattleState.PLAYERINTERACT;
-        CS.dialogueText.text = "Trykk masse på Q for å blåse hardere!";
+        if (CS.player2Unit.currentPoints < CS.player2Unit.ability1Cost)
+        {
+            CS.dialogueText.text = CS.player2Unit.unitName + " har ikke nok evne-poeng til å gjøre det!";
+        }
+        else
+        {
+            Debug.Log("Trykk masse på Q for å blåse hardere!");
+            CS.player1Buttons.SetActive(false);
+            CS.player2Buttons.SetActive(false);
+            CS.state = BattleState.PLAYERINTERACT;
+            CS.dialogueText.text = "Trykk masse på Q for å blåse hardere!";
 
-        StartCoroutine(BlowColdInteraction());
-
+            StartCoroutine(BlowColdInteraction());
+        }
     }
 
     public IEnumerator BlowColdInteraction()
     {
-        yield return new WaitForSeconds(3f);
+
+        yield return new WaitForSeconds(2f);
+        Anim.SetBool("Blås", true);
 
         Debug.Log("PlayerInteract");
 
@@ -70,25 +78,36 @@ public class SomreVintreCombat : MonoBehaviour
 
         U.TakeDamage(_windDMG, CS.enemyUnit);
         CS._player2TurnDone = true;
-
+        CS.player2Unit.currentPoints = CS.player2Unit.currentPoints - CS.player2Unit.ability1Cost;
+        CS.UpdatePointsHUD();
 
     }
 
     public void Ability2()
     {
-        Debug.Log("Trykk masse på Q for å blåse hardere!");
         CombatSystem CS = FindObjectOfType<CombatSystem>();
-        CS.player1Buttons.SetActive(false);
-        CS.player2Buttons.SetActive(false);
-        CS.state = BattleState.PLAYERINTERACT;
-        CS.dialogueText.text = "Trykk masse på Q for å blåse hardere!";
+        if (CS.player2Unit.currentPoints < CS.player2Unit.ability2Cost)
+        {
+            CS.dialogueText.text = CS.player2Unit.unitName + " har ikke nok evne-poeng til å gjøre det!";
+        }
+        else
+        {
+            Debug.Log("Trykk masse på Q for å blåse hardere!");
+            CS.player1Buttons.SetActive(false);
+            CS.player2Buttons.SetActive(false);
+            CS.state = BattleState.PLAYERINTERACT;
+            CS.dialogueText.text = "Trykk masse på Q for å blåse hardere!";
 
-        StartCoroutine(BlowWarmInteraction());
+            StartCoroutine(BlowWarmInteraction());
+        }
     }
 
     public IEnumerator BlowWarmInteraction()
     {
-        yield return new WaitForSeconds(3f);
+
+        yield return new WaitForSeconds(2f);
+
+        Anim.SetBool("Blås", true);
 
         Debug.Log("PlayerInteract");
 
@@ -121,6 +140,9 @@ public class SomreVintreCombat : MonoBehaviour
 
         U.TakeDamage(_windDMG, CS.enemyUnit);
         CS._player2TurnDone = true;
+        CS.player2Unit.currentPoints = CS.player2Unit.currentPoints - CS.player2Unit.ability2Cost;
+        CS.UpdatePointsHUD();
+
     }
 
 
@@ -138,7 +160,9 @@ public class SomreVintreCombat : MonoBehaviour
 
     public IEnumerator BasicAttackInteraction()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
+
+        Anim.SetBool("Ball", true);
 
         Debug.Log("PlayerInteract");
 

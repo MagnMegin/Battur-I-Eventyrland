@@ -29,7 +29,7 @@ public class BasicTrollCombat : MonoBehaviour
 
     public IEnumerator EnemyTurnStart()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         DefenceDownTimer();
         BurningTimer();
@@ -41,15 +41,17 @@ public class BasicTrollCombat : MonoBehaviour
 
         if (CS.enemyUnit._frozen == true)
         {
-                CS.dialogueText.text = CS.enemyUnit.unitName + " er frossen og kan ikke gjøre noe!";
+            CS.dialogueText.text = CS.enemyUnit.unitName + " er frossen og kan ikke gjøre noe!";
+            StartCoroutine(CS.DamageUpdate());
         }
         else
         { 
-           _chooseTarget = Random.Range(1, 3);
+            _chooseTarget = Random.Range(1, 3);
             _chooseAttackType = Random.Range(1, 3);
             if (_chooseTarget == 1)
             {
                 Debug.Log("Player 1 chosen");
+
                 if (_chooseAttackType == 1)
                 {
                         
@@ -89,6 +91,7 @@ public class BasicTrollCombat : MonoBehaviour
             else if (_chooseTarget == 2)
             {
                 Debug.Log("Player 2 chosen");
+
                 if (_chooseAttackType == 1)
                 {
                     //Punch//
@@ -100,7 +103,7 @@ public class BasicTrollCombat : MonoBehaviour
 
                     CS._enemyTurnDone = true;
 
-                    U.TakeDamage(_dmg, CS.player1Unit);
+                    U.TakeDamage(_dmg, CS.player2Unit);
 
                 }
                 else if (_chooseAttackType == 2)
@@ -115,7 +118,7 @@ public class BasicTrollCombat : MonoBehaviour
 
                     CS._enemyTurnDone = true;
 
-                    U.TakeDamage(_dmg, CS.player1Unit);
+                    U.TakeDamage(_dmg, CS.player2Unit);
 
                 }
                 else
@@ -128,6 +131,8 @@ public class BasicTrollCombat : MonoBehaviour
             {
                 Debug.Log("Failed to choose target");
             }
+
+            CS.dialogueText.text = "Trollet skada dere!";
 
         }
     }
@@ -171,7 +176,7 @@ public class BasicTrollCombat : MonoBehaviour
             _currentCooldownTime = _currentCooldownTime - 1;
             U.TakeDamage(_burningDamage, CS.enemyUnit);
         }
-        else
+        else if (CS.enemyUnit._burning == true)
         {
             CS.enemyUnit._burning = false;
             CS.dialogueText.text = "Brannen på " + CS.enemyUnit.unitName + " har slukna...";

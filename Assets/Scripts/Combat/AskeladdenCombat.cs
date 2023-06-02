@@ -9,6 +9,7 @@ public class AskeladdenCombat : MonoBehaviour
     public Unit unitScript;
     public CombatSystem combatScript;
     public BasicTrollCombat trollScript;
+    public Animator Anim;
 
 
     void Start()
@@ -28,18 +29,19 @@ public class AskeladdenCombat : MonoBehaviour
     public void Ability1()
     {
         CombatSystem CS = FindObjectOfType<CombatSystem>();
-        if (CS.player1Unit.currentPoints > CS.player1Unit.ability1Cost)
+        if (CS.player1Unit.currentPoints < CS.player1Unit.ability1Cost)
         {
-            CS.dialogueText.text = CS.player1Unit.unitName + " har ikke nok evne poeng til å gjøre det!";
+            CS.dialogueText.text = CS.player1Unit.unitName + " har ikke nok evne-poeng til å gjøre det!";
         }
-
-
+        else
+        { 
         Debug.Log("Pick heal target");
         CS.healPick.SetActive(true);
         CS.player1Buttons.SetActive(false);
         CS.player2Buttons.SetActive(false);
         CS.state = BattleState.PLAYERINTERACT;
         CS.dialogueText.text = "Hvem helbreder du " + _heal + " helse til?";
+        }
     }
 
     public void Ability1ActivateAsk()
@@ -49,8 +51,9 @@ public class AskeladdenCombat : MonoBehaviour
         CS._player1TurnDone = true;
         StartCoroutine(U.Heal(_heal, CS.player1Unit));
         CS.healPick.SetActive(false);
-
-
+        CS.player1Unit.currentPoints = CS.player1Unit.currentPoints - CS.player1Unit.ability1Cost;
+        CS.UpdatePointsHUD();
+        Anim.SetBool("Heltemot", true);
     }
 
     public void Ability1ActivateCompanion()
@@ -60,6 +63,9 @@ public class AskeladdenCombat : MonoBehaviour
         CS._player1TurnDone = true;
         StartCoroutine(U.Heal(_heal, CS.player2Unit));
         CS.healPick.SetActive(false);
+        CS.player1Unit.currentPoints = CS.player1Unit.currentPoints - CS.player1Unit.ability1Cost;
+        CS.UpdatePointsHUD();
+        Anim.SetBool("Heltemot", true);
     }
 
 
@@ -70,15 +76,23 @@ public class AskeladdenCombat : MonoBehaviour
     public void Ability2()
     {
         CombatSystem CS = FindObjectOfType<CombatSystem>();
-        CS.player1Buttons.SetActive(false);
-        CS.player2Buttons.SetActive(false);
-        CS.state = BattleState.PLAYERINTERACT;
-        StartCoroutine(Ability2Interaction());
+        if (CS.player1Unit.currentPoints < CS.player1Unit.ability2Cost)
+        {
+            CS.dialogueText.text = CS.player1Unit.unitName + " har ikke nok evne-poeng til å gjøre det!";
+        }
+        else
+        {
+            CS.player1Buttons.SetActive(false);
+            CS.player2Buttons.SetActive(false);
+            CS.state = BattleState.PLAYERINTERACT;
+            StartCoroutine(Ability2Interaction());
+
+        }
     }
 
     public IEnumerator Ability2Interaction()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         CombatSystem CS = FindObjectOfType<CombatSystem>();
         BasicTrollCombat Troll = FindObjectOfType<BasicTrollCombat>();
@@ -86,6 +100,9 @@ public class AskeladdenCombat : MonoBehaviour
         Troll._currentDefenceTime = Troll._defenceCooldown;
         CS.dialogueText.text = "Askeladden skremte " + CS.enemyUnit.unitName + "! Nå tar'n mer skade!";
         CS._player1TurnDone = true;
+        CS.player1Unit.currentPoints = CS.player1Unit.currentPoints - CS.player1Unit.ability2Cost;
+        CS.UpdatePointsHUD();
+        Anim.SetBool("Stenknus", true);
 
         StartCoroutine(CS.DamageUpdate());
     }
@@ -109,11 +126,12 @@ public class AskeladdenCombat : MonoBehaviour
 
     public IEnumerator BasicAttackInteraction()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         Debug.Log("PlayerInteract");
         CombatSystem CS = FindObjectOfType<CombatSystem>();
         Unit U = gameObject.GetComponent<Unit>();
+        Anim.SetBool("Sverd", true);
         U.TakeDamage(_dmg, CS.enemyUnit);
         CS._player1TurnDone = true;
     }
