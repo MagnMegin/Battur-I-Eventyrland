@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,9 @@ public class SomreVintreCombat : MonoBehaviour
     public CombatSystem combatScript;
     public BasicTrollCombat trollScript;
     public Animator Anim;
+    public EventReference BlowColdSound;
+    public EventReference BlowWarmSound;
+    public EventReference BasicAttackSound;
 
 
     void Start()
@@ -46,6 +50,7 @@ public class SomreVintreCombat : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
         Anim.SetBool("Blås", true);
+        AudioManager.Instance.PlayOneShot(BlowColdSound, Vector3.zero);
 
         Debug.Log("PlayerInteract");
 
@@ -108,6 +113,7 @@ public class SomreVintreCombat : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         Anim.SetBool("Blås", true);
+        AudioManager.Instance.PlayOneShot(BlowWarmSound, Vector3.zero);
 
         Debug.Log("PlayerInteract");
 
@@ -163,6 +169,7 @@ public class SomreVintreCombat : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         Anim.SetBool("Ball", true);
+        AudioManager.Instance.PlayOneShot(BasicAttackSound, Vector3.zero);
 
         Debug.Log("PlayerInteract");
 

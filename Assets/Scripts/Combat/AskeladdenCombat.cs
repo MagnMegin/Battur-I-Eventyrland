@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class AskeladdenCombat : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class AskeladdenCombat : MonoBehaviour
     public CombatSystem combatScript;
     public BasicTrollCombat trollScript;
     public Animator Anim;
+    public EventReference AttackSound;
+    public EventReference SteinKnusSound;
 
 
     void Start()
@@ -103,6 +106,7 @@ public class AskeladdenCombat : MonoBehaviour
         CS.player1Unit.currentPoints = CS.player1Unit.currentPoints - CS.player1Unit.ability2Cost;
         CS.UpdatePointsHUD();
         Anim.SetBool("Stenknus", true);
+        AudioManager.Instance.PlayOneShot(SteinKnusSound, Vector3.zero);
 
         StartCoroutine(CS.DamageUpdate());
     }
@@ -132,6 +136,7 @@ public class AskeladdenCombat : MonoBehaviour
         CombatSystem CS = FindObjectOfType<CombatSystem>();
         Unit U = gameObject.GetComponent<Unit>();
         Anim.SetBool("Sverd", true);
+        AudioManager.Instance.PlayOneShot(AttackSound, Vector3.zero);
         U.TakeDamage(_dmg, CS.enemyUnit);
         CS._player1TurnDone = true;
     }
