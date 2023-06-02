@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a14e81ea594ebe64a876cc7f4a953eae, type: 3}
   m_Name: Gardener
   m_EditorClassIdentifier: 
-  characterName: Gardener
+  characterName: Borealis
   characterDescription: 
-  characterDialogueSprite: {fileID: 21300000, guid: dda1b956efc281341b48ed0b00c1ab06, type: 3}
+  characterDialogueSprite: {fileID: 21300000, guid: 447b6b3a7223c1f4db072480cbf515f6, type: 3}
   lines:
-  - Hei!
-  - En planke?
-  - "Jo, det kan v\xE6re i en l\xF8vhaug"
+  - Hei! Du trenger en planke?
+  - Jeg ryddet i hagen og dumpet en i en busk
   TalkingEvent:
     Guid:
       Data1: -1379632156

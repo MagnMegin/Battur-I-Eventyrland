@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +17,8 @@ public class BasicTrollCombat : MonoBehaviour
     public int _burningDamage;
     public Unit unitScript;
     public CombatSystem combatScript;
+    public EventReference PunchSound;
+    public EventReference BranchSound;
 
 
     void Start()
@@ -57,6 +60,7 @@ public class BasicTrollCombat : MonoBehaviour
                         
                     //Punch//
                     Debug.Log("Punch");
+                    AudioManager.Instance.PlayOneShot(PunchSound, Vector3.zero);
                     CS.state = BattleState.ENEMYINTERACT;
                         
                     _dmg = Random.Range(_minDMG, _maxDMG);
@@ -72,6 +76,7 @@ public class BasicTrollCombat : MonoBehaviour
 
                     //Branch throw//
                     Debug.Log("Branch");
+                    AudioManager.Instance.PlayOneShot(BranchSound, Vector3.zero);
                     CS.state = BattleState.ENEMYINTERACT;
 
                     _dmg = Random.Range(_minDMG, _maxDMG);
@@ -96,6 +101,7 @@ public class BasicTrollCombat : MonoBehaviour
                 {
                     //Punch//
                     Debug.Log("Punch");
+                    AudioManager.Instance.PlayOneShot(PunchSound, Vector3.zero);
                     CS.state = BattleState.ENEMYINTERACT;
 
                     _dmg = Random.Range(_minDMG, _maxDMG);
@@ -111,6 +117,7 @@ public class BasicTrollCombat : MonoBehaviour
 
                     //Branch throw//
                     Debug.Log("Branch");
+                    AudioManager.Instance.PlayOneShot(BranchSound, Vector3.zero);
                     CS.state = BattleState.ENEMYINTERACT;
 
                     _dmg = Random.Range(_minDMG, _maxDMG);

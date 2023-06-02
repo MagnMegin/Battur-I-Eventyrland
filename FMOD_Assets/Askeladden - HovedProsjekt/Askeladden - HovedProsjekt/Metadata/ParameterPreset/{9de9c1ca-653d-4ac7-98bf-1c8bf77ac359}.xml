@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{9de9c1ca-653d-4ac7-98bf-1c8bf77ac359}">
+		<property name="name">
+			<value>SidekarakterVolum</value>
+		</property>
+		<relationship name="folder">
+			<destination>{3437f5eb-3332-4e82-b6be-fa267692733b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{c7e6e7ca-df3d-44fd-847c-dfc4850be63b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{c7e6e7ca-df3d-44fd-847c-dfc4850be63b}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

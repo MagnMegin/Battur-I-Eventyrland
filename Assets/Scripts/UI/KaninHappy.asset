@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a14e81ea594ebe64a876cc7f4a953eae, type: 3}
   m_Name: KaninHappy
   m_EditorClassIdentifier: 
-  characterName: Kanin
+  characterName: Harald
   characterDescription: 
-  characterDialogueSprite: {fileID: 21300000, guid: b4aaf24976d147940b4b77064c7081f8, type: 3}
+  characterDialogueSprite: {fileID: 21300000, guid: 03360da839f9c3c4c98f6a6d855faf95, type: 3}
   lines:
-  - Du har reddet oss!
-  - Da trenger vi ikke planken mer
+  - Du har reddet meg!
+  - Da trenger jeg ikke planken mer
   TalkingEvent:
     Guid:
       Data1: 1715599421
