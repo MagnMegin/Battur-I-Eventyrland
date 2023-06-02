@@ -76,6 +76,20 @@ MonoBehaviour:
   combatScript: {fileID: 0}
   trollScript: {fileID: 0}
   Anim: {fileID: 4973649920222974486}
+  AttackSound:
+    Guid:
+      Data1: -1916997983
+      Data2: 1146502292
+      Data3: 1728965022
+      Data4: 627707700
+    Path: event:/Karakterer/Askeladden/Combat/AskeladdenSverd
+  SteinKnusSound:
+    Guid:
+      Data1: 1041477164
+      Data2: 1081791858
+      Data3: 249114798
+      Data4: -800250138
+    Path: event:/Karakterer/Askeladden/Combat/MosOst
 --- !u!1 &4915218405264926923
 GameObject:
   m_ObjectHideFlags: 0

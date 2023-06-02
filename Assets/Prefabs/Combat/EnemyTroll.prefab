@@ -166,3 +166,17 @@ MonoBehaviour:
   _burningDamage: 3
   unitScript: {fileID: 0}
   combatScript: {fileID: 0}
+  PunchSound:
+    Guid:
+      Data1: -1508416609
+      Data2: 1147303043
+      Data3: 1357021065
+      Data4: 1012616906
+    Path: event:/Karakterer/Troll/Combat/TrollSlag
+  BranchSound:
+    Guid:
+      Data1: -1508416609
+      Data2: 1147303043
+      Data3: 1357021065
+      Data4: 1012616906
+    Path: event:/Karakterer/Troll/Combat/TrollSlag

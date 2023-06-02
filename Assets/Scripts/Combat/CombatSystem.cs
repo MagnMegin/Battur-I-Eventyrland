@@ -187,6 +187,11 @@ public class CombatSystem : MonoBehaviour
 
     }
 
+    public IEnumerator CombatLost()
+    {
+        yield return new WaitForSeconds(2f);
+
+    }
 
 
 

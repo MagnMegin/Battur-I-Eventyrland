@@ -79,6 +79,27 @@ MonoBehaviour:
   combatScript: {fileID: 0}
   trollScript: {fileID: 0}
   Anim: {fileID: 2805958862144277131}
+  BlowColdSound:
+    Guid:
+      Data1: -1754734003
+      Data2: 1144368285
+      Data3: 1972875685
+      Data4: 503952568
+    Path: "event:/Karakterer/Eivind/Combat/EivindBl\xE5sKaldt"
+  BlowWarmSound:
+    Guid:
+      Data1: -799994454
+      Data2: 1195902236
+      Data3: 1121999526
+      Data4: -1751533824
+    Path: "event:/Karakterer/Eivind/Combat/EivindBl\xE5sVarmt"
+  BasicAttackSound:
+    Guid:
+      Data1: -448059168
+      Data2: 1206524820
+      Data3: -1891883331
+      Data4: 1384615839
+    Path: event:/Karakterer/Eivind/Combat/EivindKaste
 --- !u!1 &5410437250448272783
 GameObject:
   m_ObjectHideFlags: 0

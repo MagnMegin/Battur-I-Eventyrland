@@ -964,7 +964,7 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638212378987950860
+  lastModified: 638213063021535345
   FileSizes:
   - Name: Desktop
     Value: 10355264
@@ -1741,7 +1741,7 @@ MonoBehaviour:
   - {fileID: -3670313327492152192}
   StringsBanks:
   - {fileID: 2510350537494216410}
-  cacheTime: 638212378987960877
+  cacheTime: 638213063021555427
   cacheVersion: 131603
 --- !u!114 &95980299302218347
 MonoBehaviour:
@@ -2237,7 +2237,7 @@ MonoBehaviour:
   Path: FMOD_Assets/Askeladden - HovedProsjekt/Askeladden - HovedProsjekt/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638212378987960877
+  lastModified: 638213063021555427
   FileSizes:
   - Name: Desktop
     Value: 4156

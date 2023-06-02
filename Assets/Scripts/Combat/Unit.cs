@@ -51,6 +51,7 @@ public class Unit : MonoBehaviour
                 Debug.Log("Player dead");
                 CS.state = BattleState.LOST;
                 CS.dialogueText.text = "En av dere døde! Prøv igjen";
+                StartCoroutine(CS.CombatLost());
             }
             else if (unit == CS.enemyUnit)
             {
