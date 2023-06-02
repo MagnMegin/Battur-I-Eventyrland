@@ -8,7 +8,6 @@ using TMPro;
 public enum BattleState { START, PLAYERTURN, PLAYERINTERACT, ENEMYTURN, ENEMYINTERACT, WON, LOST }
 public class CombatSystem : MonoBehaviour
 {
-
     public bool _player1TurnDone = false;
     public bool _player2TurnDone = false;
     public bool _enemyTurnDone = false;
@@ -180,6 +179,13 @@ public class CombatSystem : MonoBehaviour
     }
 
 
+    public IEnumerator CombatWon()
+    {
+        yield return new WaitForSeconds(2f);
+
+
+
+    }
 
 
 

@@ -50,20 +50,23 @@ public class Unit : MonoBehaviour
             {
                 Debug.Log("Player dead");
                 CS.state = BattleState.LOST;
+                CS.dialogueText.text = "En av dere døde! Prøv igjen";
             }
             else if (unit == CS.enemyUnit)
             {
                 Debug.Log("Enemy Dead");
                 CS.state = BattleState.WON;
+                CS.dialogueText.text = CS.enemyUnit.unitName + " er død! Dere vant kampen!";
+                StartCoroutine(CS.CombatWon());
             }
         }
         else
         {
             NoHealthLeft = false;
             Debug.Log("Health = plenty");
+            StartCoroutine(CS.DamageUpdate());
         }
 
-        StartCoroutine(CS.DamageUpdate());
     }
 
     public IEnumerator Heal(int heal, Unit unit)
