@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public enum BattleState { START, PLAYERTURN, PLAYERINTERACT, ENEMYTURN, ENEMYINTERACT, WON, LOST }
@@ -182,15 +183,19 @@ public class CombatSystem : MonoBehaviour
     public IEnumerator CombatWon()
     {
         yield return new WaitForSeconds(2f);
+        dialogueText.text = enemyUnit.unitName + " er død! Dere vant kampen!";
 
-
-
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("CombatPrototype");
     }
 
     public IEnumerator CombatLost()
     {
         yield return new WaitForSeconds(2f);
+        dialogueText.text = "En av dere døde! Prøv igjen";
 
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("CombatPrototype");
     }
 
 
