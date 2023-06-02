@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,6 +23,9 @@ public class Unit : MonoBehaviour
     public bool NoHealthLeft;
 
     public CombatActions Actions;
+
+    public EventReference TakeDmgSound;
+    public EventReference HealSound;
 
     private void Awake()
     {
@@ -67,12 +71,15 @@ public class Unit : MonoBehaviour
             Debug.Log("Health = plenty");
             StartCoroutine(CS.DamageUpdate());
         }
+        AudioManager.Instance.PlayOneShot(TakeDmgSound, Vector3.zero);
 
     }
 
     public IEnumerator Heal(int heal, Unit unit)
     {
         yield return new WaitForSeconds(2f);
+        AudioManager.Instance.PlayOneShot(HealSound, Vector3.zero);
+
         unit.currentHP = unit.currentHP + heal;
 
         if (unit.currentHP > unit.maxHP)

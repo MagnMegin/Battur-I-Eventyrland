@@ -58,6 +58,20 @@ MonoBehaviour:
   _frozen: 0
   _burning: 0
   NoHealthLeft: 0
+  TakeDmgSound:
+    Guid:
+      Data1: 754582174
+      Data2: 1214174753
+      Data3: -941214057
+      Data4: 761645467
+    Path: event:/Karakterer/Askeladden/Combat/AskeladdenMottaSmerte
+  HealSound:
+    Guid:
+      Data1: 376893575
+      Data2: 1221357278
+      Data3: -325347394
+      Data4: -664992135
+    Path: event:/Karakterer/Askeladden/Combat/AskeladdenMottaHelse
 --- !u!114 &8547631252224330958
 MonoBehaviour:
   m_ObjectHideFlags: 0

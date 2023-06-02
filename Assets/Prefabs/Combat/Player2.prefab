@@ -58,6 +58,20 @@ MonoBehaviour:
   _frozen: 0
   _burning: 0
   NoHealthLeft: 0
+  TakeDmgSound:
+    Guid:
+      Data1: -1550110541
+      Data2: 1196542722
+      Data3: 1931100814
+      Data4: -1290524999
+    Path: event:/Karakterer/Eivind/Combat/EivindMottaSmerte
+  HealSound:
+    Guid:
+      Data1: 1884543344
+      Data2: 1291640557
+      Data3: 1712264327
+      Data4: -97467479
+    Path: event:/Karakterer/Eivind/Combat/EivindMottaHelse2
 --- !u!114 &1636025318516459092
 MonoBehaviour:
   m_ObjectHideFlags: 0

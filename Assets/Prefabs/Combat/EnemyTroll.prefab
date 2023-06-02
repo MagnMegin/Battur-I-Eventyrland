@@ -142,6 +142,20 @@ MonoBehaviour:
   _frozen: 0
   _burning: 0
   NoHealthLeft: 0
+  TakeDmgSound:
+    Guid:
+      Data1: 1410775047
+      Data2: 1076756709
+      Data3: -719477574
+      Data4: 507290230
+    Path: event:/Karakterer/Troll/Combat/TrollMottaSmerte
+  HealSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &8074261616796733825
 MonoBehaviour:
   m_ObjectHideFlags: 0
