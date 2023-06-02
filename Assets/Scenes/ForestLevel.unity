@@ -14113,6 +14113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AssetPlane
       objectReference: {fileID: 0}
+    - target: {fileID: 87281755491286247, guid: ab4aa0596b9e80644972564bab0a2c35, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab4aa0596b9e80644972564bab0a2c35, type: 3}
 --- !u!1001 &645391127
@@ -40751,11 +40755,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6711399565188046973, guid: 48cfd1e99eef82a48837689d67ef1906, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.66
+      value: 1.05
       objectReference: {fileID: 0}
     - target: {fileID: 6711399565188046973, guid: 48cfd1e99eef82a48837689d67ef1906, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.1
+      value: 10.08
       objectReference: {fileID: 0}
     - target: {fileID: 6711399565188046973, guid: 48cfd1e99eef82a48837689d67ef1906, type: 3}
       propertyPath: m_LocalPosition.z
@@ -42471,6 +42475,7 @@ GameObject:
   - component: {fileID: 2050398661}
   - component: {fileID: 2050398660}
   - component: {fileID: 2050398666}
+  - component: {fileID: 2050398667}
   m_Layer: 0
   m_Name: BossFight
   m_TagString: NPC
@@ -42522,6 +42527,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2050398666}
         m_TargetAssemblyTypeName: testHelper, Assembly-CSharp
         m_MethodName: StartInteract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2050398667}
+        m_TargetAssemblyTypeName: StartCombat, Assembly-CSharp
+        m_MethodName: InitiateCombat
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -42618,6 +42635,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3433707c79c6f0f44a96d25c538d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2050398667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050398659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422ef6ba8d1e19d42adc07a217115dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Combat: {fileID: 2952696567453376730, guid: 36445e7b61f87c646baca4b9d0e031d5, type: 3}
 --- !u!1001 &2058190403
 PrefabInstance:
   m_ObjectHideFlags: 0
