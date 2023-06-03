@@ -134,6 +134,7 @@ public class CombatSystem : MonoBehaviour
         }
         else if (_player2TurnDone == false)
         {
+            dialogueText.text = "Velg en handling";
             player2Buttons.SetActive(true);
         }
         else

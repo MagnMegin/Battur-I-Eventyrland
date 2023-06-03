@@ -90,6 +90,27 @@ MonoBehaviour:
       Data3: 249114798
       Data4: -800250138
     Path: event:/Karakterer/Askeladden/Combat/MosOst
+  AskHealingSound:
+    Guid:
+      Data1: -1375481087
+      Data2: 1224350075
+      Data3: 247319452
+      Data4: -1894214769
+    Path: event:/Karakterer/Askeladden/Combat/AskeladdenVoice
+  EivindHealingSound:
+    Guid:
+      Data1: -715768065
+      Data2: 1314246644
+      Data3: -1433387346
+      Data4: 1367608212
+    Path: event:/Karakterer/Eivind/Combat/EivindMottaHelse1
+  GenericHealingSound:
+    Guid:
+      Data1: 1752378136
+      Data2: 1091164315
+      Data3: -1719523199
+      Data4: -504161796
+    Path: event:/Combat/CombatFX/Assets/Helbrede
 --- !u!1 &4915218405264926923
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,10 @@ public class AskeladdenCombat : MonoBehaviour
     public Animator Anim;
     public EventReference AttackSound;
     public EventReference SteinKnusSound;
+    public EventReference AskHealingSound;
+    public EventReference EivindHealingSound;
+    public EventReference GenericHealingSound;
+
 
 
     void Start()
@@ -57,6 +61,8 @@ public class AskeladdenCombat : MonoBehaviour
         CS.player1Unit.currentPoints = CS.player1Unit.currentPoints - CS.player1Unit.ability1Cost;
         CS.UpdatePointsHUD();
         Anim.SetBool("Heltemot", true);
+        AudioManager.Instance.PlayOneShot(AskHealingSound, Vector3.zero);
+        AudioManager.Instance.PlayOneShot(GenericHealingSound, Vector3.zero);
     }
 
     public void Ability1ActivateCompanion()
@@ -69,6 +75,9 @@ public class AskeladdenCombat : MonoBehaviour
         CS.player1Unit.currentPoints = CS.player1Unit.currentPoints - CS.player1Unit.ability1Cost;
         CS.UpdatePointsHUD();
         Anim.SetBool("Heltemot", true);
+        AudioManager.Instance.PlayOneShot(EivindHealingSound, Vector3.zero);
+        AudioManager.Instance.PlayOneShot(GenericHealingSound, Vector3.zero);
+
     }
 
 
