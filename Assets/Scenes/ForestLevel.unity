@@ -40975,11 +40975,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6711399565188046973, guid: 48cfd1e99eef82a48837689d67ef1906, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.07
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 6711399565188046973, guid: 48cfd1e99eef82a48837689d67ef1906, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.44
+      value: 9.47
       objectReference: {fileID: 0}
     - target: {fileID: 6711399565188046973, guid: 48cfd1e99eef82a48837689d67ef1906, type: 3}
       propertyPath: m_LocalPosition.z
@@ -42758,7 +42758,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2050398667}
         m_TargetAssemblyTypeName: StartCombat, Assembly-CSharp
-        m_MethodName: InitiateCombat
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

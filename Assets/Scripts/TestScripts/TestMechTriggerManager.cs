@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TestMechTriggerManager : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class TestMechTriggerManager : MonoBehaviour
     private bool _twoPlanksActive;
     private bool _bossDefeated;
     private bool _bossFightActivated;
+    private bool _winCondition;
     
     public bool _talkedToRabbit;
 
@@ -58,7 +60,14 @@ public class TestMechTriggerManager : MonoBehaviour
             RabbitScared.SetActive(false);
             _bossDefeated = true;
         }
-
+        if (CollectedPlank3.activeInHierarchy == true && !_winCondition)
+        {
+            _winCondition = true;
+        }
+        if (_winCondition == true)
+        {
+            SceneManager.LoadSceneAsync("LevelWon");
+        }
     }
 
 
